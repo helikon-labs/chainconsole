@@ -100,7 +100,7 @@ async function getInjectedAccounts (injectedPromise: Promise<InjectedExtension[]
 function makeCreateLink (baseApiUrl: string, isElectron: boolean): (path: string) => string {
   return (path: string, apiUrl?: string): string =>
     `${isElectron
-      ? 'https://polkadot.js.org/apps/'
+      ? 'https://dot.chainconsole.io'
       : `${window.location.origin}${window.location.pathname}`
     }?rpc=${encodeURIComponent(apiUrl || baseApiUrl)}#${path}`;
 }

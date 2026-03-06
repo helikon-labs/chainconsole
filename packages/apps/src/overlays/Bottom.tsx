@@ -5,7 +5,6 @@ import React from 'react';
 
 import { styled } from '@polkadot/react-components';
 
-import DotApps from './DotApps.js';
 import LocalFork from './LocalFork.js';
 
 interface Props {
@@ -16,7 +15,6 @@ function Bottom ({ className }: Props): React.ReactElement<Props> | null {
   return (
     <StyledDiv className={className}>
       <LocalFork />
-      <DotApps />
     </StyledDiv>
   );
 }

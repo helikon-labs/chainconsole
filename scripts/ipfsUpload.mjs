@@ -21,7 +21,7 @@ console.log('$ scripts/ipfsUpload.mjs', process.argv.slice(2).join(' '));
 
 // https://gateway.pinata.cloud/ipfs/
 const GATEWAY = 'https://ipfs.io/ipfs/';
-const DOMAIN = 'dotapps.io';
+const DOMAIN = 'dot.chainconsole.io';
 const DST = 'packages/apps/build';
 const SRC = 'packages/apps/public';
 const WOPTS = { encoding: 'utf8', flag: 'w' };

@@ -27,7 +27,7 @@ module.exports = merge(
         }]
       }),
       new HtmlWebpackPlugin({
-        PAGE_TITLE: 'Polkadot/Substrate Portal',
+        PAGE_TITLE: 'Chain Console - Polkadot',
         minify: false,
         template: path.join(context, '../apps/public/index.html')
       })
