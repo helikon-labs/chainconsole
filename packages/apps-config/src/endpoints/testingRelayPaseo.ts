@@ -469,7 +469,7 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     info: 'PaseoShibuyaChain',
     paraId: 2000,
     providers: [{
-      isAvailable: false, // https://github.com/polkadot-js/apps/issues/11950
+      isAvailable: true,
       name: 'Astar',
       url: 'wss://rpc.shibuya.astar.network'
     }],
