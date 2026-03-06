@@ -359,7 +359,7 @@ export function ApiCtxRoot ({ apiUrl, beforeApiInit, children, isElectron, store
         statics.api.on('disconnected', () => setIsApiConnected(false));
         statics.api.on('error', onError);
         statics.api.on('ready', (): void => {
-          const injectedPromise = web3Enable('p-wallet');
+          const injectedPromise = web3Enable('Chain Console');
 
           injectedPromise
             .then(setExtensions)
