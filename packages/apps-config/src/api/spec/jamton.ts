@@ -35,9 +35,7 @@ const definitions: OverrideBundleDefinition = {
       types
     }
   ],
-  runtime,
-  rpc: {},
-  signedExtensions: {}
+  runtime
 };
 
 export default definitions;

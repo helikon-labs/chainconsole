@@ -45,7 +45,7 @@
     "lint": "polkadot-dev-run-lint",
     "postinstall": "polkadot-dev-yarn-only",
     "start": "yarn clean && cd packages/apps && yarn polkadot-exec-webpack serve --config webpack.serve.cjs --port 3000",
-    "test": "polkadot-dev-run-test --env browser ^chainEndpoints ^chainTypes ^page- ^react-",
+    "test": "polkadot-dev-run-test --env browser ^chainEndpoints ^react-",
     "test:all": "polkadot-dev-run-test --env browser ^chainEndpoints ^chainTypes",
     "test:one": "polkadot-dev-run-test --env browser",
     "test:skipped": "echo 'tests skipped'"
