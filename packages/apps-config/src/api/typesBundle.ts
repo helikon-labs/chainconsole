@@ -30235,16 +30235,6 @@ export const typesBundle = {
             null
           ],
           "types": {
-            "Amount": "i128",
-            "Balance": "u128",
-            "BlockNumber": "u64",
-            "CurrencyId": {
-              "_enum": {
-                "Native": "u32",
-                "DexShare": "(DexShare, DexShare)",
-                "ForeignAsset": "u32"
-              }
-            },
             "DexShare": {
               "_enum": {
                 "Native": "u32",
@@ -30265,6 +30255,30 @@ export const typesBundle = {
                 "Enabled": "Null"
               }
             },
+            "IncomingMessageStatus": {
+              "_enum": [
+                "Executed",
+                "Verifying",
+                "Unknown"
+              ]
+            },
+            "OutcomingMessageStatus": {
+              "_enum": [
+                "Sent",
+                "DoesNotExist"
+              ]
+            },
+            "Amount": "i128",
+            "Balance": "u128",
+            "BlockNumber": "u64",
+            "CurrencyId": {
+              "_enum": {
+                "Native": "u32",
+                "DexShare": "(DexShare, DexShare)",
+                "ForeignAsset": "u32"
+              }
+            },
+            "MessageId": "u64",
             "StakingRates": {
               "collatorStakingRate": "Perquintill",
               "collatorRewardRate": "Perquintill",
@@ -30396,6 +30410,124 @@ export const typesBundle = {
                   }
                 ],
                 "type": "Option<Balance>"
+              }
+            },
+            "version": 1
+          }
+        ],
+        "AssetTransactionPaymentApi": [
+          {
+            "methods": {
+              "convert_to_asset_fee": {
+                "description": "Convert DOTON tx amount to fee amount for specified asset.",
+                "params": [
+                  {
+                    "name": "amount",
+                    "type": "Balance"
+                  },
+                  {
+                    "name": "asset",
+                    "type": "StagingXcmV3MultiLocation"
+                  }
+                ],
+                "type": "Option<Balance>"
+              }
+            },
+            "version": 1
+          }
+        ],
+        "DryRunApi": [
+          {
+            "methods": {
+              "dry_run_call": {
+                "description": "Dry run call V2.",
+                "params": [
+                  {
+                    "name": "origin",
+                    "type": "JamtonParachainRuntimeOriginCaller"
+                  },
+                  {
+                    "name": "call",
+                    "type": "RuntimeCall"
+                  },
+                  {
+                    "name": "result_xcms_version",
+                    "type": "u32"
+                  }
+                ],
+                "type": "Result<XcmRuntimeApisDryRunCallDryRunEffects, XcmRuntimeApisDryRunError>"
+              },
+              "dry_run_xcm": {
+                "description": "Dry run XCM program.",
+                "params": [
+                  {
+                    "name": "origin_location",
+                    "type": "XcmVersionedLocation"
+                  },
+                  {
+                    "name": "xcm",
+                    "type": "XcmVersionedXcm"
+                  }
+                ],
+                "type": "Result<XcmRuntimeApisDryRunXcmDryRunEffects, XcmRuntimeApisDryRunError>"
+              }
+            },
+            "version": 1
+          }
+        ],
+        "InboundQueue": [
+          {
+            "methods": {
+              "is_active_relayer": {
+                "description": "Checks if the account is an active relayer authorized to submit messages.",
+                "params": [
+                  {
+                    "name": "who",
+                    "type": "AccountId"
+                  }
+                ],
+                "type": "bool"
+              },
+              "should_submit": {
+                "description": "Checks to see if a relayer should submit a message",
+                "params": [
+                  {
+                    "name": "who",
+                    "type": "AccountId"
+                  },
+                  {
+                    "name": "message_id",
+                    "type": "MessageId"
+                  }
+                ],
+                "type": "bool"
+              },
+              "incoming_message_status": {
+                "description": "Gets the current processing status of a message by its ID.",
+                "params": [
+                  {
+                    "name": "message_id",
+                    "type": "MessageId"
+                  }
+                ],
+                "type": "IncomingMessageStatus"
+              }
+            },
+            "version": 1
+          }
+        ],
+        "OutboundQueue": [
+          {
+            "methods": {
+              "outcoming_message_status": {
+                "description": "Gets the current processing status of a message by its ID.",
+                "params": [
+                  {
+                    "name": "message_id",
+                    "type": "MessageId"
+                  }
+                ],
+                "type": "OutcomingMessageStatus"
               }
             },
             "version": 1

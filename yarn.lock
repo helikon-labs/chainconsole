@@ -680,12 +680,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jamton/parachain-ts-interfaces@npm:1.10.4":
-  version: 1.10.4
-  resolution: "@jamton/parachain-ts-interfaces@npm:1.10.4"
+"@jamton/parachain-ts-interfaces@npm:1.17.2":
+  version: 1.17.2
+  resolution: "@jamton/parachain-ts-interfaces@npm:1.17.2"
   dependencies:
     "@polkadot/api": "npm:^15.0.0"
-  checksum: 10/4b94986dfc5ed2b829e5b904994b7ce98007bcb235f35fde6de74fb0e7a466deb943b4c7c487a53b873630dbe8274b03d1cd3071d2e5b702aa8da932a796558a
+  checksum: 10/997d64baa8b2f536d2c87235b25cb5736a31103d1f6de57185029a46333f47c6eed799350c8b5cbd9758ca57b3560ad12ad0af59d11c6b252de2ab1efa194afb
   languageName: node
   linkType: hard
 
@@ -2019,7 +2019,7 @@ __metadata:
     "@fragnova/api-augment": "npm:0.1.0-spec-1.0.4-mainnet"
     "@frequency-chain/api-augment": "npm:1.11.1"
     "@interlay/interbtc-types": "npm:1.13.0"
-    "@jamton/parachain-ts-interfaces": "npm:1.10.4"
+    "@jamton/parachain-ts-interfaces": "npm:1.17.2"
     "@kiltprotocol/type-definitions": "npm:^1.11502.1"
     "@laminar/type-definitions": "npm:0.3.1"
     "@logion/node-api": "npm:0.27.0-4"

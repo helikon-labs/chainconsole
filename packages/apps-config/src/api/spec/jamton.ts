@@ -3,7 +3,28 @@
 
 import type { OverrideBundleDefinition } from '@polkadot/types/types';
 
-import { rpc, runtime, signedExtensions, types } from '@jamton/parachain-ts-interfaces/bundle';
+import { assetTransactionPaymentApi, dex, doton, dryRunApi, inboundQueue, limits, outboundQueue, primitives, staking } from '@jamton/parachain-ts-interfaces/interfaces/definitions';
+
+const types = {
+  ...assetTransactionPaymentApi.types,
+  ...dex.types,
+  ...doton.types,
+  ...dryRunApi.types,
+  ...inboundQueue.types,
+  ...limits.types,
+  ...outboundQueue.types,
+  ...primitives.types,
+  ...staking.types
+};
+const runtime = {
+  ...doton.runtime,
+  ...staking.runtime,
+  ...limits.runtime,
+  ...assetTransactionPaymentApi.runtime,
+  ...dryRunApi.runtime,
+  ...inboundQueue.runtime,
+  ...outboundQueue.runtime
+};
 
 /* eslint-disable sort-keys */
 const definitions: OverrideBundleDefinition = {
@@ -15,8 +36,8 @@ const definitions: OverrideBundleDefinition = {
     }
   ],
   runtime,
-  rpc,
-  signedExtensions
+  rpc: {},
+  signedExtensions: {}
 };
 
 export default definitions;
