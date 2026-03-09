@@ -21,5 +21,5 @@ if (!rootElement) {
 }
 
 createRoot(rootElement).render(
-  <Root isElectron={false} />
+  <Root />
 );

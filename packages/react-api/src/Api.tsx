@@ -33,7 +33,6 @@ import { decodeUrlTypes } from './urlTypes.js';
 interface Props {
   children: React.ReactNode;
   apiUrl: string;
-  isElectron: boolean;
   store?: KeyringStore;
   beforeApiInit?: React.ReactNode
 }
@@ -97,12 +96,9 @@ async function getInjectedAccounts (injectedPromise: Promise<InjectedExtension[]
   }
 }
 
-function makeCreateLink (baseApiUrl: string, isElectron: boolean): (path: string) => string {
+function makeCreateLink (baseApiUrl: string): (path: string) => string {
   return (path: string, apiUrl?: string): string =>
-    `${isElectron
-      ? 'https://dot.chainconsole.io'
-      : `${window.location.origin}${window.location.pathname}`
-    }?rpc=${encodeURIComponent(apiUrl || baseApiUrl)}#${path}`;
+    `${window.location.origin}${window.location.pathname}?rpc=${encodeURIComponent(apiUrl || baseApiUrl)}#${path}`;
 }
 
 async function retrieve (api: ApiPromise, injectedPromise: Promise<InjectedExtension[]>): Promise<ChainData> {
@@ -299,7 +295,7 @@ async function createApi (apiUrl: string, signer: ApiSigner, isLocalFork: boolea
   return { fork: chopsticksFork, types };
 }
 
-export function ApiCtxRoot ({ apiUrl, beforeApiInit, children, isElectron, store: keyringStore }: Props): React.ReactElement<Props> | null {
+export function ApiCtxRoot ({ apiUrl, beforeApiInit, children, store: keyringStore }: Props): React.ReactElement<Props> | null {
   const { queuePayload, queueSetTxStatus } = useQueue();
   const [state, setState] = useState<ApiState>(EMPTY_STATE);
   const [isApiConnected, setIsApiConnected] = useState(false);
@@ -332,8 +328,8 @@ export function ApiCtxRoot ({ apiUrl, beforeApiInit, children, isElectron, store
   const apiCoretime = useApiUrl(coretimeUrls);
   const apiSystemPeople = useApiUrl(peopleUrls);
   const createLink = useMemo(
-    () => makeCreateLink(apiUrl, isElectron),
-    [apiUrl, isElectron]
+    () => makeCreateLink(apiUrl),
+    [apiUrl]
   );
   const enableIdentity = apiEndpoint?.isPeople ||
     // Ensure that parachains that don't have isPeopleForIdentity set, can access there own identity pallet.
@@ -341,8 +337,8 @@ export function ApiCtxRoot ({ apiUrl, beforeApiInit, children, isElectron, store
     // Ensure that when isPeopleForIdentity is set to false that it enables the identity pallet access.
     (typeof apiEndpoint?.isPeopleForIdentity === 'boolean' && !apiEndpoint?.isPeopleForIdentity);
   const value = useMemo<ApiProps>(
-    () => objectSpread({}, state, { api: statics.api, apiCoretime, apiEndpoint, apiError, apiIdentity: ((apiEndpoint?.isPeopleForIdentity && apiSystemPeople) || statics.api), apiRelay, apiSystemPeople, apiUrl, createLink, enableIdentity, extensions, isApiConnected, isApiInitialized, isElectron, isLocalFork, isWaitingInjected: !extensions }),
-    [apiError, createLink, extensions, isApiConnected, isApiInitialized, isElectron, isLocalFork, state, apiEndpoint, apiCoretime, apiRelay, apiUrl, apiSystemPeople, enableIdentity]
+    () => objectSpread({}, state, { api: statics.api, apiCoretime, apiEndpoint, apiError, apiIdentity: ((apiEndpoint?.isPeopleForIdentity && apiSystemPeople) || statics.api), apiRelay, apiSystemPeople, apiUrl, createLink, enableIdentity, extensions, isApiConnected, isApiInitialized, isLocalFork, isWaitingInjected: !extensions }),
+    [apiError, createLink, extensions, isApiConnected, isApiInitialized, isLocalFork, state, apiEndpoint, apiCoretime, apiRelay, apiUrl, apiSystemPeople, enableIdentity]
   );
 
   // initial initialization

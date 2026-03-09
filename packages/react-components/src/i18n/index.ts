@@ -50,7 +50,6 @@ i18next
     ns: [
       'apps',
       'apps-config',
-      'apps-electron',
       'apps-routing',
       'app-accounts',
       'app-claims',

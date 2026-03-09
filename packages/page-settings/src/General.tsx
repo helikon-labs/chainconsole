@@ -19,12 +19,11 @@ interface Props {
   className?: string;
 }
 
-const _ledgerConnOptions = settings.availableLedgerConn;
 const _ledgerAppOptions = settings.availableLedgerApp;
 
 function General ({ className = '' }: Props): React.ReactElement<Props> {
   const { t } = useTranslation();
-  const { chainSS58, isApiReady, isElectron } = useApi();
+  const { chainSS58, isApiReady } = useApi();
   const { isIpfs } = useIpfs();
   const { hasLedgerChain, hasWebUsb } = useLedger();
   // tri-state: null = nothing changed, false = no reload, true = reload required
@@ -34,11 +33,6 @@ function General ({ className = '' }: Props): React.ReactElement<Props> {
 
     return { ...values, uiTheme: values.uiTheme === 'dark' ? 'dark' : 'light' };
   });
-
-  const ledgerConnOptions = useMemo(
-    () => _ledgerConnOptions.filter(({ value }) => !isElectron || value !== 'webusb'),
-    [isElectron]
-  );
 
   const iconOptions = useMemo(
     () => settings.availableIcons
@@ -153,7 +147,7 @@ function General ({ className = '' }: Props): React.ReactElement<Props> {
           options={prefixOptions}
         />
       </div>
-      {!isIpfs && !isElectron && (
+      {!isIpfs && (
         <>
           <div className='ui--row'>
             <Dropdown
@@ -177,12 +171,12 @@ function General ({ className = '' }: Props): React.ReactElement<Props> {
               defaultValue={
                 hasWebUsb
                   ? state.ledgerConn
-                  : ledgerConnOptions[0].value
+                  : settings.availableLedgerConn[0].value
               }
               isDisabled={!hasWebUsb}
               label={t('manage hardware connections')}
               onChange={_handleChange('ledgerConn')}
-              options={ledgerConnOptions}
+              options={settings.availableLedgerConn}
             />
           </div>
           <div className='ui--row'>

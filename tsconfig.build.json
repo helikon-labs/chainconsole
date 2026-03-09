@@ -7,7 +7,6 @@
     { "path": "./packages/apps/tsconfig.build.json" },
     { "path": "./packages/apps-config/tsconfig.build.json" },
     { "path": "./packages/apps-config/tsconfig.spec.json" },
-    { "path": "./packages/apps-electron/tsconfig.build.json" },
     { "path": "./packages/apps-routing/tsconfig.build.json" },
     { "path": "./packages/page-accounts/tsconfig.build.json" },
     { "path": "./packages/page-accounts/tsconfig.spec.json" },

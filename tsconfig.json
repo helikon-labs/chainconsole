@@ -5,8 +5,7 @@
     "composite": false,
     /*
      * We have a couple of issues that forces us to disable this -
-     *  1. apps-electron is still CJS
-     *  2. some of our packaged dependencies are problematic
+     *  1. some of our packaged dependencies are problematic
      *
      * (also disabled in tsconfig.build.json)
      */

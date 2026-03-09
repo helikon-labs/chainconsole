@@ -96,7 +96,7 @@ function groupAccounts (accounts: SortedAccount[]): Record<GroupName, string[]> 
 
 function Overview ({ className = '', onStatusChange }: Props): React.ReactElement<Props> {
   const { t } = useTranslation();
-  const { api, fork, isElectron } = useApi();
+  const { api, fork } = useApi();
   const { allAccounts, hasAccounts } = useAccounts();
   const { isIpfs } = useIpfs();
   const { isLedgerEnabled } = useLedger();
@@ -154,8 +154,8 @@ function Overview ({ className = '', onStatusChange }: Props): React.ReactElemen
   );
 
   const canStoreAccounts = useMemo(
-    () => isElectron || (!isIpfs && settings.get().storage === 'on'),
-    [isElectron, isIpfs]
+    () => (!isIpfs && settings.get().storage === 'on'),
+    [isIpfs]
   );
 
   // We use favorites only to check if it includes some element,
