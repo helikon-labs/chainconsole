@@ -30533,9 +30533,7 @@ export const typesBundle = {
             "version": 1
           }
         ]
-      },
-      "rpc": {},
-      "signedExtensions": {}
+      }
     },
     "jupiter-prep": {
       "types": [
