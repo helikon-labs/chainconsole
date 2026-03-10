@@ -20,7 +20,7 @@ interface DnsResponse {
   Question: { name: string }[];
 }
 
-const TIMEOUT = 60_000;
+const TIMEOUT = 20_000;
 
 function noopHandler () {
   // ignore
@@ -49,20 +49,23 @@ describe('check endpoints', (): void => {
       let closeTimerId: ReturnType<typeof setTimeout> | null = null;
 
       await fetchJson<DnsResponse>(`https://dns.google/resolve?name=${host}`)
-        .then((json) =>
-          assert(json?.Answer, 'No DNS entry')
-        )
-        .then(() =>
-          new Promise((resolve, reject): void => {
+        .then((json) => {
+          if (!json?.Answer) {
+            if (isAvailable) {
+              throw new Error('No DNS entry');
+            }
+
+            return undefined; // expected: unavailable endpoint has no DNS entry
+          }
+
+          return new Promise<string | undefined>((resolve, reject): void => {
             websocket = new WebSocket(endpoint);
 
             websocket.onclose = (event: { code: number; reason: string }): void => {
-              if (event.code !== 1000) {
-                if (isAvailable) {
-                  reject(new Error(`Disconnected, code: '${event.code}' reason: '${event.reason}'`));
-                } else {
-                  resolve(undefined); // expected: unavailable endpoint closed unexpectedly
-                }
+              if (isAvailable) {
+                reject(new Error(`Disconnected, code: '${event.code}' reason: '${event.reason}'`));
+              } else {
+                resolve(undefined);
               }
             };
 
@@ -92,6 +95,8 @@ describe('check endpoints', (): void => {
               } catch (e) {
                 if (isAvailable) {
                   reject(e);
+                } else {
+                  resolve(undefined);
                 }
               }
             };
@@ -108,8 +113,8 @@ describe('check endpoints', (): void => {
               },
               TIMEOUT
             );
-          })
-        )
+          });
+        })
         .finally(() => {
           if (closeTimerId) {
             clearTimeout(closeTimerId);
