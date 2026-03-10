@@ -22,7 +22,7 @@ function defaultT (keyOrText: string, text?: string | TOptions, options?: TOptio
   );
 }
 
-export function createWsEndpoints (t: TFunction = defaultT, firstOnly = false, withSort = true): LinkOption[] {
+export function createWsEndpoints (t: TFunction = defaultT, firstOnly = false): LinkOption[] {
   // Collect all endpoint configs to pass to createCustom for UI lookup
   const allEndpoints = [
     prodRelayPolkadot,
@@ -53,7 +53,7 @@ export function createWsEndpoints (t: TFunction = defaultT, firstOnly = false, w
       ui: {},
       value: ''
     },
-    ...expandEndpoints(t, [prodRelayPolkadot], firstOnly, withSort),
+    ...expandEndpoints(t, [prodRelayPolkadot], firstOnly),
     {
       isDisabled: false,
       isHeader: true,
@@ -63,7 +63,7 @@ export function createWsEndpoints (t: TFunction = defaultT, firstOnly = false, w
       ui: {},
       value: ''
     },
-    ...expandEndpoints(t, [prodRelayKusama], firstOnly, withSort),
+    ...expandEndpoints(t, [prodRelayKusama], firstOnly),
     {
       isDisabled: false,
       isHeader: true,
@@ -73,7 +73,7 @@ export function createWsEndpoints (t: TFunction = defaultT, firstOnly = false, w
       ui: {},
       value: ''
     },
-    ...expandEndpoints(t, [testRelayWestend], firstOnly, withSort),
+    ...expandEndpoints(t, [testRelayWestend], firstOnly),
     {
       isDisabled: false,
       isHeader: true,
@@ -83,7 +83,7 @@ export function createWsEndpoints (t: TFunction = defaultT, firstOnly = false, w
       ui: {},
       value: ''
     },
-    ...expandEndpoints(t, [testRelayPaseo], firstOnly, withSort),
+    ...expandEndpoints(t, [testRelayPaseo], firstOnly),
     {
       isDisabled: false,
       isHeader: true,
@@ -93,7 +93,7 @@ export function createWsEndpoints (t: TFunction = defaultT, firstOnly = false, w
       ui: {},
       value: ''
     },
-    ...expandEndpoints(t, prodChains, firstOnly, withSort),
+    ...expandEndpoints(t, prodChains, firstOnly),
     {
       isDisabled: false,
       isHeader: true,
@@ -103,7 +103,7 @@ export function createWsEndpoints (t: TFunction = defaultT, firstOnly = false, w
       ui: {},
       value: ''
     },
-    ...expandEndpoints(t, testChains, firstOnly, withSort),
+    ...expandEndpoints(t, testChains, firstOnly),
     {
       isDevelopment: true,
       isDisabled: false,

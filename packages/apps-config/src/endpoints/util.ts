@@ -37,7 +37,7 @@ function expandLinked (input: LinkOption[]): LinkOption[] {
   }, []);
 }
 
-function expandEndpoint (t: TFunction, { dnslink, genesisHash, homepage, info, isChild, isDisabled, isPeople, isPeopleForIdentity, linked, paraId, providers, relayName, teleport, text, ui }: EndpointOption, firstOnly: boolean, withSort: boolean): LinkOption[] {
+function expandEndpoint (t: TFunction, { dnslink, genesisHash, homepage, info, isChild, isDisabled, isPeople, isPeopleForIdentity, linked, paraId, providers, relayName, teleport, text, ui }: EndpointOption, firstOnly: boolean): LinkOption[] {
   const base = {
     genesisHash,
     homepage,
@@ -73,7 +73,11 @@ function expandEndpoint (t: TFunction, { dnslink, genesisHash, homepage, info, i
     }))
     .sort((a, b) => {
       const lightDiff = (a.isLightClient ? 1 : 0) - (b.isLightClient ? 1 : 0);
-      if (lightDiff !== 0) return lightDiff;
+
+      if (lightDiff !== 0) {
+        return lightDiff;
+      }
+
       const availDiff = (a.isAvailable === false ? 1 : 0) - (b.isAvailable === false ? 1 : 0);
 
       return availDiff !== 0 ? availDiff : a.textBy.toLocaleLowerCase().localeCompare(b.textBy.toLocaleLowerCase());
@@ -86,7 +90,7 @@ function expandEndpoint (t: TFunction, { dnslink, genesisHash, homepage, info, i
     linked
       .filter(({ paraId }) => paraId)
       .forEach((o) =>
-        options.push(...expandEndpoint(t, o, firstOnly, withSort))
+        options.push(...expandEndpoint(t, o, firstOnly))
       );
 
     last.isRelay = true;
@@ -96,10 +100,10 @@ function expandEndpoint (t: TFunction, { dnslink, genesisHash, homepage, info, i
   return expandLinked(result);
 }
 
-export function expandEndpoints (t: TFunction, input: EndpointOption[], firstOnly: boolean, withSort: boolean): LinkOption[] {
+export function expandEndpoints (t: TFunction, input: EndpointOption[], firstOnly: boolean): LinkOption[] {
   return input
     .reduce((all: LinkOption[], e) =>
-      all.concat(expandEndpoint(t, e, firstOnly, withSort)), []);
+      all.concat(expandEndpoint(t, e, firstOnly)), []);
 }
 
 export function getTeleports (input: EndpointOption[]): number[] {

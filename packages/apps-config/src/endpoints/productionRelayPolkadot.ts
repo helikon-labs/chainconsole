@@ -188,7 +188,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         isAvailable: true,
         name: 'RadiumBlock',
         url: 'wss://astar.public.curie.radiumblock.co/ws'
-      },
+      }
     ],
     text: 'Astar',
     ui: {
@@ -817,7 +817,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         isAvailable: true,
         name: 'laosfoundation.io',
         url: 'wss://rpc.laos.laosfoundation.io'
-      },
+      }
     ],
     text: 'Laos',
     ui: {
@@ -1706,7 +1706,7 @@ export const prodRelayPolkadot: EndpointOption = {
       isAvailable: true,
       name: 'SubQuery',
       url: 'wss://polkadot.rpc.subquery.network/public/ws'
-    },
+    }
   ],
   teleport: getTeleports(prodParasPolkadotCommon),
   text: 'Polkadot Relay',

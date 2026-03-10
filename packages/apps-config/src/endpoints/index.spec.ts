@@ -15,7 +15,7 @@ interface Endpoint {
   value: string;
 }
 
-const allEndpoints = createWsEndpoints(undefined, false, false);
+const allEndpoints = createWsEndpoints(undefined, false);
 
 const INVALID_CHARS = ['%'];
 
