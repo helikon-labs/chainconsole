@@ -36,6 +36,7 @@ export function createWsEndpoints (t: TFunction = defaultT, firstOnly = false): 
   return [
     ...createCustom(t, allEndpoints),
     {
+      isAvailable: true,
       isDisabled: false,
       isHeader: true,
       isSpaced: true,
@@ -45,6 +46,7 @@ export function createWsEndpoints (t: TFunction = defaultT, firstOnly = false): 
       value: ''
     },
     {
+      isAvailable: true,
       isDisabled: false,
       isHeader: true,
       isSpaced: true,
@@ -55,6 +57,7 @@ export function createWsEndpoints (t: TFunction = defaultT, firstOnly = false): 
     },
     ...expandEndpoints(t, [prodRelayPolkadot], firstOnly),
     {
+      isAvailable: true,
       isDisabled: false,
       isHeader: true,
       isSpaced: true,
@@ -65,6 +68,7 @@ export function createWsEndpoints (t: TFunction = defaultT, firstOnly = false): 
     },
     ...expandEndpoints(t, [prodRelayKusama], firstOnly),
     {
+      isAvailable: true,
       isDisabled: false,
       isHeader: true,
       isSpaced: true,
@@ -75,6 +79,7 @@ export function createWsEndpoints (t: TFunction = defaultT, firstOnly = false): 
     },
     ...expandEndpoints(t, [testRelayWestend], firstOnly),
     {
+      isAvailable: true,
       isDisabled: false,
       isHeader: true,
       isSpaced: true,
@@ -85,6 +90,7 @@ export function createWsEndpoints (t: TFunction = defaultT, firstOnly = false): 
     },
     ...expandEndpoints(t, [testRelayPaseo], firstOnly),
     {
+      isAvailable: true,
       isDisabled: false,
       isHeader: true,
       isSpaced: true,
@@ -95,6 +101,7 @@ export function createWsEndpoints (t: TFunction = defaultT, firstOnly = false): 
     },
     ...expandEndpoints(t, prodChains, firstOnly),
     {
+      isAvailable: true,
       isDisabled: false,
       isHeader: true,
       isSpaced: true,
@@ -105,6 +112,7 @@ export function createWsEndpoints (t: TFunction = defaultT, firstOnly = false): 
     },
     ...expandEndpoints(t, testChains, firstOnly),
     {
+      isAvailable: true,
       isDevelopment: true,
       isDisabled: false,
       isHeader: true,

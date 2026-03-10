@@ -36,7 +36,7 @@ function useParaApiImpl (paraId: BN | number): Result {
       endpoints,
       urls: arrayShuffle(
         endpoints
-          .filter(({ isAvailable, isDisabled }) => !isDisabled && isAvailable !== false)
+          .filter(({ isAvailable, isDisabled }) => !isDisabled && isAvailable)
           .map(({ value }) => value))
     });
   }, [endpoints, mountedRef]);

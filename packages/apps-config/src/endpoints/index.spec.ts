@@ -83,7 +83,7 @@ describe('urls are not duplicated', (): void => {
     .filter(({ isAvailable, isDisabled, isHeader, text }): boolean => {
       hasDevelopment = hasDevelopment || (!!isHeader && text === 'Development');
 
-      return !hasDevelopment && !isDisabled && isAvailable !== false;
+      return !hasDevelopment && !isDisabled && isAvailable;
     })
     .reduce((map, { isHeader, text, value }): Record<string, string[]> => {
       if (isHeader) {

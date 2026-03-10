@@ -72,7 +72,7 @@ function expandEndpoint (t: TFunction, { dnslink, genesisHash, homepage, info, i
         return lightDiff;
       }
 
-      const availDiff = (a.isAvailable === false ? 1 : 0) - (b.isAvailable === false ? 1 : 0);
+      const availDiff = (!a.isAvailable ? 1 : 0) - (!b.isAvailable ? 1 : 0);
 
       return availDiff !== 0 ? availDiff : a.textBy.toLocaleLowerCase().localeCompare(b.textBy.toLocaleLowerCase());
     });

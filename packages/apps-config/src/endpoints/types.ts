@@ -87,7 +87,7 @@ export interface LinkOption extends BaseOption, Option {
   isLightClient?: boolean;
   isPeople?: boolean;
   isRelay?: boolean;
-  isAvailable?: boolean;
+  isAvailable: boolean;
   isSpaced?: boolean;
   linked?: LinkOption[];
   providers?: `${'wss://' | 'light://substrate-connect/'}${string}`[];

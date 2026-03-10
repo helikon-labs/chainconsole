@@ -67,7 +67,7 @@ function combineEndpoints (endpoints: LinkOption[]): Group[] {
           paraId: e.paraId,
           relay: e.textRelay?.toString() });
 
-      if (isFavorite && favoriteGroupIndex !== -1 && e.isAvailable !== false) {
+      if (isFavorite && favoriteGroupIndex !== -1 && e.isAvailable) {
         const favGroup = result[favoriteGroupIndex];
         const lastFav = favGroup.networks[favGroup.networks.length - 1];
 

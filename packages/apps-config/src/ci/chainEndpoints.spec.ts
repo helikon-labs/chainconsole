@@ -12,7 +12,7 @@ import { fetchJson } from './fetch.js';
 interface Endpoint {
   name: string;
   ws: string;
-  isAvailable?: boolean;
+  isAvailable: boolean;
 }
 
 interface DnsResponse {
@@ -34,14 +34,14 @@ describe('check endpoints', (): void => {
       !value.includes('127.0.0.1') &&
       !value.startsWith('light://')
     )
-    .map(({ text, value, isAvailable }): Partial<Endpoint> => ({
+    .map(({ isAvailable, text, value }): Partial<Endpoint> => ({
       isAvailable,
       name: text as string,
       ws: value
     }))
     .filter((v): v is Endpoint => !!v.ws);
 
-  for (const { name, isAvailable, ws: endpoint } of checks) {
+  for (const { isAvailable, name, ws: endpoint } of checks) {
     it(`${name} @ ${endpoint}`, async (): Promise<void> => {
       const [,, hostWithPort] = endpoint.split('/');
       const [host] = hostWithPort.split(':');
@@ -81,7 +81,9 @@ describe('check endpoints', (): void => {
             websocket.onmessage = (message: { data: string }): void => {
               try {
                 const result = (JSON.parse(message.data) as { result?: string }).result;
-                assert(result != undefined, 'Invalid response - does not contain health data');
+
+                assert(result !== undefined, 'Invalid response - does not contain health data');
+
                 if (!isAvailable) {
                   reject(new Error('Endpoint was marked unavailable - it is available now'));
                 } else {
@@ -97,6 +99,7 @@ describe('check endpoints', (): void => {
             closeTimerId = setTimeout(
               () => {
                 closeTimerId = null;
+
                 if (isAvailable) {
                   reject(new Error('Connection timeout'));
                 } else {
@@ -118,11 +121,13 @@ describe('check endpoints', (): void => {
             websocket.onerror = noopHandler;
             websocket.onopen = noopHandler;
             websocket.onmessage = noopHandler;
+
             try {
               websocket.close();
             } catch (e) {
               console.error((e as Error).message);
             }
+
             websocket = null;
           }
         });

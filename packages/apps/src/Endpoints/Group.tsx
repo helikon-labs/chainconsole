@@ -34,7 +34,7 @@ function GroupDisplay ({ affinities, apiUrl, children, className = '', favoriteC
   const isFavoriteHeader = useMemo(() => header?.toString().includes('Favorite'), [header]);
 
   const filtered = useMemo(
-    () => networks.filter(({ providers }) => providers.some(({ isAvailable }) => isAvailable !== false)),
+    () => networks.filter(({ providers }) => providers.some(({ isAvailable }) => isAvailable)),
     [networks]
   );
 

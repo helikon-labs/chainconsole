@@ -50,6 +50,7 @@ export function createCustom (t: TFunction, endpoints: EndpointOption[] = []): L
 
   return [
     {
+      isAvailable: true,
       isHeader: true,
       text: t('rpc.dev.custom', 'Custom environment', { ns: 'apps-config' }),
       textBy: '',
@@ -58,6 +59,7 @@ export function createCustom (t: TFunction, endpoints: EndpointOption[] = []): L
     },
     {
       info: 'WS_URL',
+      isAvailable: true,
       text: t('rpc.dev.custom.entry', 'Custom {{WS_URL}}', { ns: 'apps-config', replace: { WS_URL } }),
       textBy: WS_URL,
       ui,
@@ -78,6 +80,7 @@ export function createOwn (t: TFunction): LinkOption[] {
 
       return items.map((textBy) => ({
         info: 'local',
+        isAvailable: true,
         text: t('rpc.dev.custom.own', 'Custom', { ns: 'apps-config' }),
         textBy,
         ui: {},
@@ -96,6 +99,7 @@ export function createDev (t: TFunction): LinkOption[] {
     {
       dnslink: 'local',
       info: 'local',
+      isAvailable: true,
       text: t('rpc.dev.local', 'Local Node', { ns: 'apps-config' }),
       textBy: '127.0.0.1:9944',
       ui: {},
