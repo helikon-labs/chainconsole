@@ -4,8 +4,6 @@
 import type { TFunction } from '../types.js';
 import type { EndpointOption, LinkOption } from './types.js';
 
-let dummyId = 0;
-
 function expandLinked (input: LinkOption[]): LinkOption[] {
   const valueRelay = input.map(({ value }) => value);
 
@@ -54,11 +52,7 @@ function expandEndpoint (t: TFunction, { dnslink, genesisHash, homepage, info, i
     ui
   };
 
-  const allProviders = providers.length === 0
-    ? [{ isAvailable: true, name: 'Placeholder', url: `wss://${++dummyId}` as const }]
-    : providers;
-
-  const result = allProviders
+  const result = providers
     .filter((_, index) => !firstOnly || index === 0)
     .map((provider, index): LinkOption => ({
       ...base,

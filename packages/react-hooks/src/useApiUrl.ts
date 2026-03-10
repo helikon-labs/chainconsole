@@ -32,7 +32,7 @@ function useApiUrlImpl (url?: null | string | string[]): ApiPromise | null {
     for (const endpoint of endpoints) {
       const rpcProvider = endpoint.textBy;
 
-      if (typeof rpcProvider === 'string' && rpcProvider.length > 0 && rpcProvider !== 'Placeholder') {
+      if (typeof rpcProvider === 'string' && rpcProvider.length > 0) {
         map.set(endpoint.value, rpcProvider);
       }
     }
