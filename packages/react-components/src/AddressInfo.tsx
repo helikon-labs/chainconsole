@@ -754,9 +754,10 @@ export default withMulti(
 
         label {
           grid-column: 1;
+          display: flex !important;
+          align-items: center;
           padding-right: 0.5rem;
           text-align: right;
-          vertical-align: middle;
           margin-bottom: 0.25rem;
 
           .help.circle.icon {

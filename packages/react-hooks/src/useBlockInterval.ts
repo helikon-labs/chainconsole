@@ -49,7 +49,7 @@ function useBlockIntervalImpl (apiOverride?: ApiPromise | null): BN {
   });
 
   return useMemo(
-    () => (blockTimeAura || blockTimeBabe) ?? calcInterval(currApi),
+    () => (blockTimeBabe || blockTimeAura) ?? calcInterval(currApi),
     [blockTimeAura, blockTimeBabe, currApi]
   );
 }

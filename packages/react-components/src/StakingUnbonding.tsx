@@ -2,10 +2,12 @@
 // SPDX-License-Identifier: Apache-2.0
 
 import type { DeriveSessionProgress, DeriveStakingAccount } from '@polkadot/api-derive/types';
+import type { Option } from '@polkadot/types';
+import type { PalletStakingActiveEraInfo } from '@polkadot/types/lookup';
 
 import React, { useMemo } from 'react';
 
-import { useApi, useCall, useStakingAsyncApis } from '@polkadot/react-hooks';
+import { useApi, useBlockInterval, useCall, useStakingAsyncApis } from '@polkadot/react-hooks';
 import { BlockToTime, FormatBalance } from '@polkadot/react-query';
 import { BN, BN_ONE, BN_ZERO, formatBalance, formatNumber } from '@polkadot/util';
 
@@ -13,6 +15,10 @@ import Icon from './Icon.js';
 import { styled } from './styled.js';
 import Tooltip from './Tooltip.js';
 import { useTranslation } from './translate.js';
+
+const OPT_ERA = {
+  transform: (o: Option<PalletStakingActiveEraInfo>) => o.unwrapOr(undefined)
+};
 
 interface Unlocking {
   remainingEras: BN;
@@ -30,12 +36,21 @@ interface Props {
   stakingInfo?: DeriveStakingAccountPartial;
 }
 
-function extractTotals (stakingInfo?: DeriveStakingAccountPartial, progress?: DeriveSessionProgress): [[Unlocking, BN, BN][], BN, boolean] {
-  if (!stakingInfo?.unlocking || !progress) {
+function extractTotals (
+  blockTime: BN,
+  activeEra?: PalletStakingActiveEraInfo,
+  timestamp?: BN,
+  stakingInfo?: DeriveStakingAccountPartial,
+  progress?: DeriveSessionProgress
+): [[Unlocking, BN, BN][], BN, boolean] {
+  if (!stakingInfo?.unlocking || !progress || !activeEra || activeEra.start.isNone || !timestamp) {
     return [[], BN_ZERO, false];
   }
 
-  const isStalled = progress.eraProgress.gt(BN_ZERO) && progress.eraProgress.gt(progress.eraLength);
+  const eraStart = activeEra.start.unwrap();
+  const eraProgress = BN.max(timestamp.sub(eraStart), BN_ZERO).div(blockTime);
+
+  const isStalled = eraProgress.gt(BN_ZERO) && eraProgress.gt(progress.eraLength);
   const mapped = stakingInfo.unlocking
     .filter(({ remainingEras, value }) => value.gt(BN_ZERO) && remainingEras.gt(BN_ZERO))
     .map((unlock): [Unlocking, BN, BN] => [
@@ -56,8 +71,8 @@ function extractTotals (stakingInfo?: DeriveStakingAccountPartial, progress?: De
           //
           // See https://github.com/polkadot-js/apps/issues/9397#issuecomment-1532465939
           isStalled
-            ? progress.eraProgress.mod(progress.eraLength)
-            : progress.eraProgress
+            ? eraProgress.mod(progress.eraLength)
+            : eraProgress
         )
     ]);
   const total = mapped.reduce((total, [{ value }]) => total.iadd(value), new BN(0));
@@ -67,17 +82,21 @@ function extractTotals (stakingInfo?: DeriveStakingAccountPartial, progress?: De
 
 function StakingUnbonding ({ className = '', iconPosition = 'left', stakingInfo }: Props): React.ReactElement<Props> | null {
   const { api: connectedApi } = useApi();
-  const { isStakingAsync, rcApi } = useStakingAsyncApis();
+  const { ahApi, isStakingAsync, rcApi } = useStakingAsyncApis();
   const api = useMemo(() => (isStakingAsync ? rcApi : connectedApi), [connectedApi, isStakingAsync, rcApi]);
+  const stakingApi = useMemo(() => (isStakingAsync ? ahApi : connectedApi), [connectedApi, isStakingAsync, ahApi]);
   const progress = useCall<DeriveSessionProgress>(api?.derive.session.progress);
+  const activeEra = useCall<PalletStakingActiveEraInfo | undefined>(stakingApi?.query.staking.activeEra, undefined, OPT_ERA);
+  const timestamp = useCall<BN>(api?.query.timestamp.now);
   const { t } = useTranslation();
+  const blockTime = useBlockInterval(api);
 
   const [mapped, total, isStalled] = useMemo(
-    () => extractTotals(stakingInfo, progress),
-    [progress, stakingInfo]
+    () => extractTotals(blockTime, activeEra, timestamp, stakingInfo, progress),
+    [blockTime, activeEra, timestamp, stakingInfo, progress]
   );
 
-  if (!stakingInfo || !mapped.length) {
+  if (!api || !stakingInfo || !mapped.length) {
     return null;
   }
 
