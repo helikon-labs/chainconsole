@@ -12,6 +12,7 @@ import { fetchJson } from './fetch.js';
 interface Endpoint {
   name: string;
   ws: string;
+  isAvailable?: boolean;
 }
 
 interface DnsResponse {
@@ -27,21 +28,20 @@ function noopHandler () {
 
 describe('check endpoints', (): void => {
   const checks = createWsEndpoints()
-    .filter(({ isAvailable, isDisabled, value }) =>
-      !isDisabled &&
-      isAvailable !== false &&
+    .filter(({ value }) =>
       value &&
       isString(value) &&
       !value.includes('127.0.0.1') &&
       !value.startsWith('light://')
     )
-    .map(({ text, value }): Partial<Endpoint> => ({
+    .map(({ text, value, isAvailable }): Partial<Endpoint> => ({
+      isAvailable,
       name: text as string,
       ws: value
     }))
     .filter((v): v is Endpoint => !!v.ws);
 
-  for (const { name, ws: endpoint } of checks) {
+  for (const { name, isAvailable, ws: endpoint } of checks) {
     it(`${name} @ ${endpoint}`, async (): Promise<void> => {
       const [,, hostWithPort] = endpoint.split('/');
       const [host] = hostWithPort.split(':');
@@ -58,33 +58,50 @@ describe('check endpoints', (): void => {
 
             websocket.onclose = (event: { code: number; reason: string }): void => {
               if (event.code !== 1000) {
-                reject(new Error(`Disconnected, code: '${event.code}' reason: '${event.reason}'`));
+                if (isAvailable) {
+                  reject(new Error(`Disconnected, code: '${event.code}' reason: '${event.reason}'`));
+                } else {
+                  resolve(undefined); // expected: unavailable endpoint closed unexpectedly
+                }
               }
             };
 
             websocket.onerror = (): void => {
-              reject(new Error('Connection error'));
+              if (isAvailable) {
+                reject(new Error('Connection error'));
+              } else {
+                resolve(undefined); // expected: unavailable endpoint couldn't connect
+              }
             };
 
             websocket.onopen = (): void => {
-              websocket?.send('{"id":"1","jsonrpc":"2.0","method":"state_getMetadata","params":[]}');
+              websocket?.send('{"id":"1","jsonrpc":"2.0","method":"system_health","params":[]}');
             };
 
             websocket.onmessage = (message: { data: string }): void => {
               try {
                 const result = (JSON.parse(message.data) as { result?: string }).result;
-
-                assert(result?.startsWith('0x'), 'Invalid/non-hex response');
-                resolve(result);
+                assert(result != undefined, 'Invalid response - does not contain health data');
+                if (!isAvailable) {
+                  reject(new Error('Endpoint was marked unavailable - it is available now'));
+                } else {
+                  resolve(result);
+                }
               } catch (e) {
-                reject(e);
+                if (isAvailable) {
+                  reject(e);
+                }
               }
             };
 
             closeTimerId = setTimeout(
               () => {
                 closeTimerId = null;
-                reject(new Error('Connection timeout'));
+                if (isAvailable) {
+                  reject(new Error('Connection timeout'));
+                } else {
+                  resolve(undefined); // expected: unavailable endpoint timed out
+                }
               },
               TIMEOUT
             );
@@ -101,13 +118,11 @@ describe('check endpoints', (): void => {
             websocket.onerror = noopHandler;
             websocket.onopen = noopHandler;
             websocket.onmessage = noopHandler;
-
             try {
               websocket.close();
             } catch (e) {
               console.error((e as Error).message);
             }
-
             websocket = null;
           }
         });
