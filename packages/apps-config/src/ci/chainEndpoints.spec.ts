@@ -52,6 +52,7 @@ describe('check endpoints', (): void => {
         .then((json) => {
           if (!json?.Answer) {
             if (isAvailable) {
+              console.error(`  ${name} @ ${endpoint}: No DNS entry`);
               throw new Error('No DNS entry');
             }
 
@@ -59,11 +60,16 @@ describe('check endpoints', (): void => {
           }
 
           return new Promise<string | undefined>((resolve, reject): void => {
+            const rejectWithLog = (message: string): void => {
+              console.error(`  ${name} @ ${endpoint}: ${message}`);
+              reject(new Error(message));
+            };
+
             websocket = new WebSocket(endpoint);
 
             websocket.onclose = (event: { code: number; reason: string }): void => {
               if (isAvailable) {
-                reject(new Error(`Disconnected, code: '${event.code}' reason: '${event.reason}'`));
+                rejectWithLog(`Disconnected, code: '${event.code}' reason: '${event.reason}'`);
               } else {
                 resolve(undefined);
               }
@@ -71,7 +77,7 @@ describe('check endpoints', (): void => {
 
             websocket.onerror = (): void => {
               if (isAvailable) {
-                reject(new Error('Connection error'));
+                rejectWithLog('Connection error');
               } else {
                 resolve(undefined); // expected: unavailable endpoint couldn't connect
               }
@@ -88,13 +94,13 @@ describe('check endpoints', (): void => {
                 assert(result !== undefined, 'Invalid response - does not contain health data');
 
                 if (!isAvailable) {
-                  reject(new Error('Endpoint was marked unavailable - it is available now'));
+                  rejectWithLog('Endpoint was marked unavailable - it is available now');
                 } else {
                   resolve(result);
                 }
               } catch (e) {
                 if (isAvailable) {
-                  reject(e);
+                  rejectWithLog((e as Error).message);
                 } else {
                   resolve(undefined);
                 }
@@ -106,7 +112,7 @@ describe('check endpoints', (): void => {
                 closeTimerId = null;
 
                 if (isAvailable) {
-                  reject(new Error('Connection timeout'));
+                  rejectWithLog('Connection timeout');
                 } else {
                   resolve(undefined); // expected: unavailable endpoint timed out
                 }

@@ -218,21 +218,6 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     }
   },
   {
-    homepage: 'https://crust.network/',
-    info: 'shadow',
-    paraId: 2225,
-    providers: [{
-      // also duplicated right above (hence marked unreachable)
-      isAvailable: false, // https://github.com/polkadot-js/apps/issues/8355
-      name: 'Crust',
-      url: 'wss://rpc-shadow.crust.network/'
-    }],
-    text: 'Crust Shadow 2',
-    ui: {
-      logo: nodesShadowSVG
-    }
-  },
-  {
     info: 'curio',
     paraId: 3339,
     providers: [{
@@ -556,7 +541,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     isPeopleForIdentity: true,
     paraId: 2281,
     providers: [{
-      isAvailable: false, // https://github.com/polkadot-js/apps/issues/12069
+      isAvailable: true,
       name: 'Kippu',
       url: 'wss://kreivo.kippu.rocks/'
     }, {

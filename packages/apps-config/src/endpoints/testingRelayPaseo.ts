@@ -223,7 +223,7 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     info: 'Ideal Network',
     paraId: 4502,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'IDN Node',
       url: 'wss://idn0-testnet.idealabs.network'
     }],

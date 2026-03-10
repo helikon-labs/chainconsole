@@ -1606,7 +1606,7 @@ export const prodParasPolkadotCommon: EndpointOption[] = [
         url: 'wss://people-polkadot.public.curie.radiumblock.co/ws'
       },
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'Stakeworld',
         url: 'wss://rpc-people-polkadot.stakeworld.io'
       }

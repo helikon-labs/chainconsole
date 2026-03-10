@@ -70,7 +70,7 @@ export const testChains: Omit<EndpointOption, 'teleport'>[] = [
     homepage: 'https://analog.one',
     info: 'analog-testnet',
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Analog One',
       url: 'wss://rpc.testnet.analog.one'
     }],
@@ -228,7 +228,7 @@ export const testChains: Omit<EndpointOption, 'teleport'>[] = [
   {
     info: 'cere',
     providers: [{
-      isAvailable: false, // https://github.com/polkadot-js/apps/issues/9712
+      isAvailable: true,
       name: 'Cere Network',
       url: 'wss://archive.testnet.cere.network/ws'
     }, {
