@@ -248,7 +248,7 @@ function createBalanceItems (formatIndex: number, lookup: Record<string, string>
   const deriveBalances = balancesAll as DeriveBalancesAll;
 
   !withBalanceToggle && balanceDisplay.total && allItems.push(
-    <React.Fragment key={0}>
+    <div key={0}>
       <Label label={withLabel ? t('total') : ''} />
       <FormatBalance
         className={`result ${balancesAll ? '' : '--tmp'}`}
@@ -256,10 +256,10 @@ function createBalanceItems (formatIndex: number, lookup: Record<string, string>
         labelPost={<IconVoid />}
         value={balancesAll ? balancesAll.freeBalance.add(balancesAll.reservedBalance) : 1}
       />
-    </React.Fragment>
+    </div>
   );
   balancesAll && balanceDisplay.available && (deriveBalances.transferable || deriveBalances.availableBalance) && allItems.push(
-    <React.Fragment key={1}>
+    <div key={1}>
       <Label label={t('transferable')} />
       <FormatBalance
         className='result'
@@ -267,7 +267,7 @@ function createBalanceItems (formatIndex: number, lookup: Record<string, string>
         labelPost={<IconVoid />}
         value={deriveBalances.transferable || deriveBalances.availableBalance}
       />
-    </React.Fragment>
+    </div>
   );
 
   // Use separate vestingInfo if provided (cross-chain vesting support),
@@ -373,7 +373,7 @@ function createBalanceItems (formatIndex: number, lookup: Record<string, string>
   const hasNamedReserves = !!allReserves && allReserves.length !== 0;
 
   balanceDisplay.locked && balancesAll && (isAllLocked || deriveBalances.lockedBalance?.gtn(0)) && allItems.push(
-    <React.Fragment key={3}>
+    <div key={3}>
       <Label label={t('locked')} />
       <FormatBalance
         className='result'
@@ -401,10 +401,10 @@ function createBalanceItems (formatIndex: number, lookup: Record<string, string>
         }
         value={isAllLocked ? 'all' : deriveBalances.lockedBalance}
       />
-    </React.Fragment>
+    </div>
   );
   balanceDisplay.reserved && balancesAll?.reservedBalance?.gtn(0) && allItems.push(
-    <React.Fragment key={4}>
+    <div key={4}>
       <Label label={t('reserved')} />
       <FormatBalance
         className='result'
@@ -431,10 +431,10 @@ function createBalanceItems (formatIndex: number, lookup: Record<string, string>
         }
         value={balancesAll.reservedBalance}
       />
-    </React.Fragment>
+    </div>
   );
   balanceDisplay.bonded && (ownBonded.gtn(0) || otherBonded.length !== 0) && allItems.push(
-    <React.Fragment key={5}>
+    <div key={5}>
       <Label label={t('bonded')} />
       <FormatBalance
         className='result'
@@ -453,21 +453,21 @@ function createBalanceItems (formatIndex: number, lookup: Record<string, string>
           )})</>
         )}
       </FormatBalance>
-    </React.Fragment>
+    </div>
   );
   balanceDisplay.redeemable && stakingInfo?.redeemable?.gtn(0) && allItems.push(
-    <React.Fragment key={6}>
+    <div key={6}>
       <Label label={t('redeemable')} />
       <StakingRedeemable
         className='result'
         stakingInfo={stakingInfo}
       />
-    </React.Fragment>
+    </div>
   );
 
   if (balanceDisplay.unlocking) {
     stakingInfo?.unlocking && allItems.push(
-      <React.Fragment key={7}>
+      <div key={7}>
         <Label label={t('unbonding')} />
         <div className='result'>
           <StakingUnbonding
@@ -475,28 +475,28 @@ function createBalanceItems (formatIndex: number, lookup: Record<string, string>
             stakingInfo={stakingInfo}
           />
         </div>
-      </React.Fragment>
+      </div>
     );
 
     if (democracyLocks && (democracyLocks.length !== 0)) {
       allItems.push(
-        <React.Fragment key={8}>
+        <div key={8}>
           <Label label={t('democracy')} />
           <div className='result'>
             <DemocracyLocks value={democracyLocks} />
           </div>
-        </React.Fragment>
+        </div>
       );
     } else if (bestNumber && votingOf && votingOf.isDirect) {
       const { prior: [unlockAt, balance] } = votingOf.asDirect;
 
       balance.gt(BN_ZERO) && unlockAt.gt(BN_ZERO) && allItems.push(
-        <React.Fragment key={8}>
+        <div key={8}>
           <Label label={t('democracy')} />
           <div className='result'>
             <DemocracyLocks value={[{ balance, isFinished: bestNumber.gt(unlockAt), unlockAt }]} />
           </div>
-        </React.Fragment>
+        </div>
       );
     }
 
@@ -504,7 +504,7 @@ function createBalanceItems (formatIndex: number, lookup: Record<string, string>
       const max = convictionLocks.reduce((max, { total }) => bnMax(max, total), BN_ZERO);
 
       allItems.push(
-        <React.Fragment key={9}>
+        <div key={9}>
           <Label label={t('referenda')} />
           <FormatBalance
             className='result'
@@ -539,20 +539,20 @@ function createBalanceItems (formatIndex: number, lookup: Record<string, string>
             }
             value={max}
           />
-        </React.Fragment>
+        </div>
       );
     }
   }
 
   if (balancesAll && (balancesAll as DeriveBalancesAll).accountNonce && balanceDisplay.nonce) {
     allItems.push(
-      <React.Fragment key={10}>
+      <div key={10}>
         <Label label={t('transactions')} />
         <div className='result'>
           {formatNumber((balancesAll as DeriveBalancesAll).accountNonce)}
           <IconVoid />
         </div>
-      </React.Fragment>
+      </div>
     );
   }
 
@@ -680,7 +680,7 @@ const StyledTooltip = styled(Tooltip)`
   .inner {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.65rem;
     margin-block: 1.5rem;
   }
 
@@ -739,10 +739,16 @@ export default withMulti(
 
       &:not(.column--expander) {
         flex: 1;
-        display: grid;
-        column-gap: 0.75rem;
-        row-gap: 0.5rem;
+        display: flex;
+        flex-direction: column;
         opacity: 1;
+
+        > div {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          min-height: 2rem;
+        }
 
         div.inner {
           margin-top: 0.25rem;
@@ -753,12 +759,7 @@ export default withMulti(
         }
 
         label {
-          grid-column: 1;
-          display: flex !important;
-          align-items: center;
-          padding-right: 0.5rem;
-          text-align: right;
-          margin-bottom: 0.25rem;
+          flex-grow: 1;
 
           .help.circle.icon {
             display: none;
@@ -766,15 +767,17 @@ export default withMulti(
         }
 
         .result {
-          grid-column: 2;
           text-align: right;
 
-          .ui--Icon,
-          .icon-void {
+          .ui--Icon, .icon-void {
             margin-left: 0.25rem;
             margin-right: 0;
             padding-right: 0 !important;
           }
+          
+          .ui--Button .ui--Icon {
+            margin-left: -0.6rem;
+          } 
 
           .icon-void {
             float: right;
