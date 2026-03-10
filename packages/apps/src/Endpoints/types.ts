@@ -15,7 +15,6 @@ export interface Network {
   isChild?: boolean;
   isLightClient?: boolean;
   isRelay?: boolean;
-  isUnreachable?: boolean;
   name: string;
   nameRelay?: string;
   paraId?: number;

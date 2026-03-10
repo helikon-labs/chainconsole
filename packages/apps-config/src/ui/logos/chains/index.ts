@@ -22,6 +22,7 @@ export { chainsChainflipPNG } from './generated/chainflipPNG.js';
 export { chainsCommuneaiPNG } from './generated/communeaiPNG.js';
 export { chainsComposableFinancePNG } from './generated/composableFinancePNG.js';
 export { chainsCoretimeKusamaSVG } from './generated/coretime-kusamaSVG.js';
+export { chainsCoretimePolkadotSVG } from './generated/coretime-polkadotSVG.js';
 export { chainsCreditcoinTestPNG } from './generated/creditcoin-testPNG.js';
 export { chainsCreditcoinPNG } from './generated/creditcoinPNG.js';
 export { chainsDebioSVG } from './generated/debioSVG.js';

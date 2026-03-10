@@ -27,9 +27,9 @@ function noopHandler () {
 
 describe('check endpoints', (): void => {
   const checks = createWsEndpoints()
-    .filter(({ isDisabled, isUnreachable, value }) =>
+    .filter(({ isAvailable, isDisabled, value }) =>
       !isDisabled &&
-      !isUnreachable &&
+      isAvailable !== false &&
       value &&
       isString(value) &&
       !value.includes('127.0.0.1') &&

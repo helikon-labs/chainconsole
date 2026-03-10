@@ -4,7 +4,7 @@
 import type { EndpointOption } from './types.js';
 
 import { POLKADOT_GENESIS } from '../api/constants.js';
-import { chainsAcalaSVG, chainsAcurastSVG, chainsBitgreenPNG, chainsComposableFinancePNG, chainsEquilibriumSVG, chainsFrequencySVG, chainsGeminisPNG, chainsHydrationSVG, chainsInvarchJPEG, chainsLaosPNG, chainsLogionPNG, chainsNeurowebPNG, chainsOakPNG, chainsPeaqPNG, chainsPendulumSVG, chainsPeoplePolkadotSVG, chainsPolkadotCircleSVG, chainsTotemSVG, chainsWatrPNG } from '../ui/logos/chains/index.js';
+import { chainsAcalaSVG, chainsAcurastSVG, chainsBitgreenPNG, chainsComposableFinancePNG, chainsCoretimePolkadotSVG, chainsEquilibriumSVG, chainsFrequencySVG, chainsGeminisPNG, chainsHydrationSVG, chainsInvarchJPEG, chainsLaosPNG, chainsLogionPNG, chainsNeurowebPNG, chainsOakPNG, chainsPeaqPNG, chainsPendulumSVG, chainsPeoplePolkadotSVG, chainsPolkadotCircleSVG, chainsTotemSVG, chainsWatrPNG } from '../ui/logos/chains/index.js';
 import { nodesAjunaPNG, nodesAresOdysseySVG, nodesAssetHubSVG, nodesAstarPNG, nodesAventusSVG, nodesBifrostSVG, nodesBridgeHubSVG, nodesCentrifugePNG, nodesCloverSVG, nodesCoinversationPNG, nodesCollectivesSVG, nodesContinuumPNG, nodesCrustParachainSVG, nodesDarwiniaSVG, nodesEfinitySVG, nodesEwxSVG, nodesHashedPNG, nodesHeimaSVG, nodesHyperbridgePNG, nodesIntegriteeSVG, nodesInterlaySVG, nodesJamtonSVG, nodesKiltIconSVG, nodesKylinPNG, nodesMantaPNG, nodesMoonbeamSVG, nodesMoonsamaSVG, nodesMythosPNG, nodesNodleSVG, nodesOmnibtcSVG, nodesParallelSVG, nodesPhalaSVG, nodesPolkadexSVG, nodesRobonomicsSVG, nodesSoraSubstrateSVG, nodesSubdaoPNG, nodesT3rnPNG, nodesUniqueSVG, nodesXodePNG, nodesZeitgeistPNG } from '../ui/logos/nodes/index.js';
 import { getTeleports } from './util.js';
 
@@ -189,11 +189,6 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         name: 'RadiumBlock',
         url: 'wss://astar.public.curie.radiumblock.co/ws'
       },
-      {
-        isAvailable: true,
-        name: 'light client',
-        url: 'light://substrate-connect/polkadot/astar'
-      }
     ],
     text: 'Astar',
     ui: {
@@ -543,11 +538,10 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
   {
     homepage: 'https://geminis.network/',
     info: 'geminis',
-    isUnreachable: true,
     paraId: 2038,
     providers: [
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'Geminis',
         url: 'wss://rpc.geminis.network'
       }
@@ -824,11 +818,6 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         name: 'laosfoundation.io',
         url: 'wss://rpc.laos.laosfoundation.io'
       },
-      {
-        isAvailable: true,
-        name: 'light client',
-        url: 'light://substrate-connect/polkadot/laos'
-      }
     ],
     text: 'Laos',
     ui: {
@@ -1014,11 +1003,10 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
   {
     homepage: 'https://oak.tech',
     info: 'oak',
-    isUnreachable: true,
     paraId: 2090,
     providers: [
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'OAK',
         url: 'wss://rpc.oak.tech'
       }
@@ -1032,11 +1020,10 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
   {
     homepage: 'https://www.omnibtc.finance',
     info: 'omnibtc',
-    isUnreachable: true,
     paraId: 2053,
     providers: [
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'OmniBTC',
         url: 'wss://psc-parachain.coming.chat'
       }
@@ -1204,11 +1191,10 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
   {
     homepage: 'https://subdao.network/',
     info: 'subdao',
-    isUnreachable: true,
     paraId: 2018,
     providers: [
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'SubDAO',
         url: 'wss://parachain-rpc.subdao.org'
       }
@@ -1394,11 +1380,6 @@ export const prodParasPolkadotCommon: EndpointOption[] = [
         url: 'wss://polkadot-asset-hub-rpc.polkadot.io'
       },
       {
-        isAvailable: false,
-        name: 'Permanence DAO EU',
-        url: 'wss://asset-hub-polkadot.rpc.permanence.io'
-      },
-      {
         isAvailable: true,
         name: 'RadiumBlock',
         url: 'wss://statemint.public.curie.radiumblock.co/ws'
@@ -1578,7 +1559,10 @@ export const prodParasPolkadotCommon: EndpointOption[] = [
     relayName: 'polkadot',
     teleport: [-1, 1000],
     text: 'Coretime',
-    ui: {}
+    ui: {
+      color: '#113911',
+      logo: chainsCoretimePolkadotSVG
+    }
   },
   {
     info: 'polkadotPeople',
@@ -1699,11 +1683,6 @@ export const prodRelayPolkadot: EndpointOption = {
       url: 'wss://polkadot.api.onfinality.io/public-ws'
     },
     {
-      isAvailable: false, // https://github.com/polkadot-js/apps/issues/12078
-      name: 'Permanence DAO EU',
-      url: 'wss://polkadot.rpc.permanence.io'
-    },
-    {
       isAvailable: true,
       name: 'RadiumBlock',
       url: 'wss://polkadot.public.curie.radiumblock.co/ws'
@@ -1728,11 +1707,6 @@ export const prodRelayPolkadot: EndpointOption = {
       name: 'SubQuery',
       url: 'wss://polkadot.rpc.subquery.network/public/ws'
     },
-    {
-      isAvailable: true,
-      name: 'light client',
-      url: 'light://substrate-connect/polkadot'
-    }
   ],
   teleport: getTeleports(prodParasPolkadotCommon),
   text: 'Polkadot Relay',

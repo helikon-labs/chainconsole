@@ -28,7 +28,7 @@ interface Props {
 function ParaLink ({ className, id, showLogo = true, type = ParaLinkType.PJS }: Props): React.ReactElement<Props> | null {
   const endpoints = useParaEndpoints(id);
   const links = useMemo(
-    () => endpoints.filter(({ isDisabled, isUnreachable }) => !isDisabled && !isUnreachable),
+    () => endpoints.filter(({ isAvailable, isDisabled }) => !isDisabled && isAvailable !== false),
     [endpoints]
   );
 

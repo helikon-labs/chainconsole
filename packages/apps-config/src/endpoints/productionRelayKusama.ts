@@ -220,7 +220,6 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
   {
     homepage: 'https://crust.network/',
     info: 'shadow',
-    isUnreachable: true,
     paraId: 2225,
     providers: [{
       // also duplicated right above (hence marked unreachable)
@@ -294,7 +293,6 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
   {
     homepage: 'https://genshiro.equilibrium.io',
     info: 'genshiro',
-    isUnreachable: true,
     paraId: 2226,
     providers: [{
       isAvailable: false, // https://github.com/polkadot-js/apps/issues/10174
@@ -331,10 +329,6 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
       isAvailable: false, // https://github.com/polkadot-js/apps/issues/9947
       name: 'bLd Nodes',
       url: 'wss://ws.gm.bldnodes.org'
-    }, {
-      isAvailable: true,
-      name: 'light client',
-      url: 'light://substrate-connect/kusama/gm'
     }],
     text: 'GM',
     ui: {
@@ -388,10 +382,6 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
       isAvailable: false, // https://github.com/polkadot-js/apps/issues/9955
       name: 'OnFinality',
       url: 'wss://invarch-tinkernet.api.onfinality.io/public-ws'
-    }, {
-      isAvailable: true,
-      name: 'light client',
-      url: 'light://substrate-connect/kusama/tinkernet'
     }],
     text: 'InvArch Tinkernet',
     ui: {
@@ -548,10 +538,9 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
   {
     homepage: 'http://apron.network/',
     info: 'kpron',
-    isUnreachable: true,
     paraId: 2019,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Kpron',
       url: 'wss://kusama-kpron-rpc.apron.network/'
     }],
@@ -710,7 +699,6 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
   {
     homepage: 'https://parallel.fi',
     info: 'heiko',
-    isUnreachable: true,
     paraId: 2126,
     providers: [],
     text: 'Parallel Heiko 2',
@@ -896,10 +884,9 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
   {
     homepage: 'https://clover.finance/',
     info: 'sakura',
-    isUnreachable: true,
     paraId: 2016,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Clover',
       url: 'wss://api-sakura.clover.finance'
     }],
@@ -933,10 +920,6 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
       isAvailable: true,
       name: 'RadiumBlock',
       url: 'wss://shiden.public.curie.radiumblock.co/ws'
-    }, {
-      isAvailable: true,
-      name: 'light client',
-      url: 'light://substrate-connect/kusama/shiden'
     }],
     text: 'Shiden',
     ui: {
@@ -947,10 +930,9 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
   {
     homepage: 'https://shiden.astar.network/',
     info: 'shiden',
-    isUnreachable: true,
     paraId: 2120,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'StakeTechnologies',
       url: 'wss://rpc.shiden.astar.network'
     }],
@@ -1022,7 +1004,6 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
   {
     homepage: 'https://trustbase.network/',
     info: 'trustbase',
-    isUnreachable: true,
     paraId: 2078,
     providers: [],
     text: 'TrustBase',
@@ -1403,10 +1384,6 @@ export const prodRelayKusama: EndpointOption = {
     isAvailable: false, // https://github.com/polkadot-js/apps/issues/11026
     name: 'SubQuery',
     url: 'wss://kusama.rpc.subquery.network/public/ws'
-  }, {
-    isAvailable: true,
-    name: 'light client',
-    url: 'light://substrate-connect/kusama'
   }],
   teleport: getTeleports(prodParasKusamaCommon),
   text: 'Kusama Relay',

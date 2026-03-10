@@ -178,10 +178,6 @@ export const testParasWestendCommon: EndpointOption[] = [
       url: 'wss://westend-asset-hub-rpc.polkadot.io'
     }, {
       isAvailable: false,
-      name: 'Permanence DAO EU',
-      url: 'wss://asset-hub-westend.rpc.permanence.io'
-    }, {
-      isAvailable: false,
       name: 'Stakeworld',
       url: 'wss://wnd-rpc.stakeworld.io/assethub'
     }],
@@ -328,10 +324,6 @@ export const testRelayWestend: EndpointOption = {
     isAvailable: false,
     name: 'Stakeworld',
     url: 'wss://wnd-rpc.stakeworld.io'
-  }, {
-    isAvailable: true,
-    name: 'light client',
-    url: 'light://substrate-connect/westend'
   }],
   teleport: getTeleports(testParasWestendCommon),
   text: 'Westend Relay',

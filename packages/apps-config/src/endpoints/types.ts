@@ -50,10 +50,6 @@ export interface EndpointOption extends BaseOption {
    */
   isPeople?: boolean;
   /**
-   * Checks whether one of the given provider is reachable or not. If set to true, it hides the chain from explorer.
-   */
-  isUnreachable?: boolean;
-  /**
    * Declares list of all linked chains. However, It is applicable for relay chains only.
    */
   linked?: EndpointOption[];
@@ -92,7 +88,6 @@ export interface LinkOption extends BaseOption, Option {
   isPeople?: boolean;
   isRelay?: boolean;
   isAvailable?: boolean;
-  isUnreachable?: boolean;
   isSpaced?: boolean;
   linked?: LinkOption[];
   providers?: `${'wss://' | 'light://substrate-connect/'}${string}`[];

@@ -704,10 +704,6 @@ export const testRelayPaseo: EndpointOption = {
     isAvailable: false, // https://github.com/polkadot-js/apps/issues/11199
     name: 'Zondax',
     url: 'wss://api2.zondax.ch/pas/node/rpc'
-  }, {
-    isAvailable: false,
-    name: 'light client',
-    url: 'light://substrate-connect/paseo'
   }],
   teleport: getTeleports(testParasPaseoCommon),
   text: 'Paseo Relay',

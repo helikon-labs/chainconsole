@@ -4,23 +4,7 @@
 import type { TFunction } from '../types.js';
 import type { EndpointOption, LinkOption } from './types.js';
 
-interface SortOption {
-  isUnreachable?: boolean;
-}
-
 let dummyId = 0;
-
-function sortNoop (): number {
-  return 0;
-}
-
-function sortLinks (a: SortOption, b: SortOption): number {
-  return !!a.isUnreachable !== !!b.isUnreachable
-    ? a.isUnreachable
-      ? 1
-      : -1
-    : 0;
-}
 
 function expandLinked (input: LinkOption[]): LinkOption[] {
   const valueRelay = input.map(({ value }) => value);
@@ -53,7 +37,7 @@ function expandLinked (input: LinkOption[]): LinkOption[] {
   }, []);
 }
 
-function expandEndpoint (t: TFunction, { dnslink, genesisHash, homepage, info, isChild, isDisabled, isPeople, isPeopleForIdentity, isUnreachable, linked, paraId, providers, relayName, teleport, text, ui }: EndpointOption, firstOnly: boolean, withSort: boolean): LinkOption[] {
+function expandEndpoint (t: TFunction, { dnslink, genesisHash, homepage, info, isChild, isDisabled, isPeople, isPeopleForIdentity, linked, paraId, providers, relayName, teleport, text, ui }: EndpointOption, firstOnly: boolean, withSort: boolean): LinkOption[] {
   const base = {
     genesisHash,
     homepage,
@@ -62,7 +46,6 @@ function expandEndpoint (t: TFunction, { dnslink, genesisHash, homepage, info, i
     isDisabled,
     isPeople,
     isPeopleForIdentity,
-    isUnreachable: isUnreachable || providers.length === 0,
     paraId,
     providers: providers.map((provider) => provider.url),
     relayName,
@@ -88,20 +71,19 @@ function expandEndpoint (t: TFunction, { dnslink, genesisHash, homepage, info, i
         : t('rpc.hosted.via', 'via {{host}}', { ns: 'apps-config', replace: { host: provider.name } }),
       value: provider.url
     }))
-    .sort((a, b) =>
-      a.isLightClient
-        ? 1
-        : b.isLightClient
-          ? -1
-          : a.textBy.toLocaleLowerCase().localeCompare(b.textBy.toLocaleLowerCase())
-    );
+    .sort((a, b) => {
+      const lightDiff = (a.isLightClient ? 1 : 0) - (b.isLightClient ? 1 : 0);
+      if (lightDiff !== 0) return lightDiff;
+      const availDiff = (a.isAvailable === false ? 1 : 0) - (b.isAvailable === false ? 1 : 0);
+
+      return availDiff !== 0 ? availDiff : a.textBy.toLocaleLowerCase().localeCompare(b.textBy.toLocaleLowerCase());
+    });
 
   if (linked) {
     const last = result[result.length - 1];
     const options: LinkOption[] = [];
 
     linked
-      .sort(withSort ? sortLinks : sortNoop)
       .filter(({ paraId }) => paraId)
       .forEach((o) =>
         options.push(...expandEndpoint(t, o, firstOnly, withSort))
@@ -116,7 +98,6 @@ function expandEndpoint (t: TFunction, { dnslink, genesisHash, homepage, info, i
 
 export function expandEndpoints (t: TFunction, input: EndpointOption[], firstOnly: boolean, withSort: boolean): LinkOption[] {
   return input
-    .sort(withSort ? sortLinks : sortNoop)
     .reduce((all: LinkOption[], e) =>
       all.concat(expandEndpoint(t, e, firstOnly, withSort)), []);
 }
