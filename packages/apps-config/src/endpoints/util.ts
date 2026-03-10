@@ -54,8 +54,6 @@ function expandLinked (input: LinkOption[]): LinkOption[] {
 }
 
 function expandEndpoint (t: TFunction, { dnslink, genesisHash, homepage, info, isChild, isDisabled, isPeople, isPeopleForIdentity, isUnreachable, linked, paraId, providers, relayName, teleport, text, ui }: EndpointOption, firstOnly: boolean, withSort: boolean): LinkOption[] {
-  const availableProviders = providers.filter((provider) => provider.isAvailable);
-  const hasProviders = availableProviders.length !== 0;
   const base = {
     genesisHash,
     homepage,
@@ -64,28 +62,25 @@ function expandEndpoint (t: TFunction, { dnslink, genesisHash, homepage, info, i
     isDisabled,
     isPeople,
     isPeopleForIdentity,
-    isUnreachable: isUnreachable || !hasProviders,
+    isUnreachable: isUnreachable || providers.length === 0,
     paraId,
-    providers: availableProviders.map((provider) => provider.url),
+    providers: providers.map((provider) => provider.url),
     relayName,
     teleport,
     text,
     ui
   };
 
-  if (availableProviders.length === 0) {
-    availableProviders.push({
-      isAvailable: true,
-      name: 'Placeholder',
-      url: `wss://${++dummyId}`
-    });
-  }
+  const allProviders = providers.length === 0
+    ? [{ isAvailable: true, name: 'Placeholder', url: `wss://${++dummyId}` as const }]
+    : providers;
 
-  const result = availableProviders
+  const result = allProviders
     .filter((_, index) => !firstOnly || index === 0)
     .map((provider, index): LinkOption => ({
       ...base,
       dnslink: index === 0 ? dnslink : undefined,
+      isAvailable: provider.isAvailable,
       isLightClient: provider.url.startsWith('light://'),
       isRelay: false,
       textBy: provider.url.startsWith('light://')

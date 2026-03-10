@@ -33,11 +33,6 @@ function GroupDisplay ({ affinities, apiUrl, children, className = '', favoriteC
 
   const isFavoriteHeader = useMemo(() => header?.toString().includes('Favorite'), [header]);
 
-  const filtered = useMemo(
-    () => networks.filter(({ isUnreachable }) => !isUnreachable),
-    [networks]
-  );
-
   if (isFavoriteHeader && Object.keys(favoriteChains).length === 0) {
     return <></>;
   }
@@ -57,7 +52,7 @@ function GroupDisplay ({ affinities, apiUrl, children, className = '', favoriteC
       {isSelected && (
         <>
           <div className='groupNetworks'>
-            {filtered.map((network, index): React.ReactNode => (
+            {networks.map((network, index): React.ReactNode => (
               <Network
                 affinity={affinities[network.name]}
                 apiUrl={apiUrl}

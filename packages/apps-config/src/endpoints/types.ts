@@ -91,6 +91,7 @@ export interface LinkOption extends BaseOption, Option {
   isLightClient?: boolean;
   isPeople?: boolean;
   isRelay?: boolean;
+  isAvailable?: boolean;
   isUnreachable?: boolean;
   isSpaced?: boolean;
   linked?: LinkOption[];

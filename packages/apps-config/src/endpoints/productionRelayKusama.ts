@@ -5,7 +5,7 @@ import type { EndpointOption } from './types.js';
 
 import { KUSAMA_GENESIS } from '../api/constants.js';
 import { chainsAbandPNG, chainsAcurastSVG, chainsAltairSVG, chainsAmplitudeSVG, chainsAssethubKusamaSVG, chainsCoretimeKusamaSVG, chainsDorafactoryPNG, chainsGenshiroSVG, chainsGmJPEG, chainsKaruraSVG, chainsKicoPNG, chainsKintsugiPNG, chainsKreivoSVG, chainsKusamaSVG, chainsListenPNG, chainsPeopleKusamaSVG, chainsQpnPNG, chainsRiodefiPNG, chainsShidenPNG, chainsTinkerPNG, chainsTuringPNG, chainsUnorthodoxPNG } from '../ui/logos/chains/index.js';
-import { nodesApronPNG, nodesAresMarsPNG, nodesBajunPNG, nodesBasiliskPNG, nodesBifrostSVG, nodesBitcountryPNG, nodesBridgeHubBlackSVG, nodesCalamariPNG, nodesCrabSVG, nodesCurioSVG, nodesDatahighwayPNG, nodesEncointerBlueSVG, nodesHyperbridgePNG, nodesImbuePNG, nodesIpciSVG, nodesKabochaSVG, nodesKhalaSVG, nodesKrestPNG, nodesLoomNetworkPNG, nodesMoonriverSVG, nodesParallelSVG, nodesPicassoPNG, nodesPichiuPNG, nodesPolkasmithSVG, nodesQuartzPNG, nodesRegionxPNG, nodesRobonomicsSVG, nodesSakuraSVG, nodesShadowSVG, nodesSnowPNG, nodesSoraSubstrateSVG, nodesSubgameSVG, nodesSubsocialXSVG, nodesT1rnPNG, nodesTrustbasePNG, nodesXodePNG, nodesYerbanetworkPNG, nodesZeroSVG } from '../ui/logos/nodes/index.js';
+import { nodesApronPNG, nodesAresMarsPNG, nodesBajunPNG, nodesBasiliskPNG, nodesBifrostSVG, nodesBitcountryPNG, nodesBridgeHubBlackSVG, nodesCalamariPNG, nodesCrabSVG, nodesCurioSVG, nodesDatahighwayPNG, nodesEncointerBlueSVG, nodesHyperbridgePNG, nodesImbuePNG, nodesIpciSVG, nodesKabochaSVG, nodesKhalaSVG, nodesKrestPNG, nodesLoomNetworkPNG, nodesMoonriverSVG, nodesParallelSVG, nodesPicassoPNG, nodesPichiuPNG, nodesPolkasmithSVG, nodesQuartzPNG, nodesRegionxPNG, nodesRobonomicsSVG, nodesSakuraSVG, nodesShadowSVG, nodesSnowPNG, nodesSoraSubstrateSVG, nodesT1rnPNG, nodesTrustbasePNG, nodesXodePNG, nodesYerbanetworkPNG, nodesZeroSVG } from '../ui/logos/nodes/index.js';
 import { getTeleports } from './util.js';
 
 // The available endpoints that will show in the dropdown. For the most part (with the exception of
@@ -894,34 +894,6 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     }
   },
   {
-    homepage: 'http://robonomics.network/',
-    info: 'robonomics',
-    isUnreachable: true,
-    paraId: 2240,
-    providers: [{
-      isAvailable: false, // https://github.com/polkadot-js/apps/issues/12052
-      name: 'Airalab',
-      url: 'wss://kusama.rpc.robonomics.network/'
-    }, {
-      isAvailable: false, // https://github.com/polkadot-js/apps/issues/9817
-      name: 'Leemo',
-      url: 'wss://robonomics.leemo.me'
-    }, {
-      isAvailable: false, // https://github.com/polkadot-js/apps/issues/9824
-      name: 'OnFinality',
-      url: 'wss://robonomics.api.onfinality.io/public-ws'
-    }, {
-      isAvailable: false, // https://github.com/polkadot-js/apps/issues/11026
-      name: 'Samsara',
-      url: 'wss://robonomics.0xsamsara.com'
-    }],
-    text: 'Robonomics 2',
-    ui: {
-      color: '#2949d3',
-      logo: nodesRobonomicsSVG
-    }
-  },
-  {
     homepage: 'https://clover.finance/',
     info: 'sakura',
     isUnreachable: true,
@@ -1015,36 +987,6 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     ui: {
       color: '#2D2926',
       logo: nodesSoraSubstrateSVG
-    }
-  },
-  {
-    homepage: 'http://subgame.org/',
-    info: 'subgame',
-    paraId: 2018,
-    providers: [{
-      isAvailable: false, // https://github.com/polkadot-js/apps/issues/7982
-      name: 'SubGame',
-      url: 'wss://gamma.subgame.org/'
-    }],
-    text: 'SubGame Gamma',
-    ui: {
-      color: '#EB027D',
-      logo: nodesSubgameSVG
-    }
-  },
-  {
-    homepage: 'https://subsocial.network/',
-    info: 'subsocialX',
-    paraId: 2100,
-    providers: [{
-      isAvailable: false,
-      name: 'Dappforce 1',
-      url: 'wss://para.subsocial.network'
-    }],
-    text: 'SubsocialX',
-    ui: {
-      color: '#69058C',
-      logo: nodesSubsocialXSVG
     }
   },
   {

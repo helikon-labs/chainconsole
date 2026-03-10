@@ -5,7 +5,7 @@ import type { EndpointOption } from './types.js';
 
 import { ZKVERIFY_VOLTA_GENESIS } from '../api/constants.js';
 import { chains3dpassSVG, chainsAcalaSVG, chainsAlephSVG, chainsAllfeatSVG, chainsAnalogSVG, chainsArgonSVG, chainsBrainstormPNG, chainsChainflipPNG, chainsCreditcoinTestPNG, chainsDebioSVG, chainsEquilibriumSVG, chainsFerrumPNG, chainsFragnovaPNG, chainsJurPNG, chainsKintsugiPNG, chainsLiberlandPNG, chainsLogionPNG, chainsMyriadPNG, chainsQfNetworkPNG, chainsSkyekiwiPNG, chainsTanglePNG, chainsVaraTestnetPNG } from '../ui/logos/chains/index.js';
-import { nodesArcticPNG, nodesAresGladiosSVG, nodesAutonomysPNG, nodesBifrostSVG, nodesBitcountryPNG, nodesCereSVG, nodesCessPNG, nodesCloverSVG, nodesCrustMaxwellSVG, nodesCurioSVG, nodesDancelightSVG, nodesDatahighwayPNG, nodesDockPNG, nodesDolphinSVG, nodesDotmogSVG, nodesEdgewareWhitePNG, nodesEncointerBlueSVG, nodesFantourPNG, nodesGalitalLogoPNG, nodesGamepowerSVG, nodesGeekSVG, nodesInterlaySVG, nodesIpsePNG, nodesJazPNG, nodesJupiterSVG, nodesKarmachainSVG, nodesKhalaSVG, nodesKlugPNG, nodesKylinPNG, nodesLaminarCircleSVG, nodesMantaPNG, nodesMathSVG, nodesMinixPNG, nodesMoonbaseAlphaSVG, nodesMybankPNG, nodesNftmartPNG, nodesNodleSVG, nodesOpportunityPNG, nodesPhalaSVG, nodesPhoenixPNG, nodesPhykenNetworkPNG, nodesPichiuPNG, nodesPolkadexSVG, nodesPolkafoundrySVG, nodesPolymeshSVG, nodesPontemSVG, nodesPrismPNG, nodesRealisPNG, nodesRiochainSVG, nodesSherpaxPNG, nodesSoonsocialPNG, nodesSoraSubstrateSVG, nodesSubdaoPNG, nodesSubgameSVG, nodesSubspacePNG, nodesSubstrateHexagonSVG, nodesTernoaSVG, nodesThebifrostPNG, nodesUniartsPNG, nodesUniqueSVG, nodesUnitnetworkPNG, nodesVFlowPNG, nodesWeb3gamesSVG, nodesZCloakSVG, nodesZeroSVG, nodesZkVerifyPNG } from '../ui/logos/nodes/index.js';
+import { nodesArcticPNG, nodesAresGladiosSVG, nodesAutonomysPNG, nodesBifrostSVG, nodesBitcountryPNG, nodesCereSVG, nodesCessPNG, nodesCloverSVG, nodesCrustMaxwellSVG, nodesCurioSVG, nodesDancelightSVG, nodesDatahighwayPNG, nodesDockPNG, nodesDolphinSVG, nodesDotmogSVG, nodesEdgewareWhitePNG, nodesEncointerBlueSVG, nodesFantourPNG, nodesGalitalLogoPNG, nodesGamepowerSVG, nodesGeekSVG, nodesInterlaySVG, nodesIpsePNG, nodesJazPNG, nodesJupiterSVG, nodesKarmachainSVG, nodesKhalaSVG, nodesKlugPNG, nodesKylinPNG, nodesLaminarCircleSVG, nodesMantaPNG, nodesMathSVG, nodesMinixPNG, nodesMoonbaseAlphaSVG, nodesMybankPNG, nodesNftmartPNG, nodesNodleSVG, nodesOpportunityPNG, nodesPhalaSVG, nodesPhoenixPNG, nodesPhykenNetworkPNG, nodesPolkadexSVG, nodesPolkafoundrySVG, nodesPolymeshSVG, nodesPontemSVG, nodesPrismPNG, nodesRealisPNG, nodesRiochainSVG, nodesSherpaxPNG, nodesSoonsocialPNG, nodesSoraSubstrateSVG, nodesSubdaoPNG, nodesSubgameSVG, nodesSubspacePNG, nodesSubstrateHexagonSVG, nodesTernoaSVG, nodesThebifrostPNG, nodesUniartsPNG, nodesUniqueSVG, nodesUnitnetworkPNG, nodesVFlowPNG, nodesWeb3gamesSVG, nodesZCloakSVG, nodesZeroSVG, nodesZkVerifyPNG } from '../ui/logos/nodes/index.js';
 
 export * from './testingRelayPaseo.js';
 export * from './testingRelayWestend.js';
@@ -895,18 +895,6 @@ export const testChains: Omit<EndpointOption, 'teleport'>[] = [
     ui: {
       color: '#48B96C',
       logo: nodesPhykenNetworkPNG
-    }
-  },
-  {
-    info: 'pichiu',
-    providers: [{
-      isAvailable: false, // https://github.com/polkadot-js/apps/pull/6761
-      name: 'Kylin Network',
-      url: 'wss://westend.kylin-node.co.uk'
-    }],
-    text: 'Pichiu Testnet',
-    ui: {
-      logo: nodesPichiuPNG
     }
   },
   {

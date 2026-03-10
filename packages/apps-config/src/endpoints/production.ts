@@ -5,7 +5,7 @@ import type { EndpointOption } from './types.js';
 
 import { ZKVERIFY_GENESIS } from '../api/constants.js';
 import { chains3dpassSVG, chainsAnalogSVG, chainsBittensorPNG, chainsBulletinPNG, chainsChainflipPNG, chainsCommuneaiPNG, chainsCreditcoinPNG, chainsDebioSVG, chainsFragnovaPNG, chainsJurPNG, chainsLiberlandPNG, chainsLogionPNG, chainsMyriadPNG, chainsSpannerPNG, chainsTanglePNG, chainsTorusPNG, chainsVaraPNG, chainsVtbPNG } from '../ui/logos/chains/index.js';
-import { nodesAresOdysseySVG, nodesAutonomysPNG, nodesCentrifugePNG, nodesCereSVG, nodesChainxSVG, nodesCompetitorsClubPNG, nodesCrownSterlingPNG, nodesCrustSVG, nodesDatahighwayPNG, nodesDockPNG, nodesEdgewareWhitePNG, nodesEfinitySVG, nodesElysiumPNG, nodesHanyonycashPNG, nodesHumanodePNG, nodesInnovatorPNG, nodesJoystreamSVG, nodesKulupuSVG, nodesKusariSVG, nodesMathSVG, nodesMinixPNG, nodesNftmartPNG, nodesNodleSVG, nodesPolkadexSVG, nodesPolymeshSVG, nodesRiochainSVG, nodesRobonomicsSVG, nodesSherpaxPNG, nodesSoraSubstrateSVG, nodesStafiPNG, nodesSubgameSVG, nodesSubsocialSVG, nodesSwapdexSVG, nodesTanssiSVG, nodesTernoaSVG, nodesThebifrostPNG, nodesTscsPNG, nodesUniartsPNG, nodesUnitnetworkPNG, nodesVFlowPNG, nodesZkVerifyPNG } from '../ui/logos/nodes/index.js';
+import { nodesAresOdysseySVG, nodesAutonomysPNG, nodesCereSVG, nodesChainxSVG, nodesCompetitorsClubPNG, nodesCrownSterlingPNG, nodesCrustSVG, nodesDatahighwayPNG, nodesDockPNG, nodesEdgewareWhitePNG, nodesEfinitySVG, nodesElysiumPNG, nodesHanyonycashPNG, nodesHumanodePNG, nodesInnovatorPNG, nodesJoystreamSVG, nodesKulupuSVG, nodesKusariSVG, nodesMathSVG, nodesMinixPNG, nodesNftmartPNG, nodesNodleSVG, nodesPolkadexSVG, nodesPolymeshSVG, nodesRiochainSVG, nodesSherpaxPNG, nodesSoraSubstrateSVG, nodesStafiPNG, nodesSubgameSVG, nodesSwapdexSVG, nodesTanssiSVG, nodesTernoaSVG, nodesThebifrostPNG, nodesTscsPNG, nodesUniartsPNG, nodesUnitnetworkPNG, nodesVFlowPNG, nodesZkVerifyPNG } from '../ui/logos/nodes/index.js';
 
 export * from './productionRelayKusama.js';
 export * from './productionRelayPolkadot.js';
@@ -185,19 +185,6 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
     ui: {
       color: '#2D353F',
       logo: chainsCreditcoinPNG
-    }
-  },
-  {
-    info: 'centrifuge',
-    providers: [{
-      isAvailable: false, // https://github.com/polkadot-js/apps/issues/8012
-      name: 'Centrifuge',
-      url: 'wss://fullnode.centrifuge.io'
-    }],
-    text: 'Centrifuge Standalone [Archived]',
-    ui: {
-      color: '#fcc367',
-      logo: nodesCentrifugePNG
     }
   },
   {
@@ -683,19 +670,6 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
     }
   },
   {
-    info: 'robonomics',
-    providers: [{
-      isAvailable: false, // https://github.com/polkadot-js/apps/pull/6761
-      name: 'Airalab',
-      url: 'wss://kusama.rpc.robonomics.network/'
-    }],
-    text: 'Robonomics',
-    ui: {
-      color: '#2949d3',
-      logo: nodesRobonomicsSVG
-    }
-  },
-  {
     info: 'sherpax',
     providers: [{
       isAvailable: false, // https://github.com/polkadot-js/apps/issues/9712
@@ -770,19 +744,6 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
     ui: {
       color: '#EB027D',
       logo: nodesSubgameSVG
-    }
-  },
-  {
-    info: 'subsocial',
-    providers: [{
-      isAvailable: false, // https://github.com/polkadot-js/apps/issues/8046
-      name: 'DappForce',
-      url: 'wss://rpc.subsocial.network'
-    }],
-    text: 'Subsocial',
-    ui: {
-      color: '#b9018c',
-      logo: nodesSubsocialSVG
     }
   },
   {

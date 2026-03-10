@@ -60,7 +60,7 @@ function combineEndpoints (endpoints: LinkOption[]): Group[] {
       }
     } else {
       const prev = result[result.length - 1];
-      const prov = { isLightClient: e.isLightClient, name: e.textBy, url: e.value };
+      const prov = { isAvailable: e.isAvailable, isLightClient: e.isLightClient, name: e.textBy, url: e.value };
 
       const isFavorite = isFavoriteChain(favoriteChains,
         { chainName: e.text?.toString() ?? '',
@@ -88,7 +88,7 @@ function combineEndpoints (endpoints: LinkOption[]): Group[] {
 
       if (prev.networks[prev.networks.length - 1] && e.text === prev.networks[prev.networks.length - 1].name) {
         prev.networks[prev.networks.length - 1].providers.push(prov);
-      } else if (!e.isUnreachable) {
+      } else {
         prev.networks.push({
           isChild: e.isChild,
           isRelay: !!e.genesisHash,

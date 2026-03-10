@@ -126,8 +126,6 @@ export { nodesSoraSubstrateSVG } from './generated/sora-substrateSVG.js';
 export { nodesStafiPNG } from './generated/stafiPNG.js';
 export { nodesSubdaoPNG } from './generated/subdaoPNG.js';
 export { nodesSubgameSVG } from './generated/subgameSVG.js';
-export { nodesSubsocialSVG } from './generated/subsocialSVG.js';
-export { nodesSubsocialXSVG } from './generated/subsocialXSVG.js';
 export { nodesSubspacePNG } from './generated/subspacePNG.js';
 export { nodesSubstrateHexagonSVG } from './generated/substrate-hexagonSVG.js';
 export { nodesSwapdexSVG } from './generated/swapdexSVG.js';

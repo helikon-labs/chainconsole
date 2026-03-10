@@ -5,7 +5,7 @@ import type { EndpointOption } from './types.js';
 
 import { POLKADOT_GENESIS } from '../api/constants.js';
 import { chainsAcalaSVG, chainsAcurastSVG, chainsBitgreenPNG, chainsComposableFinancePNG, chainsEquilibriumSVG, chainsFrequencySVG, chainsGeminisPNG, chainsHydrationSVG, chainsInvarchJPEG, chainsLaosPNG, chainsLogionPNG, chainsNeurowebPNG, chainsOakPNG, chainsPeaqPNG, chainsPendulumSVG, chainsPeoplePolkadotSVG, chainsPolkadotCircleSVG, chainsTotemSVG, chainsWatrPNG } from '../ui/logos/chains/index.js';
-import { nodesAjunaPNG, nodesAresOdysseySVG, nodesAssetHubSVG, nodesAstarPNG, nodesAventusSVG, nodesBifrostSVG, nodesBridgeHubSVG, nodesCentrifugePNG, nodesCloverSVG, nodesCoinversationPNG, nodesCollectivesSVG, nodesContinuumPNG, nodesCrustParachainSVG, nodesDarwiniaSVG, nodesEfinitySVG, nodesEwxSVG, nodesHashedPNG, nodesHeimaSVG, nodesHyperbridgePNG, nodesIntegriteeSVG, nodesInterlaySVG, nodesJamtonSVG, nodesKiltIconSVG, nodesKylinPNG, nodesMantaPNG, nodesMoonbeamSVG, nodesMoonsamaSVG, nodesMythosPNG, nodesNodleSVG, nodesOmnibtcSVG, nodesParallelSVG, nodesPhalaSVG, nodesPolkadexSVG, nodesRobonomicsSVG, nodesSoraSubstrateSVG, nodesSubdaoPNG, nodesSubgameSVG, nodesSubsocialSVG, nodesT3rnPNG, nodesUniqueSVG, nodesXodePNG, nodesZeitgeistPNG } from '../ui/logos/nodes/index.js';
+import { nodesAjunaPNG, nodesAresOdysseySVG, nodesAssetHubSVG, nodesAstarPNG, nodesAventusSVG, nodesBifrostSVG, nodesBridgeHubSVG, nodesCentrifugePNG, nodesCloverSVG, nodesCoinversationPNG, nodesCollectivesSVG, nodesContinuumPNG, nodesCrustParachainSVG, nodesDarwiniaSVG, nodesEfinitySVG, nodesEwxSVG, nodesHashedPNG, nodesHeimaSVG, nodesHyperbridgePNG, nodesIntegriteeSVG, nodesInterlaySVG, nodesJamtonSVG, nodesKiltIconSVG, nodesKylinPNG, nodesMantaPNG, nodesMoonbeamSVG, nodesMoonsamaSVG, nodesMythosPNG, nodesNodleSVG, nodesOmnibtcSVG, nodesParallelSVG, nodesPhalaSVG, nodesPolkadexSVG, nodesRobonomicsSVG, nodesSoraSubstrateSVG, nodesSubdaoPNG, nodesT3rnPNG, nodesUniqueSVG, nodesXodePNG, nodesZeitgeistPNG } from '../ui/logos/nodes/index.js';
 import { getTeleports } from './util.js';
 
 // The available endpoints that will show in the dropdown. For the most part (with the exception of
@@ -1146,28 +1146,6 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     }
   },
   {
-    homepage: 'https://polkadex.trade/crowdloans',
-    info: 'polkadex',
-    paraId: 3363,
-    providers: [
-      {
-        isAvailable: false,
-        name: 'OnFinality',
-        url: 'wss://polkadex-parachain.api.onfinality.io/public-ws'
-      },
-      {
-        isAvailable: false,
-        name: 'RadiumBlock',
-        url: 'wss://polkadex-parachain.public.curie.radiumblock.co/ws'
-      }
-    ],
-    text: 'Polkadex',
-    ui: {
-      color: '#7C30DD',
-      logo: nodesPolkadexSVG
-    }
-  },
-  {
     homepage: 'https://polkadex.trade/',
     info: 'polkadex',
     paraId: 2040,
@@ -1239,45 +1217,6 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     ui: {
       color: 'linear-gradient(50deg, #F20092 0%, #FF4D5D 100%)',
       logo: nodesSubdaoPNG
-    }
-  },
-  {
-    homepage: 'http://subgame.org/',
-    info: 'subgame',
-    paraId: 2017,
-    providers: [
-      {
-        isAvailable: false, // https://github.com/polkadot-js/apps/pull/6761
-        name: 'SubGame',
-        url: 'wss://gamma.subgame.org/'
-      }
-    ],
-    text: 'SubGame Gamma',
-    ui: {
-      color: '#EB027D',
-      logo: nodesSubgameSVG
-    }
-  },
-  {
-    homepage: 'https://subsocial.network/',
-    info: 'subsocial',
-    paraId: 2101,
-    providers: [
-      {
-        isAvailable: false, // https://github.com/polkadot-js/apps/issues/11569
-        name: 'Dappforce',
-        url: 'wss://para.subsocial.network'
-      },
-      {
-        isAvailable: false, // https://github.com/polkadot-js/apps/issues/9977
-        name: 'OnFinality',
-        url: 'wss://subsocial-polkadot.api.onfinality.io/public-ws'
-      }
-    ],
-    text: 'Subsocial',
-    ui: {
-      color: '#b9018c',
-      logo: nodesSubsocialSVG
     }
   },
   {

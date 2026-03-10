@@ -27,7 +27,8 @@ function NetworkDisplay ({ apiUrl, className = '', isFavorite, setApiUrl, toggle
   );
 
   const providersOptions = useMemo(() => {
-    return providers.map(({ name, url }) => ({
+    return providers.map(({ isAvailable, name, url }) => ({
+      disabled: isAvailable === false,
       text: name,
       value: url
     }));
@@ -35,7 +36,7 @@ function NetworkDisplay ({ apiUrl, className = '', isFavorite, setApiUrl, toggle
 
   const _selectUrl = useCallback(
     () => {
-      const filteredProviders = providers.filter(({ url }) => !url.startsWith('light://'));
+      const filteredProviders = providers.filter(({ isAvailable, url }) => isAvailable !== false && !url.startsWith('light://'));
 
       if (filteredProviders.length === 0) {
         alert('No WebSocket (wss://) provider available');

@@ -22,6 +22,7 @@ export interface Network {
   providers: {
     name: string;
     url: string;
+    isAvailable?: boolean;
   }[];
   ui: {
     color?: string;
