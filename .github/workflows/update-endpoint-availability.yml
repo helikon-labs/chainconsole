@@ -1,0 +1,48 @@
+name: Update endpoint availability
+on:
+  push:
+    branches:
+      - development
+  #schedule:
+    # once daily, early morning (02:50 GMT)
+  #  - cron: '50 2 * * *'
+  workflow_dispatch:
+
+jobs:
+  update:
+    if: github.repository == 'helikon-labs/chainconsole'
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v6
+    - uses: actions/setup-node@v6
+      with:
+        node-version: 'lts/*'
+    - name: install
+      run: yarn install --immutable | grep -v 'YN0013'
+    - name: get date
+      id: date
+      run: echo "value=$(date +'%Y-%m-%d-%H%M')" >> $GITHUB_OUTPUT
+    - name: check and update
+      run: yarn ci:updateAvailability
+    - name: close previous PRs
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        gh pr list --state open --json number,headRefName \
+          --jq '.[] | select(.headRefName | startswith("ci/update-endpoint-availability-")) | .number' \
+          | xargs -I{} gh pr close {} --delete-branch
+    - name: create PR
+      uses: peter-evans/create-pull-request@v7
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        commit-message: 'chore: update endpoint availability'
+        title: 'chore: update endpoint availability'
+        branch: ci/update-endpoint-availability-${{ steps.date.outputs.value }}
+        delete-branch: true
+        body: |
+          Automated update of `isAvailable` flags based on daily connectivity check.
+
+          Endpoints newly available are set to `isAvailable: true`.
+          Endpoints no longer reachable are set to `isAvailable: false`.
+
+          See the [workflow run](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}) for the full change list.

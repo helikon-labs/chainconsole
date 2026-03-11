@@ -39,6 +39,7 @@
     "build:www": "rm -rf packages/apps/build && mkdir -p packages/apps/build && yarn run build:i18n && cd packages/apps && yarn polkadot-exec-webpack --config webpack.config.cjs",
     "ci:chainEndpoints": "polkadot-dev-run-test --env node --logfile .github/chain-endpoints.md packages/apps-config/src/ci/chainEndpoints",
     "ci:chainTypes": "echo ok",
+    "ci:updateAvailability": "polkadot-dev-run-node-ts packages/apps-config/src/ci/updateEndpointAvailability.ts",
     "clean": "polkadot-dev-clean-build",
     "clean:i18n": "rm -rf packages/apps/public/locales/en && mkdir -p packages/apps/public/locales/en",
     "docs": "echo \"skipping docs\"",
