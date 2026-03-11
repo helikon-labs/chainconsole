@@ -53,7 +53,7 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     info: 'paseoAmplitude',
     paraId: 2124,
     providers: [{
-      isAvailable: false, // https://github.com/polkadot-js/apps/issues/11267
+      isAvailable: true,
       name: 'PendulumChain',
       url: 'wss://rpc-foucoco.pendulumchain.tech'
     }],

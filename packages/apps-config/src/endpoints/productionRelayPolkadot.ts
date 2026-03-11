@@ -1355,7 +1355,7 @@ export const prodParasPolkadotCommon: EndpointOption[] = [
         url: 'wss://statemint-rpc-tn.dwellir.com'
       },
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'IBP1',
         url: 'wss://asset-hub-polkadot.ibp.network'
       },
@@ -1385,7 +1385,7 @@ export const prodParasPolkadotCommon: EndpointOption[] = [
         url: 'wss://statemint.public.curie.radiumblock.co/ws'
       },
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'Stakeworld',
         url: 'wss://rpc-asset-hub-polkadot.stakeworld.io'
       }
