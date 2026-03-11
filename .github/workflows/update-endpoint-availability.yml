@@ -14,6 +14,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v6
+      with:
+        ref: development
     - uses: actions/setup-node@v6
       with:
         node-version: 'lts/*'
@@ -38,6 +40,7 @@ jobs:
         commit-message: 'chore: update endpoint availability'
         title: 'chore: update endpoint availability'
         branch: ci/update-endpoint-availability-${{ steps.date.outputs.value }}
+        base: development
         delete-branch: true
         body: |
           Automated update of `isAvailable` flags based on daily connectivity check.
