@@ -1,18 +1,18 @@
 {
   "author": "Jaco Greeff <jacogr@gmail.com>",
-  "bugs": "https://github.com/polkadot-js/apps/issues",
-  "description": "An Apps portal into the Polkadot network",
+  "bugs": "https://github.com/helikon-labs/chainconsole/issues",
+  "description": "A web console for blockchains built on the Polkadot SDK",
   "engines": {
     "node": ">=18.14"
   },
-  "homepage": "https://github.com/polkadot-js/apps#readme",
+  "homepage": "https://github.com/helikon-labs/chainconsole#readme",
   "license": "Apache-2.0",
   "name": "polkadot-apps",
   "packageManager": "yarn@4.6.0",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/polkadot-js/apps.git"
+    "url": "https://github.com/helikon-labs/chainconsole.git"
   },
   "sideEffects": false,
   "type": "module",

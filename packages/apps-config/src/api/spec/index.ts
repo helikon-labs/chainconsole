@@ -47,8 +47,6 @@ import encointerNodeTeeproxy from './encointer-node-teeproxy.js';
 import encointerPara from './encointer-para.js';
 import equilibrium from './equilibrium.js';
 import fantour from './fantour.js';
-// See https://github.com/polkadot-js/apps/pull/9243
-// import fragnova from './fragnova.js';
 import ferrum from './ferrum.js';
 import frequency from './frequency.js';
 import galital from './galital.js';

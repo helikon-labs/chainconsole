@@ -1,16 +1,16 @@
 {
-  "bugs": "https://github.com/polkadot-js/apps/issues",
+  "bugs": "https://github.com/helikon-labs/chainconsole/issues",
   "engines": {
     "node": ">=18"
   },
-  "homepage": "https://github.com/polkadot-js/apps/tree/master/packages/page-coretime#readme",
+  "homepage": "https://github.com/helikon-labs/chainconsole/tree/master/packages/page-coretime#readme",
   "license": "Apache-2.0",
   "name": "@polkadot/app-coretime",
   "private": true,
   "repository": {
     "directory": "packages/page-coretime",
     "type": "git",
-    "url": "https://github.com/polkadot-js/apps.git"
+    "url": "https://github.com/helikon-labs/chainconsole.git"
   },
   "sideEffects": false,
   "type": "module",
