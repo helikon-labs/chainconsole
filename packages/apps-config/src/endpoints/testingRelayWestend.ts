@@ -165,7 +165,7 @@ export const testParasWestendCommon: EndpointOption[] = [
       name: 'Dwellir',
       url: 'wss://asset-hub-westend-rpc.n.dwellir.com'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'Dwellir Tunisia',
       url: 'wss://westmint-rpc-tn.dwellir.com'
     }, {
@@ -177,7 +177,7 @@ export const testParasWestendCommon: EndpointOption[] = [
       name: 'Parity',
       url: 'wss://westend-asset-hub-rpc.polkadot.io'
     }, {
-      isAvailable: false,
+      isAvailable: true,
       name: 'Stakeworld',
       url: 'wss://wnd-rpc.stakeworld.io/assethub'
     }],
@@ -198,7 +198,7 @@ export const testParasWestendCommon: EndpointOption[] = [
       name: 'Dwellir',
       url: 'wss://bridge-hub-westend-rpc.n.dwellir.com'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'Dwellir Tunisia',
       url: 'wss://westend-bridge-hub-rpc-tn.dwellir.com'
     }, {
@@ -226,7 +226,7 @@ export const testParasWestendCommon: EndpointOption[] = [
       name: 'Dwellir',
       url: 'wss://collectives-westend-rpc.n.dwellir.com'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'Dwellir Tunisia',
       url: 'wss://westend-collectives-rpc-tn.dwellir.com'
     }, {
@@ -301,7 +301,7 @@ export const testRelayWestend: EndpointOption = {
     name: 'Dwellir',
     url: 'wss://westend-rpc.n.dwellir.com'
   }, {
-    isAvailable: true,
+    isAvailable: false,
     name: 'Dwellir Tunisia',
     url: 'wss://westend-rpc-tn.dwellir.com'
   }, {
@@ -321,7 +321,7 @@ export const testRelayWestend: EndpointOption = {
     name: 'RadiumBlock',
     url: 'wss://westend.public.curie.radiumblock.co/ws'
   }, {
-    isAvailable: false,
+    isAvailable: true,
     name: 'Stakeworld',
     url: 'wss://wnd-rpc.stakeworld.io'
   }],

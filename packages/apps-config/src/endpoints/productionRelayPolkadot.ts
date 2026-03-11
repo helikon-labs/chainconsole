@@ -32,7 +32,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://acala-rpc-1.aca-api.network'
       },
       {
-        isAvailable: false, // https://github.com/polkadot-js/apps/issues/6965
+        isAvailable: true,
         name: 'Acala Foundation 2',
         url: 'wss://acala-rpc-2.aca-api.network/ws'
       },
@@ -57,7 +57,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://acala.dotters.network'
       },
       {
-        isAvailable: false, // https://github.com/polkadot-js/apps/issues/10728
+        isAvailable: true,
         name: 'LuckyFriday',
         url: 'wss://rpc-acala.luckyfriday.io'
       },
@@ -202,7 +202,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     paraId: 2056,
     providers: [
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'Aventus',
         url: 'wss://avn-parachain.mainnet.aventus.io'
       }
@@ -229,7 +229,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://bifrost-polkadot.dotters.network'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'Liebi',
         url: 'wss://hk.p.bifrost-rpc.liebi.com/ws'
       },
@@ -244,7 +244,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://bifrost-polkadot.api.onfinality.io/public-ws'
       },
       {
-        isAvailable: false, // https://github.com/polkadot-js/apps/issues/11827
+        isAvailable: true,
         name: 'RadiumBlock',
         url: 'wss://bifrost.public.curie.radiumblock.co/ws'
       }
@@ -283,7 +283,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     paraId: 2031,
     providers: [
       {
-        isAvailable: false, // https://github.com/polkadot-js/apps/issues/11745
+        isAvailable: true,
         name: 'Centrifuge',
         url: 'wss://fullnode.centrifuge.io'
       },
@@ -880,7 +880,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://moonbeam-rpc.publicnode.com'
       },
       {
-        isAvailable: false, // https://github.com/polkadot-js/apps/issues/10566
+        isAvailable: true,
         name: 'Automata 1RPC',
         url: 'wss://1rpc.io/glmr'
       },
@@ -984,12 +984,12 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     paraId: 2026,
     providers: [
       {
-        isAvailable: true, // https://github.com/polkadot-js/apps/issues/11965
+        isAvailable: false,
         name: 'Dwellir',
         url: 'wss://nodle-rpc.dwellir.com'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'OnFinality',
         url: 'wss://nodle-parachain.api.onfinality.io/public-ws'
       }
@@ -1062,7 +1062,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     paraId: 3338,
     providers: [
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'OnFinality',
         url: 'wss://peaq.api.onfinality.io/public-ws'
       }
@@ -1096,7 +1096,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     paraId: 2035,
     providers: [
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'Dwellir',
         url: 'wss://phala-rpc.n.dwellir.com'
       },
@@ -1111,7 +1111,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://phala.api.onfinality.io/public-ws'
       },
       {
-        isAvailable: false, // https://github.com/polkadot-js/apps/issues/11251
+        isAvailable: true,
         name: 'Phala',
         url: 'wss://api.phala.network/ws'
       },
@@ -1253,17 +1253,17 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://unique.api.onfinality.io/public-ws'
       },
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'Unique America',
         url: 'wss://us-ws.unique.network'
       },
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'Unique Asia',
         url: 'wss://asia-ws.unique.network'
       },
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'Unique Europe',
         url: 'wss://eu-ws.unique.network'
       }
@@ -1302,7 +1302,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://polkadot-rpcnode.xode.net'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'Zeeve',
         url: 'wss://xode-polkadot-rpc-01.zeeve.net/y0yxg038wn1fncc/rpc'
       }
@@ -1350,12 +1350,12 @@ export const prodParasPolkadotCommon: EndpointOption[] = [
         url: 'wss://asset-hub-polkadot-rpc.n.dwellir.com'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'Dwellir Tunisia',
         url: 'wss://statemint-rpc-tn.dwellir.com'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'IBP1',
         url: 'wss://asset-hub-polkadot.ibp.network'
       },
@@ -1409,7 +1409,7 @@ export const prodParasPolkadotCommon: EndpointOption[] = [
         url: 'wss://bridge-hub-polkadot-rpc.n.dwellir.com'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'Dwellir Tunisia',
         url: 'wss://polkadot-bridge-hub-rpc-tn.dwellir.com'
       },
@@ -1444,7 +1444,7 @@ export const prodParasPolkadotCommon: EndpointOption[] = [
         url: 'wss://bridgehub-polkadot.public.curie.radiumblock.co/ws'
       },
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'Stakeworld',
         url: 'wss://rpc-bridge-hub-polkadot.stakeworld.io'
       }
@@ -1467,7 +1467,7 @@ export const prodParasPolkadotCommon: EndpointOption[] = [
         url: 'wss://collectives-polkadot-rpc.n.dwellir.com'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'Dwellir Tunisia',
         url: 'wss://polkadot-collectives-rpc-tn.dwellir.com'
       },
@@ -1502,7 +1502,7 @@ export const prodParasPolkadotCommon: EndpointOption[] = [
         url: 'wss://collectives.public.curie.radiumblock.co/ws'
       },
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'Stakeworld',
         url: 'wss://rpc-collectives-polkadot.stakeworld.io'
       }
@@ -1551,7 +1551,7 @@ export const prodParasPolkadotCommon: EndpointOption[] = [
         url: 'wss://polkadot-coretime-rpc.polkadot.io'
       },
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'Stakeworld',
         url: 'wss://rpc-coretime-polkadot.stakeworld.io'
       }
@@ -1601,7 +1601,7 @@ export const prodParasPolkadotCommon: EndpointOption[] = [
         url: 'wss://polkadot-people-rpc.polkadot.io'
       },
       {
-        isAvailable: false, // https://github.com/polkadot-js/apps/issues/11791
+        isAvailable: true,
         name: 'RadiumBlock',
         url: 'wss://people-polkadot.public.curie.radiumblock.co/ws'
       },
@@ -1643,7 +1643,7 @@ export const prodRelayPolkadot: EndpointOption = {
       url: 'wss://polkadot.geometry.io/websockets'
     },
     {
-      isAvailable: false,
+      isAvailable: true,
       name: 'Automata 1RPC',
       url: 'wss://1rpc.io/dot'
     },
@@ -1653,7 +1653,7 @@ export const prodRelayPolkadot: EndpointOption = {
       url: 'wss://polkadot-rpc.n.dwellir.com'
     },
     {
-      isAvailable: true,
+      isAvailable: false,
       name: 'Dwellir Tunisia',
       url: 'wss://polkadot-rpc-tn.dwellir.com'
     },
@@ -1688,7 +1688,7 @@ export const prodRelayPolkadot: EndpointOption = {
       url: 'wss://polkadot.public.curie.radiumblock.co/ws'
     },
     {
-      isAvailable: false, // https://github.com/polkadot-js/apps/issues/11439
+      isAvailable: true,
       name: 'RockX',
       url: 'wss://rockx-dot.w3node.com/polka-public-dot/ws'
     },

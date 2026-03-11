@@ -405,7 +405,7 @@ export const testChains: Omit<EndpointOption, 'teleport'>[] = [
   {
     info: 'encointer',
     providers: [{
-      isAvailable: false, // https://github.com/polkadot-js/apps/issues/11186
+      isAvailable: true,
       name: 'Encointer Association',
       url: 'wss://gesell.encointer.org'
     }],
@@ -789,7 +789,7 @@ export const testChains: Omit<EndpointOption, 'teleport'>[] = [
       name: 'RadiumBlock',
       url: 'wss://moonbase.public.curie.radiumblock.co/ws'
     }, {
-      isAvailable: false, // https://github.com/polkadot-js/apps/issues/11992
+      isAvailable: true,
       name: 'UnitedBloc',
       url: 'wss://moonbase.unitedbloc.com'
     }],
@@ -862,7 +862,7 @@ export const testChains: Omit<EndpointOption, 'teleport'>[] = [
   {
     info: 'phala',
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Phala Network',
       url: 'wss://poc6.phala.network/ws'
     }],
@@ -1099,7 +1099,7 @@ export const testChains: Omit<EndpointOption, 'teleport'>[] = [
   {
     info: 'subspace-gemini-3f',
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Europe',
       url: 'wss://rpc-1.gemini-3f.subspace.network/ws'
     }, {

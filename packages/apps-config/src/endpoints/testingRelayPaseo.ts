@@ -238,7 +238,7 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     info: 'IDN Consumer',
     paraId: 4594,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'IDN Node',
       url: 'wss://idnc0-testnet.idealabs.network'
     }],
@@ -300,7 +300,7 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     info: 'laos-sigma',
     paraId: 4006,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'freeverse.io',
       url: 'wss://rpc.laossigma.laosfoundation.io'
     }],
@@ -315,11 +315,11 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     info: 'Mandala',
     paraId: 4818,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Autobot',
       url: 'wss://rpc1.paseo.mandalachain.io'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'Bumblebee',
       url: 'wss://rpc2.paseo.mandalachain.io'
     }],
@@ -421,7 +421,7 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     info: 'Pop Network',
     paraId: 4001,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'R0GUE-RPC1',
       url: 'wss://rpc1.paseo.popnetwork.xyz'
     }, {
@@ -440,7 +440,7 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     info: 'qf-paseo',
     paraId: 4775,
     providers: [{
-      isAvailable: false, // https://github.com/polkadot-js/apps/issues/11745
+      isAvailable: true,
       name: 'QF Network',
       url: 'wss://para-test.qfnetwork.xyz'
     }],
@@ -529,7 +529,7 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     info: 'ZeitgeistBatteryStation',
     paraId: 2101,
     providers: [{
-      isAvailable: false, // https://github.com/polkadot-js/apps/issues/11992
+      isAvailable: true,
       name: 'Zeitgeist',
       url: 'wss://bsr.zeitgeist.pm'
     }],

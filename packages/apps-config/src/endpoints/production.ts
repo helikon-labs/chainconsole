@@ -39,11 +39,11 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
   {
     info: '3dpass',
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: '3dpass',
       url: 'wss://rpc.3dpass.org'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'Lzmz',
       url: 'wss://rpc.p3d.top'
     }],
@@ -156,7 +156,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
       name: 'Amforc',
       url: 'wss://bulletin.rpc.amforc.com'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'Interweb',
       url: 'wss://rpc.interweb-it.com/bulletin'
     }, {
@@ -164,7 +164,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
       name: 'TurboFlakes',
       url: 'wss://bulletin.rpc.turboflakes.io'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'Web3 Foundation',
       url: 'wss://bulletin-rpc.w3f.community'
     }],
@@ -276,7 +276,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
   {
     info: 'crown-sterling',
     providers: [{
-      isAvailable: false, // https://github.com/polkadot-js/apps/issues/10289
+      isAvailable: true,
       name: 'Crown Sterling',
       url: 'wss://blockchain.crownsterling.io'
     }],
@@ -445,7 +445,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
   {
     info: 'joystream',
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Joyutils',
       url: 'wss://rpc.joyutils.org'
     }, {
@@ -685,7 +685,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
   {
     info: 'sora-substrate',
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'OnFinality',
       url: 'wss://sora.api.onfinality.io/public-ws'
     }, {
@@ -723,7 +723,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
   {
     info: 'stafi',
     providers: [{
-      isAvailable: false, // Cannot find type ChainId
+      isAvailable: true,
       name: 'Stafi Foundation',
       url: 'wss://mainnet-rpc.stafi.io'
     }],
@@ -766,7 +766,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
       name: 'Dwellir',
       url: 'wss://tangle-mainnet-rpc.n.dwellir.com'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'Webb',
       url: 'wss://rpc.tangle.tools'
     }],

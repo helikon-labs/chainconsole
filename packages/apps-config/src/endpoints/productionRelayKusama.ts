@@ -40,7 +40,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
       name: 'Acurast',
       url: 'wss://public-rpc.canary.acurast.com'
     }, {
-      isAvailable: false, // https://github.com/polkadot-js/apps/issues/10667
+      isAvailable: true,
       name: 'Acurast Papers',
       url: 'wss://acurast-canarynet-ws.prod.gke.papers.tech'
     }],
@@ -55,7 +55,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     info: 'altair',
     paraId: 2088,
     providers: [{
-      isAvailable: false, // https://github.com/polkadot-js/apps/issues/11566
+      isAvailable: true,
       name: 'Centrifuge',
       url: 'wss://fullnode.altair.centrifuge.io'
     }, {
@@ -74,7 +74,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     info: 'amplitude',
     paraId: 2124,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'PendulumChain',
       url: 'wss://rpc-amplitude.pendulumchain.tech'
     }],
@@ -173,7 +173,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     info: 'crab',
     paraId: 2105,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Darwinia',
       url: 'wss://crab-rpc.darwinia.network/'
     }, {
@@ -414,7 +414,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
       name: 'Dwellir',
       url: 'wss://karura-rpc.n.dwellir.com'
     }, {
-      isAvailable: false, // https://github.com/polkadot-js/apps/issues/10663
+      isAvailable: true,
       name: 'LuckyFriday',
       url: 'wss://rpc-karura.luckyfriday.io'
     }, {
@@ -506,7 +506,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
       name: 'Kintsugi Labs',
       url: 'wss://api-kusama.interlay.io/parachain'
     }, {
-      isAvailable: false, // https://github.com/polkadot-js/apps/issues/9947
+      isAvailable: true,
       name: 'LuckyFriday',
       url: 'wss://rpc-kintsugi.luckyfriday.io/'
     }, {
@@ -562,7 +562,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     info: 'krest',
     paraId: 2241,
     providers: [{
-      isAvailable: false, // https://github.com/polkadot-js/apps/issues/12018
+      isAvailable: true,
       name: 'Krest',
       url: 'wss://wss-krest.peaq.network/'
     }, {
@@ -701,7 +701,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
       name: 'Composable',
       url: 'wss://rpc.composablenodes.tech'
     }, {
-      isAvailable: false, // https://github.com/polkadot-js/apps/issues/9947
+      isAvailable: true,
       name: 'LuckyFriday',
       url: 'wss://rpc-picasso.luckyfriday.io'
     }],
@@ -787,7 +787,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
       name: 'OnFinality',
       url: 'wss://quartz.api.onfinality.io/public-ws'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'Geo Load Balancer',
       url: 'wss://ws-quartz.unique.network'
     }, {
@@ -886,7 +886,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     info: 'shiden',
     paraId: 2007,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Astar',
       url: 'wss://rpc.shiden.astar.network'
     }, {
@@ -907,21 +907,6 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
       url: 'wss://shiden.public.curie.radiumblock.co/ws'
     }],
     text: 'Shiden',
-    ui: {
-      color: '#5923B2',
-      logo: chainsShidenPNG
-    }
-  },
-  {
-    homepage: 'https://shiden.astar.network/',
-    info: 'shiden',
-    paraId: 2120,
-    providers: [{
-      isAvailable: false,
-      name: 'StakeTechnologies',
-      url: 'wss://rpc.shiden.astar.network'
-    }],
-    text: 'Shiden Crowdloan 2',
     ui: {
       color: '#5923B2',
       logo: chainsShidenPNG
@@ -1084,7 +1069,7 @@ export const prodParasKusamaCommon: EndpointOption[] = [
       name: 'Dwellir',
       url: 'wss://asset-hub-kusama-rpc.n.dwellir.com'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'Dwellir Tunisia',
       url: 'wss://statemine-rpc-tn.dwellir.com'
     }, {
@@ -1112,7 +1097,7 @@ export const prodParasKusamaCommon: EndpointOption[] = [
       name: 'RadiumBlock',
       url: 'wss://statemine.public.curie.radiumblock.co/ws'
     }, {
-      isAvailable: false,
+      isAvailable: true,
       name: 'Stakeworld',
       url: 'wss://rpc-assethub-kusama.stakeworld.io'
     }],
@@ -1133,7 +1118,7 @@ export const prodParasKusamaCommon: EndpointOption[] = [
       name: 'Dwellir',
       url: 'wss://bridge-hub-kusama-rpc.n.dwellir.com'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'Dwellir Tunisia',
       url: 'wss://kusama-bridge-hub-rpc-tn.dwellir.com'
     }, {
@@ -1161,7 +1146,7 @@ export const prodParasKusamaCommon: EndpointOption[] = [
       name: 'RadiumBlock',
       url: 'wss://bridgehub-kusama.public.curie.radiumblock.co/ws'
     }, {
-      isAvailable: false,
+      isAvailable: true,
       name: 'Stakeworld',
       url: 'wss://rpc-bridgehub-kusama.stakeworld.io'
     }],
@@ -1201,7 +1186,7 @@ export const prodParasKusamaCommon: EndpointOption[] = [
       name: 'Parity',
       url: 'wss://kusama-coretime-rpc.polkadot.io'
     }, {
-      isAvailable: false,
+      isAvailable: true,
       name: 'Stakeworld',
       url: 'wss://rpc-coretime-kusama.stakeworld.io'
     }],
@@ -1289,7 +1274,7 @@ export const prodParasKusamaCommon: EndpointOption[] = [
       name: 'Parity',
       url: 'wss://kusama-people-rpc.polkadot.io'
     }, {
-      isAvailable: false,
+      isAvailable: true,
       name: 'Stakeworld',
       url: 'wss://rpc-people-kusama.stakeworld.io'
     }],
@@ -1318,7 +1303,7 @@ export const prodRelayKusama: EndpointOption = {
     name: 'Geometry Labs',
     url: 'wss://kusama.geometry.io/websockets'
   }, {
-    isAvailable: false,
+    isAvailable: true,
     name: 'Automata 1RPC',
     url: 'wss://1rpc.io/ksm'
   }, {
@@ -1330,7 +1315,7 @@ export const prodRelayKusama: EndpointOption = {
     name: 'Dwellir',
     url: 'wss://kusama-rpc.n.dwellir.com'
   }, {
-    isAvailable: true,
+    isAvailable: false,
     name: 'Dwellir Tunisia',
     url: 'wss://kusama-rpc-tn.dwellir.com'
   }, {
@@ -1358,7 +1343,7 @@ export const prodRelayKusama: EndpointOption = {
     name: 'RadiumBlock',
     url: 'wss://kusama.public.curie.radiumblock.co/ws'
   }, {
-    isAvailable: false, // https://github.com/polkadot-js/apps/issues/11477
+    isAvailable: true,
     name: 'RockX',
     url: 'wss://rockx-ksm.w3node.com/polka-public-ksm/ws'
   }, {
@@ -1366,7 +1351,7 @@ export const prodRelayKusama: EndpointOption = {
     name: 'Stakeworld',
     url: 'wss://rpc-kusama.stakeworld.io'
   }, {
-    isAvailable: false, // https://github.com/polkadot-js/apps/issues/11026
+    isAvailable: true,
     name: 'SubQuery',
     url: 'wss://kusama.rpc.subquery.network/public/ws'
   }],
