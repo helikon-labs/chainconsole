@@ -1,11 +1,11 @@
 name: Update endpoint availability
 on:
-  push:
-    branches:
-      - development
-  #schedule:
+  #push:
+  #  branches:
+  #    - development
+  schedule:
     # once daily, early morning (02:50 GMT)
-  #  - cron: '50 2 * * *'
+    - cron: '50 10,02 * * *'
   workflow_dispatch:
 
 jobs:
