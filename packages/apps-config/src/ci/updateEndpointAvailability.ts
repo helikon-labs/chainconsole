@@ -16,7 +16,7 @@ interface DnsResponse {
   Question: { name: string }[];
 }
 
-const TIMEOUT = 20_000;
+const TIMEOUT = 60_000;
 const CONCURRENCY = 10;
 const ENDPOINTS_DIR = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../endpoints');
 
