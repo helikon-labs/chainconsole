@@ -4,8 +4,8 @@
 import type { EndpointOption } from './types.js';
 
 import { WESTEND_GENESIS } from '../api/constants.js';
-import { chainsBulletinPNG, chainsKaruraSVG, chainsPeoplePolkadotSVG, chainsStandardPNG } from '../ui/logos/chains/index.js';
-import { nodesAssetHubSVG, nodesBridgeHubSVG, nodesCentrifugePNG, nodesIntegriteeSVG, nodesInterlaySVG, nodesKhalaSVG, nodesKylinPNG, nodesMoonshadowPNG, nodesWestendColourSVG } from '../ui/logos/nodes/index.js';
+import { chainsBulletinPNG, chainsCoretimePolkadotSVG, chainsKaruraSVG, chainsPeoplePolkadotSVG, chainsStandardPNG } from '../ui/logos/chains/index.js';
+import { nodesAssetHubSVG, nodesBridgeHubSVG, nodesCentrifugePNG, nodesCollectivesSVG, nodesIntegriteeSVG, nodesInterlaySVG, nodesKhalaSVG, nodesKylinPNG, nodesMoonshadowPNG, nodesSubstrateHexagonSVG, nodesWestendColourSVG } from '../ui/logos/nodes/index.js';
 import { getTeleports } from './util.js';
 
 // The available endpoints that will show in the dropdown. For the most part (with the exception of
@@ -96,7 +96,8 @@ export const testParasWestend: Omit<EndpointOption, 'teleport'>[] = [
     relayName: 'westend',
     text: 'Penpal',
     ui: {
-      color: '#964b00'
+      color: '#964b00',
+      logo: nodesSubstrateHexagonSVG
     }
   },
   {
@@ -239,7 +240,7 @@ export const testParasWestendCommon: EndpointOption[] = [
     text: 'Collectives',
     ui: {
       color: '#e6777a',
-      logo: 'fa;people-group'
+      logo: nodesCollectivesSVG
     }
   },
   {
@@ -259,7 +260,8 @@ export const testParasWestendCommon: EndpointOption[] = [
     teleport: [-1, 1000],
     text: 'Coretime',
     ui: {
-      color: '#f19135'
+      color: '#f19135',
+      logo: chainsCoretimePolkadotSVG
     }
   },
   {
