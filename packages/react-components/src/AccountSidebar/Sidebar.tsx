@@ -118,6 +118,24 @@ const StyledSidebar = styled(Sidebar)`
         overflow: hidden;
       }
     }
+
+
+    
+    .ui--Button {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+      padding: 0;
+      margin: 0;
+      width: 4.35rem;
+      height: 4.35rem;
+      align-items: center;
+      justify-content: center;
+
+      .ui--Icon {
+        margin: 0 !important;
+      }
+    }
   }
 
   .ui--AddressMenu-addr,
@@ -145,8 +163,7 @@ const StyledSidebar = styled(Sidebar)`
     margin: 0.371rem 0;
     color: var(--color-label);
   }
-
-
+  
   .ui--AddressMenu-index {
     display: flex;
     flex-direction: row;
