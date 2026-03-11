@@ -17,7 +17,7 @@ interface DnsResponse {
 }
 
 const TIMEOUT = 60_000;
-const CONCURRENCY = 10;
+const CONCURRENCY = 1;
 const ENDPOINTS_DIR = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../endpoints');
 
 function noopHandler () {
