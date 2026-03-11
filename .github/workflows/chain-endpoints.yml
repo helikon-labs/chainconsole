@@ -3,7 +3,7 @@ on:
   push:
     branches:
       - development
-      - main
+  #    - main
   #schedule:
     # twice daily (mornings/afternoons, the latter being busy)
     # - cron:  '50 0/12 * * *'
