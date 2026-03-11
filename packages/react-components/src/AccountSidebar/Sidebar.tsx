@@ -118,8 +118,6 @@ const StyledSidebar = styled(Sidebar)`
         overflow: hidden;
       }
     }
-
-
     
     .ui--Button {
       display: flex;
@@ -330,6 +328,10 @@ const StyledSidebar = styled(Sidebar)`
   .ui--ScrollSection {
     padding: 1rem;
     overflow: auto;
+
+    .ui--AddressInfo div.column {
+      align-items: stretch;
+    }
   }
 
   .ui--LinkSection {
