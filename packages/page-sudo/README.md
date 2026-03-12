@@ -1,1 +1,1 @@
-# @polkadot/app-sudo
+# @chainconsole/app-sudo

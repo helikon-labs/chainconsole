@@ -1,1 +1,1 @@
-# @polkadot/app-treasury
+# @chainconsole/app-treasury

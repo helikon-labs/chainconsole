@@ -1,1 +1,1 @@
-# @polkadot/app-referenda
+# @chainconsole/app-referenda

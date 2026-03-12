@@ -1,1 +1,1 @@
-# @polkadot/app-ranked
+# @chainconsole/app-ranked

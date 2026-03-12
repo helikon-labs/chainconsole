@@ -1,1 +1,1 @@
-# @polkadot/app-nis
+# @chainconsole/app-nis

@@ -1,1 +1,1 @@
-# @polkadot/app-coretime
+# @chainconsole/app-coretime

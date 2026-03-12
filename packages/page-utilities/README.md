@@ -1,1 +1,1 @@
-# @polkadot/app-utilities
+# @chainconsole/app-utilities

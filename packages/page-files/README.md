@@ -1,4 +1,4 @@
-# @polkadot/app-files
+# @chainconsole/app-files
 
 ## Description
 

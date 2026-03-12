@@ -1,1 +1,1 @@
-# @polkadot/app-runtime
+# @chainconsole/app-runtime

@@ -1,1 +1,1 @@
-# @polkadot/app-membership
+# @chainconsole/app-membership

@@ -1,1 +1,1 @@
-# @polkadot/app-gilt
+# @chainconsole/app-gilt

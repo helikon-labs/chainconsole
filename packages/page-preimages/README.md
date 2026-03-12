@@ -1,1 +1,1 @@
-# @polkadot/app-preimages
+# @chainconsole/app-preimages

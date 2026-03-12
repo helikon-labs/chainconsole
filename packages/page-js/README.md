@@ -1,1 +1,1 @@
-# @polkadot/app-js
+# @chainconsole/app-js

@@ -1,1 +1,1 @@
-# @polkadot/app-rpc
+# @chainconsole/app-rpc

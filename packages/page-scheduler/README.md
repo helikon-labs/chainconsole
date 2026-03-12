@@ -1,1 +1,1 @@
-# @polkadot/app-scheduler
+# @chainconsole/app-scheduler

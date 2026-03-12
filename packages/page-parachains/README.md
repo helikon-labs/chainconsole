@@ -1,1 +1,1 @@
-# @polkadot/app-parachains
+# @chainconsole/app-parachains

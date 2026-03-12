@@ -1,1 +1,1 @@
-# @polkadot/app-collator
+# @chainconsole/app-collator

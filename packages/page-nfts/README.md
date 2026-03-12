@@ -1,1 +1,1 @@
-# @polkadot/app-nfts
+# @chainconsole/app-nfts

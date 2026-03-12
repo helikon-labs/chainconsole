@@ -1,1 +1,1 @@
-# @polkadot/app-fellowship
+# @chainconsole/app-fellowship

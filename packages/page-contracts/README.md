@@ -1,3 +1,3 @@
-# @polkadot/app-contracts
+# @chainconsole/app-contracts
 
 Substrate contracts - code deployment, instance creation and messages.

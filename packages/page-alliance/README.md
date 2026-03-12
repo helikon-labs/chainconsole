@@ -1,1 +1,1 @@
-# @polkadot/app-alliance
+# @chainconsole/app-alliance

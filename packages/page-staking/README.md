@@ -1,1 +1,1 @@
-# @polkadot/app-staking
+# @chainconsole/app-staking

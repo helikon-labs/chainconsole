@@ -1,1 +1,1 @@
-# @polkadot/app-toolbox
+# @chainconsole/app-toolbox

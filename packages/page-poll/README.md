@@ -1,1 +1,1 @@
-# @polkadot/app-poll
+# @chainconsole/app-poll

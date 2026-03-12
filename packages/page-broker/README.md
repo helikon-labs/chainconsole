@@ -1,1 +1,1 @@
-# @polkadot/app-broker
+# @chainconsole/app-broker

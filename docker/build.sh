@@ -4,11 +4,11 @@
 # of the Apache-2.0 license. See the LICENSE file for details.
 
 # fail fast on any non-zero exits
-set -e
+set -euo pipefail
 
 # the docker image name and dockerhub repo
-NAME="polkadot-js-apps"
-REPO="jacogr"
+NAME="chainconsole"
+REPO="helikon"
 
 # extract the current npm version from package.json
 VERSION=$(cat package.json \

@@ -1,1 +1,1 @@
-# @polkadot/app-council
+# @chainconsole/app-council

@@ -1,1 +1,1 @@
-# @polkadot/app-democracy
+# @chainconsole/app-democracy

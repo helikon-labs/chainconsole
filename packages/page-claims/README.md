@@ -1,1 +1,1 @@
-# @polkadot/app-claims
+# @chainconsole/app-claims

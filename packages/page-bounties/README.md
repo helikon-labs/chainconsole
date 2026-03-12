@@ -1,1 +1,1 @@
-# @polkadot/bounties
+# @chainconsole/bounties

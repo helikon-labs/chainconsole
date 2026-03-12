@@ -1,1 +1,1 @@
-# @polkadot/app-storage
+# @chainconsole/app-storage

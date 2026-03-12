@@ -1,1 +1,1 @@
-# @polkadot/app-staking-legacy
+# @chainconsole/app-staking-legacy

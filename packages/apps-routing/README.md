@@ -1,3 +1,3 @@
-# @polkadot/apps-routing
+# @chainconsole/apps-routing
 
 The routing config for the application

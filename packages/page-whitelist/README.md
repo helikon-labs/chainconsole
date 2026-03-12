@@ -1,1 +1,1 @@
-# @polkadot/app-whitelist
+# @chainconsole/app-whitelist

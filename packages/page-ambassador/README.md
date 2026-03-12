@@ -1,1 +1,1 @@
-# @polkadot/app-ambassador
+# @chainconsole/app-ambassador

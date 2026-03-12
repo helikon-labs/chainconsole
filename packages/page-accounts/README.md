@@ -1,1 +1,1 @@
-# @polkadot/app-accounts
+# @chainconsole/app-accounts

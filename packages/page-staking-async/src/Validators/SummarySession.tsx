@@ -21,7 +21,7 @@ interface Props {
 function SummarySession ({ className, withEra = true, withSession = true }: Props): React.ReactElement<Props> {
   const { t } = useTranslation();
   const { api } = useApi(); // Asset Hub API
-  const { rcApi, isStakingAsync } = useStakingAsyncApis();
+  const { isStakingAsync, rcApi } = useStakingAsyncApis();
   const blockTime = useBlockInterval(isStakingAsync ? rcApi : api);
   const sessionInfo = useCall<DeriveSessionProgress>(rcApi?.derive.session?.progress);
   const ahSessionInfo = useCall<DeriveSessionProgress>(api?.derive.session?.progress);
@@ -37,12 +37,16 @@ function SummarySession ({ className, withEra = true, withSession = true }: Prop
     if (!ahSessionInfo) {
       return BN_ZERO;
     }
+
     const currentEraStart = ahSessionInfo.activeEraStart.unwrapOrDefault();
+
     if (currentEraStart.isZero()) {
       return BN_ZERO;
     }
+
     const currentTimestamp = new BN(Math.floor(Date.now()));
     const elapsed = currentTimestamp.sub(currentEraStart);
+
     return elapsed.div(blockTime);
   }, [ahSessionInfo, blockTime]);
 

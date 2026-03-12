@@ -1,1 +1,1 @@
-# @polkadot/app-explorer
+# @chainconsole/app-explorer

@@ -1,1 +1,1 @@
-# @polkadot/apps
+# Chain Console Web Application

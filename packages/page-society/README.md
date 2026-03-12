@@ -1,1 +1,1 @@
-# @polkadot/app-society
+# @chainconsole/app-society
