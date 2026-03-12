@@ -10,7 +10,6 @@ import ambassador from './ambassador.js';
 import assets from './assets.js';
 import bounties from './bounties.js';
 import broker from './broker.js';
-import claims from './claims.js';
 import collator from './collator.js';
 import contracts from './contracts.js';
 import coretime from './coretime.js';
@@ -54,7 +53,6 @@ export default function create (t: TFunction): Routes {
     accounts(t),
     addresses(t),
     explorer(t),
-    claims(t),
     poll(t),
     transfer(t),
     teleport(t),

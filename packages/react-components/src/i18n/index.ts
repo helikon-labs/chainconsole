@@ -52,7 +52,6 @@ i18next
       'apps-config',
       'apps-routing',
       'app-accounts',
-      'app-claims',
       'app-contracts',
       'app-council',
       'app-democracy',
