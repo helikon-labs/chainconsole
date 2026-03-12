@@ -766,7 +766,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
       name: 'Dwellir',
       url: 'wss://tangle-mainnet-rpc.n.dwellir.com'
     }, {
-      isAvailable: false,
+      isAvailable: true,
       name: 'Webb',
       url: 'wss://rpc.tangle.tools'
     }],
