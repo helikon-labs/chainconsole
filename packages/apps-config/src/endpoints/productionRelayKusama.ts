@@ -648,7 +648,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
       name: 'OnFinality',
       url: 'wss://moonriver.api.onfinality.io/public-ws'
     }, {
-      isAvailable: false,
+      isAvailable: true,
       name: 'RadiumBlock',
       url: 'wss://moonriver.public.curie.radiumblock.co/ws'
     }, {
