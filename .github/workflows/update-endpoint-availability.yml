@@ -5,7 +5,7 @@ on:
   #    - development
   schedule:
     # once daily, early morning (02:50 GMT)
-    - cron: '50 10,02 * * *'
+    - cron: '50 06,14 * * *'
   workflow_dispatch:
 
 jobs:
