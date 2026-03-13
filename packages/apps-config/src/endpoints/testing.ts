@@ -952,7 +952,7 @@ export const testChains: Omit<EndpointOption, 'teleport'>[] = [
   {
     info: 'qf-testnet',
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'QF Network',
       url: 'wss://test.qfnetwork.xyz'
     }],
