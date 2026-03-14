@@ -89,7 +89,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     paraId: 3396,
     providers: [
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'Acurast',
         url: 'wss://public-rpc.mainnet.acurast.com'
       }
@@ -616,7 +616,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://rpc.hydradx.cloud'
       },
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'Helikon',
         url: 'wss://rpc.helikon.io/hydradx'
       },
@@ -1643,7 +1643,7 @@ export const prodRelayPolkadot: EndpointOption = {
       url: 'wss://polkadot.geometry.io/websockets'
     },
     {
-      isAvailable: true,
+      isAvailable: false,
       name: 'Automata 1RPC',
       url: 'wss://1rpc.io/dot'
     },
