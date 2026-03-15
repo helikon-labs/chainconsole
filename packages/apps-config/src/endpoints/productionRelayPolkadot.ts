@@ -1445,6 +1445,11 @@ export const prodParasPolkadotCommon: EndpointOption[] = [
       },
       {
         isAvailable: true,
+        name: 'Spectrum',
+        url: 'wss://spectrum-03.simplystaking.xyz/cG9sa2Fkb3QtMDMtOTFkMmYwZGYtcG9sa2Fkb3Q/mgX--uWlEtmNKw/polkadotbridgehub/mainnet/'
+      },
+      {
+        isAvailable: true,
         name: 'Stakeworld',
         url: 'wss://rpc-bridge-hub-polkadot.stakeworld.io'
       }
@@ -1699,7 +1704,7 @@ export const prodRelayPolkadot: EndpointOption = {
     },
     {
       isAvailable: true,
-      name: 'Simply Staking',
+      name: 'Spectrum',
       url: 'wss://spectrum-03.simplystaking.xyz/cG9sa2Fkb3QtMDMtOTFkMmYwZGYtcG9sa2Fkb3Q/LjwBJpV3dIKyWQ/polkadot/mainnet/'
     },
     {

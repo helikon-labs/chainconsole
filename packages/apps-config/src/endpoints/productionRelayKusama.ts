@@ -1124,6 +1124,10 @@ export const prodParasKusamaCommon: EndpointOption[] = [
       url: 'wss://bridgehub-kusama.public.curie.radiumblock.co/ws'
     }, {
       isAvailable: true,
+      name: 'Spectrum',
+      url: 'wss://spectrum-03.simplystaking.xyz/cG9sa2Fkb3QtMDMtOTFkMmYwZGYtcG9sa2Fkb3Q/balkpUVauqyv8g/kusamabridgehub/mainnet/'
+    }, {
+      isAvailable: true,
       name: 'Stakeworld',
       url: 'wss://rpc-bridgehub-kusama.stakeworld.io'
     }],
@@ -1323,6 +1327,10 @@ export const prodRelayKusama: EndpointOption = {
     isAvailable: true,
     name: 'RadiumBlock',
     url: 'wss://kusama.public.curie.radiumblock.co/ws'
+  }, {
+    isAvailable: true,
+    name: 'Spectrum',
+    url: 'wss://spectrum-03.simplystaking.xyz/cG9sa2Fkb3QtMDMtOTFkMmYwZGYtcG9sa2Fkb3Q/QXq7QZ6Q60NDzA/kusama/mainnet/'
   }, {
     isAvailable: true,
     name: 'RockX',
