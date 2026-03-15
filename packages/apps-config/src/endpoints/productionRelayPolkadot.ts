@@ -89,7 +89,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     paraId: 3396,
     providers: [
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'Acurast',
         url: 'wss://public-rpc.mainnet.acurast.com'
       }
@@ -880,7 +880,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://moonbeam-rpc.publicnode.com'
       },
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'Automata 1RPC',
         url: 'wss://1rpc.io/glmr'
       },
@@ -1643,7 +1643,7 @@ export const prodRelayPolkadot: EndpointOption = {
       url: 'wss://polkadot.geometry.io/websockets'
     },
     {
-      isAvailable: false,
+      isAvailable: true,
       name: 'Automata 1RPC',
       url: 'wss://1rpc.io/dot'
     },
