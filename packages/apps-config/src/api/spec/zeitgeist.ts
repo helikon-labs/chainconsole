@@ -3,7 +3,7 @@
 
 import type { OverrideBundleDefinition } from '@polkadot/types/types';
 
-import * as typeDefs from '@zeitgeistpm/type-defs';
+import typeDefs from '@zeitgeistpm/type-defs';
 
 import { typesFromDefs } from '../util.js';
 
