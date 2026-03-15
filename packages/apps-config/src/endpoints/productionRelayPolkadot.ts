@@ -987,11 +987,6 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         isAvailable: false,
         name: 'Dwellir',
         url: 'wss://nodle-rpc.dwellir.com'
-      },
-      {
-        isAvailable: false,
-        name: 'OnFinality',
-        url: 'wss://nodle-parachain.api.onfinality.io/public-ws'
       }
     ],
     text: 'Nodle',
