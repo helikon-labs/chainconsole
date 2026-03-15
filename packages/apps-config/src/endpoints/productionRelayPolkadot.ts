@@ -1552,6 +1552,11 @@ export const prodParasPolkadotCommon: EndpointOption[] = [
       },
       {
         isAvailable: true,
+        name: 'RadiumBlock',
+        url: 'wss://coretime-polkadot.public.curie.radiumblock.co/ws'
+      },
+      {
+        isAvailable: true,
         name: 'Stakeworld',
         url: 'wss://rpc-coretime-polkadot.stakeworld.io'
       }

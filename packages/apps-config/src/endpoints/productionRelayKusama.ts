@@ -1252,6 +1252,10 @@ export const prodParasKusamaCommon: EndpointOption[] = [
       url: 'wss://kusama-people-rpc.polkadot.io'
     }, {
       isAvailable: true,
+      name: 'RadiumBlock',
+      url: 'wss://people-kusama.public.curie.radiumblock.co/ws'
+    }, {
+      isAvailable: true,
       name: 'Stakeworld',
       url: 'wss://rpc-people-kusama.stakeworld.io'
     }],
