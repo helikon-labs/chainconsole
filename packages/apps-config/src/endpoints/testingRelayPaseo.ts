@@ -455,7 +455,7 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     info: 'qf-paseo',
     paraId: 4775,
     providers: [{
-      isAvailable: false,
+      isAvailable: true,
       name: 'QF Network',
       url: 'wss://para-test.qfnetwork.xyz'
     }],
