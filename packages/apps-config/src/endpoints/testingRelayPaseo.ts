@@ -148,7 +148,7 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     providers: [{
       isAvailable: true,
       name: 'DePow',
-      url: 'wss://testnet.fintra.network'
+      url: 'wss://rpc.depow.lat'
     }],
     text: 'DePow (Paseo)',
     ui: {
