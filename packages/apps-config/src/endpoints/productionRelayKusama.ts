@@ -198,7 +198,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     info: 'curio',
     paraId: 3339,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Curio',
       url: 'wss://parachain.curioinvest.com/'
     }],
@@ -1139,7 +1139,7 @@ export const prodParasKusamaCommon: EndpointOption[] = [
       name: 'Dwellir',
       url: 'wss://coretime-kusama-rpc.n.dwellir.com'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'IBP1',
       url: 'wss://coretime-kusama.ibp.network'
     }, {
@@ -1280,7 +1280,7 @@ export const prodRelayKusama: EndpointOption = {
     name: 'Geometry Labs',
     url: 'wss://kusama.geometry.io/websockets'
   }, {
-    isAvailable: false,
+    isAvailable: true,
     name: 'Automata 1RPC',
     url: 'wss://1rpc.io/ksm'
   }, {
