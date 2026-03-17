@@ -3,7 +3,7 @@
   "bugs": "https://github.com/helikon-labs/chainconsole/issues",
   "description": "A web console for blockchains built on the Polkadot SDK",
   "engines": {
-    "node": ">=18.14"
+    "node": ">=24.0"
   },
   "homepage": "https://github.com/helikon-labs/chainconsole#readme",
   "license": "Apache-2.0",
@@ -103,6 +103,6 @@
     "@polkadot/x-textencoder": "^14.0.1",
     "@polkadot/x-ws": "^14.0.1",
     "@zondax/ledger-substrate": "1.1.1",
-    "typescript": "^5.5.4"
+    "typescript": "^5.9.3"
   }
 }

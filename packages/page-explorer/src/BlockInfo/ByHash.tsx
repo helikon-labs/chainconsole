@@ -132,7 +132,7 @@ function BlockByHash ({ className = '', error, value }: Props): React.ReactEleme
             if (mountedRef.current && header.number.unwrap().eq(nextBlockNumber)) {
               setState((prev) => ({
                 ...prev,
-                nextBlockHash: header.hash
+                nextBlockHash: header.hash as unknown as Hash
               }));
               unsub && unsub();
             }

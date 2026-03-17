@@ -167,16 +167,11 @@ function Playground ({ basePath, className = '' }: Props): React.ReactElement<Pr
           if (iframeRef.current?.contentWindow) {
             const iframeDoc = iframeRef.current.contentWindow.document;
 
-            iframeDoc.open();
-            iframeDoc.write('<!DOCTYPE html><html><head></head><body></body></html>');
-            iframeDoc.close();
-
+            iframeRef.current.srcdoc = '<!DOCTYPE html><html><head></head><body></body></html>';
             // Expose injected to iframe window
             iframeRef.current.contentWindow.injected = injectedRef.current;
-
             // Build destructured keys from injectedRef
             const injectedKeys = Object.keys(iframeRef.current.contentWindow.injected).sort().slice(1).join(', ');
-
             // Build the code to run (scoped with destructured injected keys)
             const exec = `
               (async ({ ${injectedKeys} }) => {
