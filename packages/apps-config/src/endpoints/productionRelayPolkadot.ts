@@ -1345,11 +1345,6 @@ export const prodParasPolkadotCommon: EndpointOption[] = [
         url: 'wss://asset-hub-polkadot-rpc.n.dwellir.com'
       },
       {
-        isAvailable: false,
-        name: 'Dwellir Tunisia',
-        url: 'wss://statemint-rpc-tn.dwellir.com'
-      },
-      {
         isAvailable: true,
         name: 'IBP1',
         url: 'wss://asset-hub-polkadot.ibp.network'
@@ -1402,11 +1397,6 @@ export const prodParasPolkadotCommon: EndpointOption[] = [
         isAvailable: true,
         name: 'Dwellir',
         url: 'wss://bridge-hub-polkadot-rpc.n.dwellir.com'
-      },
-      {
-        isAvailable: false,
-        name: 'Dwellir Tunisia',
-        url: 'wss://polkadot-bridge-hub-rpc-tn.dwellir.com'
       },
       {
         isAvailable: true,
@@ -1465,11 +1455,6 @@ export const prodParasPolkadotCommon: EndpointOption[] = [
         isAvailable: true,
         name: 'Dwellir',
         url: 'wss://collectives-polkadot-rpc.n.dwellir.com'
-      },
-      {
-        isAvailable: false,
-        name: 'Dwellir Tunisia',
-        url: 'wss://polkadot-collectives-rpc-tn.dwellir.com'
       },
       {
         isAvailable: true,
@@ -1656,11 +1641,6 @@ export const prodRelayPolkadot: EndpointOption = {
       isAvailable: true,
       name: 'Dwellir',
       url: 'wss://polkadot-rpc.n.dwellir.com'
-    },
-    {
-      isAvailable: false,
-      name: 'Dwellir Tunisia',
-      url: 'wss://polkadot-rpc-tn.dwellir.com'
     },
     {
       isAvailable: true,

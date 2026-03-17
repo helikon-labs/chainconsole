@@ -1046,10 +1046,6 @@ export const prodParasKusamaCommon: EndpointOption[] = [
       name: 'Dwellir',
       url: 'wss://asset-hub-kusama-rpc.n.dwellir.com'
     }, {
-      isAvailable: false,
-      name: 'Dwellir Tunisia',
-      url: 'wss://statemine-rpc-tn.dwellir.com'
-    }, {
       isAvailable: true,
       name: 'IBP1',
       url: 'wss://asset-hub-kusama.ibp.network'
@@ -1094,10 +1090,6 @@ export const prodParasKusamaCommon: EndpointOption[] = [
       isAvailable: true,
       name: 'Dwellir',
       url: 'wss://bridge-hub-kusama-rpc.n.dwellir.com'
-    }, {
-      isAvailable: false,
-      name: 'Dwellir Tunisia',
-      url: 'wss://kusama-bridge-hub-rpc-tn.dwellir.com'
     }, {
       isAvailable: true,
       name: 'IBP1',
@@ -1299,10 +1291,6 @@ export const prodRelayKusama: EndpointOption = {
     isAvailable: true,
     name: 'Dwellir',
     url: 'wss://kusama-rpc.n.dwellir.com'
-  }, {
-    isAvailable: false,
-    name: 'Dwellir Tunisia',
-    url: 'wss://kusama-rpc-tn.dwellir.com'
   }, {
     isAvailable: true,
     name: 'Helixstreet',

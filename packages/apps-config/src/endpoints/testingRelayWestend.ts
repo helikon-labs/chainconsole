@@ -167,10 +167,6 @@ export const testParasWestendCommon: EndpointOption[] = [
       url: 'wss://asset-hub-westend-rpc.n.dwellir.com'
     }, {
       isAvailable: false,
-      name: 'Dwellir Tunisia',
-      url: 'wss://westmint-rpc-tn.dwellir.com'
-    }, {
-      isAvailable: false, // https://github.com/polkadot-js/apps/issues/9955
       name: 'OnFinality',
       url: 'wss://westmint.api.onfinality.io/public-ws'
     }, {
@@ -199,10 +195,6 @@ export const testParasWestendCommon: EndpointOption[] = [
       name: 'Dwellir',
       url: 'wss://bridge-hub-westend-rpc.n.dwellir.com'
     }, {
-      isAvailable: false,
-      name: 'Dwellir Tunisia',
-      url: 'wss://westend-bridge-hub-rpc-tn.dwellir.com'
-    }, {
       isAvailable: false, // https://github.com/polkadot-js/apps/issues/9960
       name: 'OnFinality',
       url: 'wss://bridgehub-westend.api.onfinality.io/public-ws'
@@ -226,10 +218,6 @@ export const testParasWestendCommon: EndpointOption[] = [
       isAvailable: true,
       name: 'Dwellir',
       url: 'wss://collectives-westend-rpc.n.dwellir.com'
-    }, {
-      isAvailable: false,
-      name: 'Dwellir Tunisia',
-      url: 'wss://westend-collectives-rpc-tn.dwellir.com'
     }, {
       isAvailable: true,
       name: 'Parity',
@@ -304,10 +292,6 @@ export const testRelayWestend: EndpointOption = {
     url: 'wss://westend-rpc.n.dwellir.com'
   }, {
     isAvailable: false,
-    name: 'Dwellir Tunisia',
-    url: 'wss://westend-rpc-tn.dwellir.com'
-  }, {
-    isAvailable: false, // https://github.com/polkadot-js/apps/issues/10728
     name: 'LuckyFriday',
     url: 'wss://rpc-westend.luckyfriday.io'
   }, {
