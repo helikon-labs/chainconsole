@@ -10,7 +10,7 @@ import { styled } from '@polkadot/react-components';
 import { useApi } from '@polkadot/react-hooks';
 import { NodeName, NodeVersion } from '@polkadot/react-query';
 
-const appsVersion = `apps v${packageInfo.version.replace('-x', '')}`;
+const appsVersion = `chain-console v${packageInfo.version.replace('-x', '')}`;
 
 function NodeInfo ({ className = '' }: Props): React.ReactElement<Props> {
   const { api, isApiReady } = useApi();
