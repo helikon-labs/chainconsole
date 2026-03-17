@@ -42,7 +42,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://acala-rpc-3.aca-api.network/ws'
       },
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'Dwellir',
         url: 'wss://acala-rpc.n.dwellir.com'
       },
@@ -1588,7 +1588,7 @@ export const prodParasPolkadotCommon: EndpointOption[] = [
         url: 'wss://people-polkadot.ibp.network'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'IBP2',
         url: 'wss://people-polkadot.dotters.network'
       },
