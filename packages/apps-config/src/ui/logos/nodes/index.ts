@@ -38,6 +38,7 @@ export { nodesDancelightSVG } from './generated/dancelightSVG.js';
 export { nodesDarwiniaKoiSVG } from './generated/darwinia-koiSVG.js';
 export { nodesDarwiniaSVG } from './generated/darwiniaSVG.js';
 export { nodesDatahighwayPNG } from './generated/datahighwayPNG.js';
+export { nodesDepowSVG } from './generated/depowSVG.js';
 export { nodesDockPNG } from './generated/dockPNG.js';
 export { nodesDolphinSVG } from './generated/dolphinSVG.js';
 export { nodesDotmogSVG } from './generated/dotmogSVG.js';
