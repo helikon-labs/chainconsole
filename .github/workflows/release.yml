@@ -19,11 +19,12 @@ jobs:
       - name: get release notes
         id: notes
         run: |
-          LAST_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "")
-          if [ -z "$LAST_TAG" ]; then
+          CURRENT_TAG="${{ github.ref_name }}"
+          PREV_TAG=$(git tag --sort=-version:refname | grep -v "^${CURRENT_TAG}$" | head -1)
+          if [ -z "$PREV_TAG" ]; then
             COMMITS=$(git log --pretty=format:"- %s (%h)" HEAD)
           else
-            COMMITS=$(git log --pretty=format:"- %s (%h)" "${LAST_TAG}..HEAD")
+            COMMITS=$(git log --pretty=format:"- %s (%h)" "${PREV_TAG}..HEAD")
           fi
           {
             echo "body<<EOF"
@@ -34,6 +35,6 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gh release create "$tag" \
-            --title "$tag" \
+          gh release create "${{ github.ref_name }}" \
+            --title "${{ github.ref_name }}" \
             --notes "${{ steps.notes.outputs.body }}"
