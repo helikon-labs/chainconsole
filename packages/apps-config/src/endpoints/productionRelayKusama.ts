@@ -198,7 +198,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     info: 'curio',
     paraId: 3339,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Curio',
       url: 'wss://parachain.curioinvest.com/'
     }],
