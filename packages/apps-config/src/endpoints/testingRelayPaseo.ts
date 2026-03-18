@@ -645,7 +645,7 @@ export const testParasPaseoCommon: EndpointOption[] = [
       name: 'IBP2',
       url: 'wss://coretime-paseo.dotters.network'
     }, {
-      isAvailable: false, // https://github.com/polkadot-js/apps/issues/11587
+      isAvailable: true,
       name: 'ParaNodes',
       url: 'wss://paseo-coretime.paranodes.io'
     }],
