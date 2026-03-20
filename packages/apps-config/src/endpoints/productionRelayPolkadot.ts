@@ -180,7 +180,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://astar-rpc.n.dwellir.com'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'OnFinality',
         url: 'wss://astar.api.onfinality.io/public-ws'
       },
@@ -1309,7 +1309,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     paraId: 3417,
     providers: [
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'XodeCommunity',
         url: 'wss://polkadot-rpcnode.xode.net'
       },
