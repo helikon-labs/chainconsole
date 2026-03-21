@@ -73,7 +73,7 @@ async function checkEndpoint (url: string): Promise<boolean> {
       ws = new WebSocket(url);
       ws.onclose = () => settle(false);
       ws.onerror = () => settle(false);
-      ws.onopen = () => ws?.send('{"id":"1","jsonrpc":"2.0","method":"system_health","params":[]}');
+      ws.onopen = () => ws?.send('{"id":"1","jsonrpc":"2.0","method":"chain_getFinalizedHead","params":[]}');
 
       ws.onmessage = (msg: { data: string }): void => {
         try {
