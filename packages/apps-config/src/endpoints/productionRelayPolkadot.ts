@@ -42,7 +42,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://acala-rpc-3.aca-api.network/ws'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'Dwellir',
         url: 'wss://acala-rpc.n.dwellir.com'
       },
@@ -165,7 +165,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://rpc.astar.network'
       },
       {
-        isAvailable: false, // https://github.com/polkadot-js/apps/issues/11827
+        isAvailable: true,
         name: 'Automata 1RPC',
         url: 'wss://1rpc.io/astr'
       },
@@ -180,7 +180,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://astar-rpc.n.dwellir.com'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'OnFinality',
         url: 'wss://astar.api.onfinality.io/public-ws'
       },
@@ -1309,7 +1309,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     paraId: 3417,
     providers: [
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'XodeCommunity',
         url: 'wss://polkadot-rpcnode.xode.net'
       },
