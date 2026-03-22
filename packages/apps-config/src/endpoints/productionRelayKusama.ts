@@ -821,7 +821,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     info: 'robonomics',
     paraId: 2048,
     providers: [{
-      isAvailable: false,
+      isAvailable: true,
       name: 'Airalab',
       url: 'wss://kusama.rpc.robonomics.network/'
     }, {
