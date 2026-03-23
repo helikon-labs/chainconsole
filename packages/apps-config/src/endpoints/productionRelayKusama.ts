@@ -629,7 +629,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
       name: 'RadiumBlock',
       url: 'wss://moonriver.public.curie.radiumblock.co/ws'
     }, {
-      isAvailable: false,
+      isAvailable: true,
       name: 'UnitedBloc',
       url: 'wss://moonriver.unitedbloc.com'
     }],
