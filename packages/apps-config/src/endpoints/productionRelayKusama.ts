@@ -629,7 +629,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
       name: 'RadiumBlock',
       url: 'wss://moonriver.public.curie.radiumblock.co/ws'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'UnitedBloc',
       url: 'wss://moonriver.unitedbloc.com'
     }],
@@ -1280,7 +1280,7 @@ export const prodRelayKusama: EndpointOption = {
     name: 'Geometry Labs',
     url: 'wss://kusama.geometry.io/websockets'
   }, {
-    isAvailable: false,
+    isAvailable: true,
     name: 'Automata 1RPC',
     url: 'wss://1rpc.io/ksm'
   }, {
