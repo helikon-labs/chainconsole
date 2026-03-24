@@ -276,7 +276,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
   {
     info: 'crown-sterling',
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Crown Sterling',
       url: 'wss://blockchain.crownsterling.io'
     }],
