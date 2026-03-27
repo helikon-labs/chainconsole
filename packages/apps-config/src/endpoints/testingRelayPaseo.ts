@@ -208,7 +208,7 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     info: 'rococoHydraDX',
     paraId: 2034,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Galactic Council',
       url: 'wss://paseo-rpc.play.hydration.cloud'
     }],
