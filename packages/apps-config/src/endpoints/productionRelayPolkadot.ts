@@ -180,7 +180,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://astar-rpc.n.dwellir.com'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'OnFinality',
         url: 'wss://astar.api.onfinality.io/public-ws'
       },
@@ -880,7 +880,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://moonbeam-rpc.publicnode.com'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'Automata 1RPC',
         url: 'wss://1rpc.io/glmr'
       },
@@ -1377,7 +1377,7 @@ export const prodParasPolkadotCommon: EndpointOption[] = [
         url: 'wss://rpc-asset-hub-polkadot.luckyfriday.io'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'OnFinality',
         url: 'wss://statemint.api.onfinality.io/public-ws'
       },
