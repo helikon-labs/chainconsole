@@ -613,7 +613,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
       name: 'Allnodes',
       url: 'wss://moonriver-rpc.publicnode.com'
     }, {
-      isAvailable: false, // https://github.com/polkadot-js/apps/issues/11935
+      isAvailable: true,
       name: 'Dwellir',
       url: 'wss://moonriver-rpc.n.dwellir.com'
     }, {

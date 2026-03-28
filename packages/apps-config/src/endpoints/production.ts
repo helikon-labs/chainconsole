@@ -351,7 +351,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
       name: 'Commonwealth Labs',
       url: 'wss://mainnet2.edgewa.re'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'JelliedOwl Bangalore',
       url: 'wss://edgeware-rpc3.jelliedowl.net'
     }, {
