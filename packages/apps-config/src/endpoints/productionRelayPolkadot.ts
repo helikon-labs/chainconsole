@@ -42,7 +42,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://acala-rpc-3.aca-api.network/ws'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'Dwellir',
         url: 'wss://acala-rpc.n.dwellir.com'
       },
@@ -180,7 +180,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://astar-rpc.n.dwellir.com'
       },
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'OnFinality',
         url: 'wss://astar.api.onfinality.io/public-ws'
       },
@@ -616,7 +616,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://rpc.hydradx.cloud'
       },
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'Helikon',
         url: 'wss://rpc.helikon.io/hydradx'
       },
@@ -890,7 +890,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://moonbeam.public.blastapi.io'
       },
       {
-        isAvailable: false, // https://github.com/polkadot-js/apps/issues/11935
+        isAvailable: true,
         name: 'Dwellir',
         url: 'wss://moonbeam-rpc.n.dwellir.com'
       },
@@ -1106,7 +1106,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://phala.api.onfinality.io/public-ws'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'Phala',
         url: 'wss://api.phala.network/ws'
       },
