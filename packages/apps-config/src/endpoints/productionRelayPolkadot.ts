@@ -1358,6 +1358,11 @@ export const prodParasPolkadotCommon: EndpointOption[] = [
     providers: [
       {
         isAvailable: true,
+        name: 'DeServe',
+        url: 'wss://asset-hub.polkadot.rpc.deserve.network'
+      },
+      {
+        isAvailable: true,
         name: 'Dwellir',
         url: 'wss://asset-hub-polkadot-rpc.n.dwellir.com'
       },
