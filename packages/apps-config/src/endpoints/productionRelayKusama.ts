@@ -356,7 +356,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     info: 'kabocha',
     paraId: 2113,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'JelliedOwl',
       url: 'wss://kabocha.jelliedowl.net'
     }],
