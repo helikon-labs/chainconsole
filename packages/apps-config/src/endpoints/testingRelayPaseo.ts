@@ -116,7 +116,7 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     info: 'bulletin',
     paraId: 5118,
     providers: [{
-      isAvailable: false,
+      isAvailable: true,
       name: 'Parity',
       url: 'wss://paseo-bulletin-rpc.polkadot.io'
     }],
