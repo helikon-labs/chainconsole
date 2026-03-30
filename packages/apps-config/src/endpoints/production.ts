@@ -736,7 +736,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
   {
     info: 'stafi',
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Stafi Foundation',
       url: 'wss://mainnet-rpc.stafi.io'
     }],
