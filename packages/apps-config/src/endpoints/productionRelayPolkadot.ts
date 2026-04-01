@@ -42,7 +42,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://acala-rpc-3.aca-api.network/ws'
       },
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'Dwellir',
         url: 'wss://acala-rpc.n.dwellir.com'
       },
@@ -439,7 +439,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://darwinia-rpc.n.dwellir.com'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'Subquery',
         url: 'wss://darwinia.rpc.subquery.network/public/ws'
       }
@@ -880,7 +880,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://moonbeam-rpc.publicnode.com'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'Automata 1RPC',
         url: 'wss://1rpc.io/glmr'
       },
@@ -1665,7 +1665,7 @@ export const prodRelayPolkadot: EndpointOption = {
       url: 'wss://polkadot-rpc.n.dwellir.com'
     },
     {
-      isAvailable: true,
+      isAvailable: false,
       name: 'Helixstreet',
       url: 'wss://rpc-polkadot.helixstreet.io'
     },
