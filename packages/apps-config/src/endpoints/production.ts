@@ -135,7 +135,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
       name: 'Latent Holdings (Lite)',
       url: 'wss://lite.sub.latent.to:443'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'OnFinality (Archive)',
       url: 'wss://bittensor-finney.api.onfinality.io/public-ws'
     }, {
