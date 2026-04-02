@@ -223,7 +223,7 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     info: 'Hyperbridge',
     paraId: 4009,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'BlockOps',
       url: 'wss://hyperbridge-paseo-rpc.blockops.network'
     }],
