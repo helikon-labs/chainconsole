@@ -967,7 +967,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     paraId: 2043,
     providers: [
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'TraceLabs',
         url: 'wss://parachain-rpc.origin-trail.network'
       }
