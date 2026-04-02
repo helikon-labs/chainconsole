@@ -53,7 +53,7 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     info: 'paseoAmplitude',
     paraId: 2124,
     providers: [{
-      isAvailable: false,
+      isAvailable: true,
       name: 'PendulumChain',
       url: 'wss://rpc-foucoco.pendulumchain.tech'
     }],
@@ -102,7 +102,7 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
       name: 'Liebi',
       url: 'wss://bifrost-rpc.paseo.liebi.com/ws'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'Liebi2',
       url: 'wss://bifrost-rpc.paseo2.liebi.com/ws'
     }],
