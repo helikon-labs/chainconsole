@@ -915,7 +915,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://moonbeam.api.onfinality.io/public-ws'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'RadiumBlock',
         url: 'wss://moonbeam.public.curie.radiumblock.co/ws'
       },
