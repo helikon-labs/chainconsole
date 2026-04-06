@@ -616,7 +616,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://rpc.hydradx.cloud'
       },
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'Helikon',
         url: 'wss://rpc.helikon.io/hydradx'
       },
@@ -653,7 +653,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     paraId: 3367,
     providers: [
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'BlockOps',
         url: 'wss://hyperbridge-nexus-rpc.blockops.network'
       },
@@ -880,7 +880,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://moonbeam-rpc.publicnode.com'
       },
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'Automata 1RPC',
         url: 'wss://1rpc.io/glmr'
       },
