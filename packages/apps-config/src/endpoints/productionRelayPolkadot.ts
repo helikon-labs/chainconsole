@@ -42,7 +42,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://acala-rpc-3.aca-api.network/ws'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'Dwellir',
         url: 'wss://acala-rpc.n.dwellir.com'
       },
@@ -616,7 +616,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://rpc.hydradx.cloud'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'Helikon',
         url: 'wss://rpc.helikon.io/hydradx'
       },
@@ -880,7 +880,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://moonbeam-rpc.publicnode.com'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'Automata 1RPC',
         url: 'wss://1rpc.io/glmr'
       },
@@ -1494,7 +1494,7 @@ export const prodParasPolkadotCommon: EndpointOption[] = [
         url: 'wss://rpc-collectives-polkadot.luckyfriday.io'
       },
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'OnFinality',
         url: 'wss://collectives.api.onfinality.io/public-ws'
       },
