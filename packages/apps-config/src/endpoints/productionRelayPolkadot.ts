@@ -666,6 +666,11 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         isAvailable: true,
         name: 'IBP2',
         url: 'wss://nexus.dotters.network'
+      },
+      {
+        isAvailable: true,
+        name: 'Polytope Labs',
+        url: 'wss://nexus.rpc.polytope.technology'
       }
     ],
     text: 'Hyperbridge (Nexus)',
@@ -1310,13 +1315,18 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     providers: [
       {
         isAvailable: true,
-        name: 'XodeCommunity',
-        url: 'wss://polkadot-rpcnode.xode.net'
+        name: 'RakSonCebu',
+        url: 'wss://rakson-ceb-rpc.xode.net'
       },
       {
-        isAvailable: false,
-        name: 'Zeeve',
-        url: 'wss://xode-polkadot-rpc-01.zeeve.net/y0yxg038wn1fncc/rpc'
+        isAvailable: true,
+        name: 'RakSonKorea',
+        url: 'wss://rakson-rpc.xode.net'
+      },
+      {
+        isAvailable: true,
+        name: 'XodeCommunity',
+        url: 'wss://polkadot-rpcnode.xode.net'
       }
     ],
     text: 'Xode',

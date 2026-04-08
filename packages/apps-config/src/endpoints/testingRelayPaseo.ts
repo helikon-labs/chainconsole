@@ -222,11 +222,18 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     homepage: 'https://hyperbridge.network',
     info: 'Hyperbridge',
     paraId: 4009,
-    providers: [{
-      isAvailable: false,
-      name: 'BlockOps',
-      url: 'wss://hyperbridge-paseo-rpc.blockops.network'
-    }],
+    providers: [
+      {
+        isAvailable: false,
+        name: 'BlockOps',
+        url: 'wss://hyperbridge-paseo-rpc.blockops.network'
+      },
+      {
+        isAvailable: true,
+        name: 'Polytope Labs',
+        url: 'wss://gargantua.rpc.polytope.technology'
+      }
+    ],
     text: 'Hyperbridge (Gargantua)',
     ui: {
       color: '#ED6FF1',
@@ -527,7 +534,7 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
   {
     homepage: 'https://xode.net',
     info: 'paseoXode',
-    paraId: 4607,
+    paraId: 5160,
     providers: [{
       isAvailable: true,
       name: 'XodeCommunity',
