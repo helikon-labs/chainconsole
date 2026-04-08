@@ -879,7 +879,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
       name: 'OnFinality',
       url: 'wss://shiden.api.onfinality.io/public-ws'
     }, {
-      isAvailable: false,
+      isAvailable: true,
       name: 'RadiumBlock',
       url: 'wss://shiden.public.curie.radiumblock.co/ws'
     }],
