@@ -39,7 +39,7 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     info: 'Ajuna(paseo)',
     paraId: 2051,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Bajun Network',
       url: 'wss://rpc-paseo.ajuna.network'
     }],
