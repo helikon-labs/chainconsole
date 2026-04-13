@@ -42,7 +42,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://acala-rpc-3.aca-api.network/ws'
       },
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'Dwellir',
         url: 'wss://acala-rpc.n.dwellir.com'
       },
@@ -439,7 +439,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://darwinia-rpc.n.dwellir.com'
       },
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'Subquery',
         url: 'wss://darwinia.rpc.subquery.network/public/ws'
       }
@@ -915,7 +915,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://wss.api.moonbeam.network'
       },
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'OnFinality',
         url: 'wss://moonbeam.api.onfinality.io/public-ws'
       },
@@ -1436,7 +1436,7 @@ export const prodParasPolkadotCommon: EndpointOption[] = [
         url: 'wss://bridge-hub-polkadot.ibp.network'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'IBP2',
         url: 'wss://bridge-hub-polkadot.dotters.network'
       },
