@@ -146,7 +146,7 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     info: 'DePow',
     paraId: 5139,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'DePow',
       url: 'wss://rpc.depow.lat'
     }],
