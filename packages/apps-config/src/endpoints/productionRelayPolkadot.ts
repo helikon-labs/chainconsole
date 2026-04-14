@@ -388,22 +388,22 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     paraId: 2008,
     providers: [
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'Crust',
         url: 'wss://crust-parachain.crustapps.net'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'Crust APP',
         url: 'wss://crust-parachain.crustnetwork.app'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'Crust CC',
         url: 'wss://crust-parachain.crustnetwork.cc'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'Crust XYZ',
         url: 'wss://crust-parachain.crustnetwork.xyz'
       },
@@ -885,7 +885,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://moonbeam-rpc.publicnode.com'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'Automata 1RPC',
         url: 'wss://1rpc.io/glmr'
       },
@@ -925,7 +925,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://moonbeam.public.curie.radiumblock.co/ws'
       },
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'UnitedBloc',
         url: 'wss://moonbeam.unitedbloc.com'
       }
@@ -1436,7 +1436,7 @@ export const prodParasPolkadotCommon: EndpointOption[] = [
         url: 'wss://bridge-hub-polkadot.ibp.network'
       },
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'IBP2',
         url: 'wss://bridge-hub-polkadot.dotters.network'
       },

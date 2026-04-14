@@ -152,7 +152,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
   {
     info: 'bulletin',
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Amforc',
       url: 'wss://bulletin.rpc.amforc.com'
     }, {
@@ -160,7 +160,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
       name: 'Interweb',
       url: 'wss://rpc.interweb-it.com/bulletin'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'TurboFlakes',
       url: 'wss://bulletin.rpc.turboflakes.io'
     }, {
