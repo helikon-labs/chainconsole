@@ -1143,7 +1143,7 @@ export const prodParasKusamaCommon: EndpointOption[] = [
       name: 'IBP1',
       url: 'wss://coretime-kusama.ibp.network'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'IBP2',
       url: 'wss://coretime-kusama.dotters.network'
     }, {
@@ -1280,7 +1280,7 @@ export const prodRelayKusama: EndpointOption = {
     name: 'Geometry Labs',
     url: 'wss://kusama.geometry.io/websockets'
   }, {
-    isAvailable: true,
+    isAvailable: false,
     name: 'Automata 1RPC',
     url: 'wss://1rpc.io/ksm'
   }, {
@@ -1328,7 +1328,7 @@ export const prodRelayKusama: EndpointOption = {
     name: 'Stakeworld',
     url: 'wss://rpc-kusama.stakeworld.io'
   }, {
-    isAvailable: true,
+    isAvailable: false,
     name: 'SubQuery',
     url: 'wss://kusama.rpc.subquery.network/public/ws'
   }],
