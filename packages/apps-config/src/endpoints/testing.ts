@@ -743,7 +743,7 @@ export const testChains: Omit<EndpointOption, 'teleport'>[] = [
   {
     info: 'melodie',
     providers: [{
-      isAvailable: false,
+      isAvailable: true,
       name: 'Allfeat labs',
       url: 'wss://melodie-rpc.allfeat.io'
     }],
