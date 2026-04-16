@@ -659,7 +659,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
   {
     info: 'qf-network',
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'QF Network',
       url: 'wss://mainnet.qfnode.net'
     }],

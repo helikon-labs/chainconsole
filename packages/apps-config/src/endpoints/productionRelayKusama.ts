@@ -487,7 +487,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
       name: 'LuckyFriday',
       url: 'wss://rpc-kintsugi.luckyfriday.io/'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'OnFinality',
       url: 'wss://kintsugi.api.onfinality.io/public-ws'
     }],
@@ -1143,7 +1143,7 @@ export const prodParasKusamaCommon: EndpointOption[] = [
       name: 'IBP1',
       url: 'wss://coretime-kusama.ibp.network'
     }, {
-      isAvailable: false,
+      isAvailable: true,
       name: 'IBP2',
       url: 'wss://coretime-kusama.dotters.network'
     }, {
@@ -1280,7 +1280,7 @@ export const prodRelayKusama: EndpointOption = {
     name: 'Geometry Labs',
     url: 'wss://kusama.geometry.io/websockets'
   }, {
-    isAvailable: true,
+    isAvailable: false,
     name: 'Automata 1RPC',
     url: 'wss://1rpc.io/ksm'
   }, {
@@ -1300,7 +1300,7 @@ export const prodRelayKusama: EndpointOption = {
     name: 'IBP1',
     url: 'wss://kusama.ibp.network'
   }, {
-    isAvailable: true,
+    isAvailable: false,
     name: 'IBP2',
     url: 'wss://kusama.dotters.network'
   }, {
