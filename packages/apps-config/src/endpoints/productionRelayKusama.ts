@@ -1280,7 +1280,7 @@ export const prodRelayKusama: EndpointOption = {
     name: 'Geometry Labs',
     url: 'wss://kusama.geometry.io/websockets'
   }, {
-    isAvailable: false,
+    isAvailable: true,
     name: 'Automata 1RPC',
     url: 'wss://1rpc.io/ksm'
   }, {
@@ -1300,7 +1300,7 @@ export const prodRelayKusama: EndpointOption = {
     name: 'IBP1',
     url: 'wss://kusama.ibp.network'
   }, {
-    isAvailable: false,
+    isAvailable: true,
     name: 'IBP2',
     url: 'wss://kusama.dotters.network'
   }, {
