@@ -609,7 +609,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     info: 'moonriver',
     paraId: 2023,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Allnodes',
       url: 'wss://moonriver-rpc.publicnode.com'
     }, {
@@ -625,7 +625,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
       name: 'OnFinality',
       url: 'wss://moonriver.api.onfinality.io/public-ws'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'RadiumBlock',
       url: 'wss://moonriver.public.curie.radiumblock.co/ws'
     }, {
@@ -1095,7 +1095,7 @@ export const prodParasKusamaCommon: EndpointOption[] = [
       name: 'IBP1',
       url: 'wss://bridge-hub-kusama.ibp.network'
     }, {
-      isAvailable: false,
+      isAvailable: true,
       name: 'IBP2',
       url: 'wss://bridge-hub-kusama.dotters.network'
     }, {
@@ -1284,7 +1284,7 @@ export const prodRelayKusama: EndpointOption = {
     name: 'Automata 1RPC',
     url: 'wss://1rpc.io/ksm'
   }, {
-    isAvailable: true,
+    isAvailable: false,
     name: 'Allnodes',
     url: 'wss://kusama-rpc.publicnode.com'
   }, {
@@ -1328,7 +1328,7 @@ export const prodRelayKusama: EndpointOption = {
     name: 'Stakeworld',
     url: 'wss://rpc-kusama.stakeworld.io'
   }, {
-    isAvailable: true,
+    isAvailable: false,
     name: 'SubQuery',
     url: 'wss://kusama.rpc.subquery.network/public/ws'
   }],

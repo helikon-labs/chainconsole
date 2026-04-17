@@ -185,7 +185,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://astar.api.onfinality.io/public-ws'
       },
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'RadiumBlock',
         url: 'wss://astar.public.curie.radiumblock.co/ws'
       }
@@ -388,22 +388,22 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     paraId: 2008,
     providers: [
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'Crust',
         url: 'wss://crust-parachain.crustapps.net'
       },
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'Crust APP',
         url: 'wss://crust-parachain.crustnetwork.app'
       },
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'Crust CC',
         url: 'wss://crust-parachain.crustnetwork.cc'
       },
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'Crust XYZ',
         url: 'wss://crust-parachain.crustnetwork.xyz'
       },
@@ -880,7 +880,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     paraId: 2004,
     providers: [
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'Allnodes',
         url: 'wss://moonbeam-rpc.publicnode.com'
       },
@@ -925,7 +925,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://moonbeam.public.curie.radiumblock.co/ws'
       },
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'UnitedBloc',
         url: 'wss://moonbeam.unitedbloc.com'
       }
@@ -1275,7 +1275,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://us-ws.unique.network'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'Unique Asia',
         url: 'wss://asia-ws.unique.network'
       },
@@ -1655,7 +1655,7 @@ export const prodRelayPolkadot: EndpointOption = {
   ],
   providers: [
     {
-      isAvailable: true,
+      isAvailable: false,
       name: 'Allnodes',
       url: 'wss://polkadot-rpc.publicnode.com'
     },
