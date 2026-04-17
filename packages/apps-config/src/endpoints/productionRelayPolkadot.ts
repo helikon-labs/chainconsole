@@ -42,7 +42,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://acala-rpc-3.aca-api.network/ws'
       },
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'Dwellir',
         url: 'wss://acala-rpc.n.dwellir.com'
       },
@@ -880,7 +880,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     paraId: 2004,
     providers: [
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'Allnodes',
         url: 'wss://moonbeam-rpc.publicnode.com'
       },
@@ -925,7 +925,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://moonbeam.public.curie.radiumblock.co/ws'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'UnitedBloc',
         url: 'wss://moonbeam.unitedbloc.com'
       }
@@ -1275,7 +1275,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://us-ws.unique.network'
       },
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'Unique Asia',
         url: 'wss://asia-ws.unique.network'
       },
@@ -1655,7 +1655,7 @@ export const prodRelayPolkadot: EndpointOption = {
   ],
   providers: [
     {
-      isAvailable: false,
+      isAvailable: true,
       name: 'Allnodes',
       url: 'wss://polkadot-rpc.publicnode.com'
     },
@@ -1720,7 +1720,7 @@ export const prodRelayPolkadot: EndpointOption = {
       url: 'wss://rpc-polkadot.stakeworld.io'
     },
     {
-      isAvailable: true,
+      isAvailable: false,
       name: 'SubQuery',
       url: 'wss://polkadot.rpc.subquery.network/public/ws'
     }
