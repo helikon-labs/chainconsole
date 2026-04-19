@@ -1665,7 +1665,7 @@ export const prodRelayPolkadot: EndpointOption = {
       url: 'wss://polkadot.geometry.io/websockets'
     },
     {
-      isAvailable: true,
+      isAvailable: false,
       name: 'Automata 1RPC',
       url: 'wss://1rpc.io/dot'
     },
