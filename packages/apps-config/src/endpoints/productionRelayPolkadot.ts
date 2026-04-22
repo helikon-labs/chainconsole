@@ -42,7 +42,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://acala-rpc-3.aca-api.network/ws'
       },
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'Dwellir',
         url: 'wss://acala-rpc.n.dwellir.com'
       },
@@ -175,7 +175,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://astar.public.blastapi.io'
       },
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'Dwellir',
         url: 'wss://astar-rpc.n.dwellir.com'
       },
@@ -658,7 +658,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://hyperbridge-nexus-rpc.blockops.network'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'IBP1',
         url: 'wss://nexus.ibp.network'
       },
@@ -1426,7 +1426,7 @@ export const prodParasPolkadotCommon: EndpointOption[] = [
     paraId: 1002,
     providers: [
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'Dwellir',
         url: 'wss://bridge-hub-polkadot-rpc.n.dwellir.com'
       },

@@ -707,7 +707,7 @@ export const testRelayPaseo: EndpointOption = {
     name: 'Amforc',
     url: 'wss://paseo.rpc.amforc.com'
   }, {
-    isAvailable: false,
+    isAvailable: true,
     name: 'Dwellir',
     url: 'wss://paseo-rpc.n.dwellir.com'
   }, {
