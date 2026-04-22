@@ -36,7 +36,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     info: 'acurast',
     paraId: 2239,
     providers: [{
-      isAvailable: false,
+      isAvailable: true,
       name: 'Acurast',
       url: 'wss://public-rpc.canary.acurast.com'
     }, {
@@ -609,7 +609,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     info: 'moonriver',
     paraId: 2023,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Allnodes',
       url: 'wss://moonriver-rpc.publicnode.com'
     }, {
@@ -629,7 +629,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
       name: 'RadiumBlock',
       url: 'wss://moonriver.public.curie.radiumblock.co/ws'
     }, {
-      isAvailable: false,
+      isAvailable: true,
       name: 'UnitedBloc',
       url: 'wss://moonriver.unitedbloc.com'
     }],
@@ -871,7 +871,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
       name: 'Blast',
       url: 'wss://shiden.public.blastapi.io'
     }, {
-      isAvailable: false,
+      isAvailable: true,
       name: 'Dwellir',
       url: 'wss://shiden-rpc.n.dwellir.com'
     }, {
@@ -1143,7 +1143,7 @@ export const prodParasKusamaCommon: EndpointOption[] = [
       name: 'IBP1',
       url: 'wss://coretime-kusama.ibp.network'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'IBP2',
       url: 'wss://coretime-kusama.dotters.network'
     }, {
@@ -1181,7 +1181,7 @@ export const prodParasKusamaCommon: EndpointOption[] = [
       name: 'Dwellir',
       url: 'wss://encointer-kusama-rpc.n.dwellir.com'
     }, {
-      isAvailable: false,
+      isAvailable: true,
       name: 'Encointer Association',
       url: 'wss://kusama.api.encointer.org'
     }, {
