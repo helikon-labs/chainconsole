@@ -175,7 +175,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://astar.public.blastapi.io'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'Dwellir',
         url: 'wss://astar-rpc.n.dwellir.com'
       },
@@ -1426,7 +1426,7 @@ export const prodParasPolkadotCommon: EndpointOption[] = [
     paraId: 1002,
     providers: [
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'Dwellir',
         url: 'wss://bridge-hub-polkadot-rpc.n.dwellir.com'
       },
@@ -1603,7 +1603,7 @@ export const prodParasPolkadotCommon: EndpointOption[] = [
         url: 'wss://people-polkadot.ibp.network'
       },
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'IBP2',
         url: 'wss://people-polkadot.dotters.network'
       },
@@ -1665,7 +1665,7 @@ export const prodRelayPolkadot: EndpointOption = {
       url: 'wss://polkadot.geometry.io/websockets'
     },
     {
-      isAvailable: false,
+      isAvailable: true,
       name: 'Automata 1RPC',
       url: 'wss://1rpc.io/dot'
     },
@@ -1720,7 +1720,7 @@ export const prodRelayPolkadot: EndpointOption = {
       url: 'wss://rpc-polkadot.stakeworld.io'
     },
     {
-      isAvailable: true,
+      isAvailable: false,
       name: 'SubQuery',
       url: 'wss://polkadot.rpc.subquery.network/public/ws'
     }

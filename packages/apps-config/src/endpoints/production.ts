@@ -596,7 +596,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
   {
     info: 'nftmart',
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'NFTMart',
       url: 'wss://mainnet.nftmart.io/rpc/ws'
     }],
