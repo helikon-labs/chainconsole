@@ -707,7 +707,7 @@ export const testRelayPaseo: EndpointOption = {
     name: 'Amforc',
     url: 'wss://paseo.rpc.amforc.com'
   }, {
-    isAvailable: true,
+    isAvailable: false,
     name: 'Dwellir',
     url: 'wss://paseo-rpc.n.dwellir.com'
   }, {
@@ -715,7 +715,7 @@ export const testRelayPaseo: EndpointOption = {
     name: 'IBP1',
     url: 'wss://paseo.ibp.network'
   }, {
-    isAvailable: false,
+    isAvailable: true,
     name: 'IBP2',
     url: 'wss://paseo.dotters.network'
   }, {

@@ -287,7 +287,7 @@ export const testRelayWestend: EndpointOption = {
     ...testParasWestend
   ],
   providers: [{
-    isAvailable: true,
+    isAvailable: false,
     name: 'Dwellir',
     url: 'wss://westend-rpc.n.dwellir.com'
   }, {
