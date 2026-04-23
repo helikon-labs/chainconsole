@@ -609,7 +609,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     info: 'moonriver',
     paraId: 2023,
     providers: [{
-      isAvailable: false,
+      isAvailable: true,
       name: 'Allnodes',
       url: 'wss://moonriver-rpc.publicnode.com'
     }, {
@@ -1087,7 +1087,7 @@ export const prodParasKusamaCommon: EndpointOption[] = [
     isPeopleForIdentity: true,
     paraId: 1002,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Dwellir',
       url: 'wss://bridge-hub-kusama-rpc.n.dwellir.com'
     }, {
@@ -1143,7 +1143,7 @@ export const prodParasKusamaCommon: EndpointOption[] = [
       name: 'IBP1',
       url: 'wss://coretime-kusama.ibp.network'
     }, {
-      isAvailable: false,
+      isAvailable: true,
       name: 'IBP2',
       url: 'wss://coretime-kusama.dotters.network'
     }, {
@@ -1328,7 +1328,7 @@ export const prodRelayKusama: EndpointOption = {
     name: 'Stakeworld',
     url: 'wss://rpc-kusama.stakeworld.io'
   }, {
-    isAvailable: true,
+    isAvailable: false,
     name: 'SubQuery',
     url: 'wss://kusama.rpc.subquery.network/public/ws'
   }],

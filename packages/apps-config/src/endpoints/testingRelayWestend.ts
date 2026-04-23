@@ -162,7 +162,7 @@ export const testParasWestendCommon: EndpointOption[] = [
     isPeopleForIdentity: true,
     paraId: 1000,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Dwellir',
       url: 'wss://asset-hub-westend-rpc.n.dwellir.com'
     }, {
