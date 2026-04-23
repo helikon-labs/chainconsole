@@ -743,7 +743,7 @@ export const testChains: Omit<EndpointOption, 'teleport'>[] = [
   {
     info: 'melodie',
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Allfeat labs',
       url: 'wss://melodie-rpc.allfeat.io'
     }],
@@ -785,7 +785,7 @@ export const testChains: Omit<EndpointOption, 'teleport'>[] = [
       name: 'OnFinality',
       url: 'wss://moonbeam-alpha.api.onfinality.io/public-ws'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'RadiumBlock',
       url: 'wss://moonbase.public.curie.radiumblock.co/ws'
     }, {
