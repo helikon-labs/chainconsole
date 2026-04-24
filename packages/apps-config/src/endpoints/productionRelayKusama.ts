@@ -1087,7 +1087,7 @@ export const prodParasKusamaCommon: EndpointOption[] = [
     isPeopleForIdentity: true,
     paraId: 1002,
     providers: [{
-      isAvailable: false,
+      isAvailable: true,
       name: 'Dwellir',
       url: 'wss://bridge-hub-kusama-rpc.n.dwellir.com'
     }, {
@@ -1280,7 +1280,7 @@ export const prodRelayKusama: EndpointOption = {
     name: 'Geometry Labs',
     url: 'wss://kusama.geometry.io/websockets'
   }, {
-    isAvailable: true,
+    isAvailable: false,
     name: 'Automata 1RPC',
     url: 'wss://1rpc.io/ksm'
   }, {
@@ -1328,7 +1328,7 @@ export const prodRelayKusama: EndpointOption = {
     name: 'Stakeworld',
     url: 'wss://rpc-kusama.stakeworld.io'
   }, {
-    isAvailable: false,
+    isAvailable: true,
     name: 'SubQuery',
     url: 'wss://kusama.rpc.subquery.network/public/ws'
   }],

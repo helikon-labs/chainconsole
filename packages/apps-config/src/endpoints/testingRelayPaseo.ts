@@ -569,7 +569,7 @@ export const testParasPaseoCommon: EndpointOption[] = [
     isPeopleForIdentity: true,
     paraId: 1000,
     providers: [{
-      isAvailable: false,
+      isAvailable: true,
       name: 'Dwellir',
       url: 'wss://asset-hub-paseo-rpc.n.dwellir.com'
     }, {
