@@ -305,7 +305,7 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     isPeopleForIdentity: true,
     paraId: 2281,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Kippu',
       url: 'wss://testnet.kreivo.kippu.rocks/'
     }],
@@ -627,7 +627,7 @@ export const testParasPaseoCommon: EndpointOption[] = [
       name: 'IBP1',
       url: 'wss://collectives-paseo.ibp.network'
     }, {
-      isAvailable: false,
+      isAvailable: true,
       name: 'IBP2',
       url: 'wss://collectives-paseo.dotters.network'
     }],

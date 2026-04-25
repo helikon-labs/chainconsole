@@ -925,7 +925,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://moonbeam.public.curie.radiumblock.co/ws'
       },
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'UnitedBloc',
         url: 'wss://moonbeam.unitedbloc.com'
       }
@@ -1720,7 +1720,7 @@ export const prodRelayPolkadot: EndpointOption = {
       url: 'wss://rpc-polkadot.stakeworld.io'
     },
     {
-      isAvailable: false,
+      isAvailable: true,
       name: 'SubQuery',
       url: 'wss://polkadot.rpc.subquery.network/public/ws'
     }
