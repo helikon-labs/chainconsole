@@ -42,7 +42,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://acala-rpc-3.aca-api.network/ws'
       },
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'Dwellir',
         url: 'wss://acala-rpc.n.dwellir.com'
       },
@@ -658,7 +658,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://hyperbridge-nexus-rpc.blockops.network'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'IBP1',
         url: 'wss://nexus.ibp.network'
       },
@@ -1675,7 +1675,7 @@ export const prodRelayPolkadot: EndpointOption = {
       url: 'wss://polkadot-rpc.n.dwellir.com'
     },
     {
-      isAvailable: true,
+      isAvailable: false,
       name: 'Helixstreet',
       url: 'wss://rpc-polkadot.helixstreet.io'
     },
@@ -1720,7 +1720,7 @@ export const prodRelayPolkadot: EndpointOption = {
       url: 'wss://rpc-polkadot.stakeworld.io'
     },
     {
-      isAvailable: false,
+      isAvailable: true,
       name: 'SubQuery',
       url: 'wss://polkadot.rpc.subquery.network/public/ws'
     }
