@@ -606,7 +606,7 @@ export const testParasPaseoCommon: EndpointOption[] = [
       name: 'IBP1',
       url: 'wss://bridge-hub-paseo.ibp.network'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'IBP2',
       url: 'wss://bridge-hub-paseo.dotters.network'
     }],
@@ -623,11 +623,11 @@ export const testParasPaseoCommon: EndpointOption[] = [
     isPeopleForIdentity: true,
     paraId: 1001,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'IBP1',
       url: 'wss://collectives-paseo.ibp.network'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'IBP2',
       url: 'wss://collectives-paseo.dotters.network'
     }],
