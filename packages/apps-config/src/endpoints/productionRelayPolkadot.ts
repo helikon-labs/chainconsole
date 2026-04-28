@@ -42,12 +42,12 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://acala-rpc-3.aca-api.network/ws'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'Dwellir',
         url: 'wss://acala-rpc.n.dwellir.com'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'IBP1',
         url: 'wss://acala.ibp.network'
       },
@@ -111,7 +111,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://rpc-para.ajuna.network'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'IBP1',
         url: 'wss://ajuna.ibp.network'
       },
@@ -219,7 +219,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     paraId: 2030,
     providers: [
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'IBP1',
         url: 'wss://bifrost-polkadot.ibp.network'
       },
@@ -900,7 +900,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://moonbeam-rpc.n.dwellir.com'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'IBP1',
         url: 'wss://moonbeam.ibp.network'
       },
@@ -1255,7 +1255,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://ws.unique.network'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'IBP1',
         url: 'wss://unique.ibp.network'
       },
@@ -1675,7 +1675,7 @@ export const prodRelayPolkadot: EndpointOption = {
       url: 'wss://polkadot-rpc.n.dwellir.com'
     },
     {
-      isAvailable: false,
+      isAvailable: true,
       name: 'Helixstreet',
       url: 'wss://rpc-polkadot.helixstreet.io'
     },
