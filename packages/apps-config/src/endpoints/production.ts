@@ -449,7 +449,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
       name: 'Joyutils',
       url: 'wss://rpc.joyutils.org'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'Jsgenesis',
       url: 'wss://rpc.joystream.org'
     }, {
