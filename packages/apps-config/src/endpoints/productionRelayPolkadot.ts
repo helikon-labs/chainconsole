@@ -1489,7 +1489,7 @@ export const prodParasPolkadotCommon: EndpointOption[] = [
         url: 'wss://collectives-polkadot-rpc.n.dwellir.com'
       },
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'IBP1',
         url: 'wss://collectives-polkadot.ibp.network'
       },

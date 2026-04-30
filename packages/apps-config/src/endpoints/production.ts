@@ -207,7 +207,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
   {
     info: 'chainflip',
     providers: [{
-      isAvailable: false,
+      isAvailable: true,
       name: 'chainflip',
       url: 'wss://mainnet-archive.chainflip.io'
     }],
@@ -301,7 +301,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
       name: 'Crust Network CC',
       url: 'wss://rpc.crustnetwork.cc'
     }, {
-      isAvailable: false,
+      isAvailable: true,
       name: 'Crust Network XYZ',
       url: 'wss://rpc.crustnetwork.xyz'
     }, {
