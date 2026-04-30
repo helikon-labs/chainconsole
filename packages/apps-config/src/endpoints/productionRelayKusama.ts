@@ -483,7 +483,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
       name: 'Kintsugi Labs',
       url: 'wss://api-kusama.interlay.io/parachain'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'LuckyFriday',
       url: 'wss://rpc-kintsugi.luckyfriday.io/'
     }, {
@@ -1091,7 +1091,7 @@ export const prodParasKusamaCommon: EndpointOption[] = [
       name: 'Dwellir',
       url: 'wss://bridge-hub-kusama-rpc.n.dwellir.com'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'IBP1',
       url: 'wss://bridge-hub-kusama.ibp.network'
     }, {
@@ -1139,11 +1139,11 @@ export const prodParasKusamaCommon: EndpointOption[] = [
       name: 'Dwellir',
       url: 'wss://coretime-kusama-rpc.n.dwellir.com'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'IBP1',
       url: 'wss://coretime-kusama.ibp.network'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'IBP2',
       url: 'wss://coretime-kusama.dotters.network'
     }, {
@@ -1227,7 +1227,7 @@ export const prodParasKusamaCommon: EndpointOption[] = [
       name: 'Helixstreet',
       url: 'wss://rpc-people-kusama.helixstreet.io'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'IBP1',
       url: 'wss://people-kusama.ibp.network'
     }, {
