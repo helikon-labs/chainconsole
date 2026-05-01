@@ -116,7 +116,7 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     info: 'bulletin',
     paraId: 5118,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Parity',
       url: 'wss://paseo-bulletin-rpc.polkadot.io'
     }],
@@ -606,7 +606,7 @@ export const testParasPaseoCommon: EndpointOption[] = [
       name: 'IBP1',
       url: 'wss://bridge-hub-paseo.ibp.network'
     }, {
-      isAvailable: false,
+      isAvailable: true,
       name: 'IBP2',
       url: 'wss://bridge-hub-paseo.dotters.network'
     }],
@@ -715,7 +715,7 @@ export const testRelayPaseo: EndpointOption = {
     name: 'IBP1',
     url: 'wss://paseo.ibp.network'
   }, {
-    isAvailable: true,
+    isAvailable: false,
     name: 'IBP2',
     url: 'wss://paseo.dotters.network'
   }, {
