@@ -415,10 +415,6 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     paraId: 2004,
     providers: [{
       isAvailable: false,
-      name: 'Helikon',
-      url: 'wss://rpc.helikon.io/khala'
-    }, {
-      isAvailable: false,
       name: 'OnFinality',
       url: 'wss://khala.api.onfinality.io/public-ws'
     }, {

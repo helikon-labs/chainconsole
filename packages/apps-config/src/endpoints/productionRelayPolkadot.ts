@@ -1102,11 +1102,6 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
       },
       {
         isAvailable: false,
-        name: 'Helikon',
-        url: 'wss://rpc.helikon.io/phala'
-      },
-      {
-        isAvailable: false,
         name: 'OnFinality',
         url: 'wss://phala.api.onfinality.io/public-ws'
       },
