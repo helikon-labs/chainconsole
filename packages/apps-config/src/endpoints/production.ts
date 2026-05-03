@@ -513,7 +513,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
       name: 'Dwellir',
       url: 'wss://liberland-rpc.n.dwellir.com'
     }, {
-      isAvailable: false,
+      isAvailable: true,
       name: 'Liberland Government',
       url: 'wss://mainnet.liberland.org'
     }],
