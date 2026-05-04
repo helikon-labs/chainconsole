@@ -535,7 +535,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     info: 'krest',
     paraId: 2241,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Krest',
       url: 'wss://wss-krest.peaq.network/'
     }, {
@@ -625,7 +625,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
       name: 'RadiumBlock',
       url: 'wss://moonriver.public.curie.radiumblock.co/ws'
     }, {
-      isAvailable: false,
+      isAvailable: true,
       name: 'UnitedBloc',
       url: 'wss://moonriver.unitedbloc.com'
     }],
