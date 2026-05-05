@@ -405,7 +405,7 @@ export const testChains: Omit<EndpointOption, 'teleport'>[] = [
   {
     info: 'encointer',
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Encointer Association',
       url: 'wss://gesell.encointer.org'
     }],
