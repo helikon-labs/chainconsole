@@ -305,7 +305,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
       name: 'Crust Network XYZ',
       url: 'wss://rpc.crustnetwork.xyz'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'OnFinality',
       url: 'wss://crust.api.onfinality.io/public-ws'
     }],

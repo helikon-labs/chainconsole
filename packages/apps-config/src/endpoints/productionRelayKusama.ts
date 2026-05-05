@@ -817,7 +817,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     info: 'robonomics',
     paraId: 2048,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Airalab',
       url: 'wss://kusama.rpc.robonomics.network/'
     }, {
@@ -1139,7 +1139,7 @@ export const prodParasKusamaCommon: EndpointOption[] = [
       name: 'IBP1',
       url: 'wss://coretime-kusama.ibp.network'
     }, {
-      isAvailable: false,
+      isAvailable: true,
       name: 'IBP2',
       url: 'wss://coretime-kusama.dotters.network'
     }, {
@@ -1147,7 +1147,7 @@ export const prodParasKusamaCommon: EndpointOption[] = [
       name: 'LuckyFriday',
       url: 'wss://rpc-coretime-kusama.luckyfriday.io'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'OnFinality',
       url: 'wss://coretime-kusama.api.onfinality.io/public-ws'
     }, {
@@ -1235,7 +1235,7 @@ export const prodParasKusamaCommon: EndpointOption[] = [
       name: 'LuckyFriday',
       url: 'wss://rpc-people-kusama.luckyfriday.io'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'OnFinality',
       url: 'wss://people-kusama.api.onfinality.io/public-ws'
     }, {
@@ -1276,7 +1276,7 @@ export const prodRelayKusama: EndpointOption = {
     name: 'Geometry Labs',
     url: 'wss://kusama.geometry.io/websockets'
   }, {
-    isAvailable: true,
+    isAvailable: false,
     name: 'Automata 1RPC',
     url: 'wss://1rpc.io/ksm'
   }, {
