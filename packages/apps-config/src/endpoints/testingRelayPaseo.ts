@@ -355,7 +355,7 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     info: 'muse',
     paraId: 3369,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Parity',
       url: 'wss://paseo-muse-rpc.polkadot.io'
     }],

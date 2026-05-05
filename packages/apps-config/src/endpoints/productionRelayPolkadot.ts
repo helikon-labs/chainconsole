@@ -42,7 +42,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://acala-rpc-3.aca-api.network/ws'
       },
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'Dwellir',
         url: 'wss://acala-rpc.n.dwellir.com'
       },
@@ -616,7 +616,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://rpc.hydradx.cloud'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'Helikon',
         url: 'wss://rpc.helikon.io/hydradx'
       },
@@ -925,7 +925,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://moonbeam.public.curie.radiumblock.co/ws'
       },
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'UnitedBloc',
         url: 'wss://moonbeam.unitedbloc.com'
       }
@@ -955,7 +955,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     paraId: 3369,
     providers: [
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'parity',
         url: 'wss://polkadot-mythos-rpc.polkadot.io'
       }
