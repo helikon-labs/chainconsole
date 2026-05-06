@@ -355,7 +355,7 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     info: 'muse',
     paraId: 3369,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Parity',
       url: 'wss://paseo-muse-rpc.polkadot.io'
     }],
@@ -715,7 +715,7 @@ export const testRelayPaseo: EndpointOption = {
     name: 'IBP1',
     url: 'wss://paseo.ibp.network'
   }, {
-    isAvailable: true,
+    isAvailable: false,
     name: 'IBP2',
     url: 'wss://paseo.dotters.network'
   }, {
