@@ -42,7 +42,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://acala-rpc-3.aca-api.network/ws'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'Dwellir',
         url: 'wss://acala-rpc.n.dwellir.com'
       },
@@ -885,7 +885,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://moonbeam-rpc.publicnode.com'
       },
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'Automata 1RPC',
         url: 'wss://1rpc.io/glmr'
       },
@@ -1431,7 +1431,7 @@ export const prodParasPolkadotCommon: EndpointOption[] = [
         url: 'wss://bridge-hub-polkadot.ibp.network'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'IBP2',
         url: 'wss://bridge-hub-polkadot.dotters.network'
       },

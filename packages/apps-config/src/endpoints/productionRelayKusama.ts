@@ -1046,7 +1046,7 @@ export const prodParasKusamaCommon: EndpointOption[] = [
       name: 'IBP1',
       url: 'wss://asset-hub-kusama.ibp.network'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'IBP2',
       url: 'wss://asset-hub-kusama.dotters.network'
     }, {
@@ -1139,7 +1139,7 @@ export const prodParasKusamaCommon: EndpointOption[] = [
       name: 'IBP1',
       url: 'wss://coretime-kusama.ibp.network'
     }, {
-      isAvailable: false,
+      isAvailable: true,
       name: 'IBP2',
       url: 'wss://coretime-kusama.dotters.network'
     }, {
