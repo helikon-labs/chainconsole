@@ -139,7 +139,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
       name: 'Liebi',
       url: 'wss://bifrost-rpc.liebi.com/ws'
     }, {
-      isAvailable: false,
+      isAvailable: true,
       name: 'LiebiUS',
       url: 'wss://us.bifrost-rpc.liebi.com/ws'
     }, {
@@ -1139,7 +1139,7 @@ export const prodParasKusamaCommon: EndpointOption[] = [
       name: 'IBP1',
       url: 'wss://coretime-kusama.ibp.network'
     }, {
-      isAvailable: false,
+      isAvailable: true,
       name: 'IBP2',
       url: 'wss://coretime-kusama.dotters.network'
     }, {
