@@ -617,11 +617,6 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
       },
       {
         isAvailable: true,
-        name: 'Helikon',
-        url: 'wss://rpc.helikon.io/hydradx'
-      },
-      {
-        isAvailable: true,
         name: 'IBP1',
         url: 'wss://hydration.ibp.network'
       },
