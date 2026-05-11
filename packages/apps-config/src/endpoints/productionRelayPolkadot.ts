@@ -814,7 +814,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://laos-rpc.n.dwellir.com'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'laosfoundation.io',
         url: 'wss://rpc.laos.laosfoundation.io'
       }
