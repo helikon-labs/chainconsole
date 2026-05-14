@@ -539,7 +539,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
       name: 'Krest',
       url: 'wss://wss-krest.peaq.network/'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'OnFinality',
       url: 'wss://krest.api.onfinality.io/public-ws'
     }, {
