@@ -98,7 +98,7 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     info: 'Bifrost(Paseo)',
     paraId: 2030,
     providers: [{
-      isAvailable: false,
+      isAvailable: true,
       name: 'Liebi',
       url: 'wss://bifrost-rpc.paseo.liebi.com/ws'
     }, {
