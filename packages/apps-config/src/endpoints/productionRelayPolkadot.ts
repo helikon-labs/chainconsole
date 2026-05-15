@@ -42,7 +42,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://acala-rpc-3.aca-api.network/ws'
       },
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'Dwellir',
         url: 'wss://acala-rpc.n.dwellir.com'
       },
@@ -814,7 +814,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://laos-rpc.n.dwellir.com'
       },
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'laosfoundation.io',
         url: 'wss://rpc.laos.laosfoundation.io'
       }
@@ -1304,17 +1304,17 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     paraId: 3417,
     providers: [
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'RakSonCebu',
         url: 'wss://rakson-ceb-rpc.xode.net'
       },
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'RakSonKorea',
         url: 'wss://rakson-rpc.xode.net'
       },
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'XodeCommunity',
         url: 'wss://polkadot-rpcnode.xode.net'
       }
