@@ -42,7 +42,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://acala-rpc-3.aca-api.network/ws'
       },
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'Dwellir',
         url: 'wss://acala-rpc.n.dwellir.com'
       },
@@ -439,7 +439,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://darwinia-rpc.n.dwellir.com'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'Subquery',
         url: 'wss://darwinia.rpc.subquery.network/public/ws'
       }
@@ -1304,17 +1304,17 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     paraId: 3417,
     providers: [
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'RakSonCebu',
         url: 'wss://rakson-ceb-rpc.xode.net'
       },
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'RakSonKorea',
         url: 'wss://rakson-rpc.xode.net'
       },
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'XodeCommunity',
         url: 'wss://polkadot-rpcnode.xode.net'
       }
@@ -1426,7 +1426,7 @@ export const prodParasPolkadotCommon: EndpointOption[] = [
         url: 'wss://bridge-hub-polkadot.ibp.network'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'IBP2',
         url: 'wss://bridge-hub-polkadot.dotters.network'
       },
