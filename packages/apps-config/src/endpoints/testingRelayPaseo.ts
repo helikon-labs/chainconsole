@@ -602,7 +602,7 @@ export const testParasPaseoCommon: EndpointOption[] = [
     isPeopleForIdentity: true,
     paraId: 1002,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'IBP1',
       url: 'wss://bridge-hub-paseo.ibp.network'
     }, {
