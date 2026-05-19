@@ -53,7 +53,7 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     info: 'paseoAmplitude',
     paraId: 2124,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'PendulumChain',
       url: 'wss://rpc-foucoco.pendulumchain.tech'
     }],
@@ -193,7 +193,7 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     info: 'heima-paseo',
     paraId: 2106,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Heima',
       url: 'wss://rpc.paseo-parachain.heima.network'
     }],
@@ -551,7 +551,7 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     info: 'ZeitgeistBatteryStation',
     paraId: 2101,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Zeitgeist',
       url: 'wss://bsr.zeitgeist.pm'
     }],
@@ -606,7 +606,7 @@ export const testParasPaseoCommon: EndpointOption[] = [
       name: 'IBP1',
       url: 'wss://bridge-hub-paseo.ibp.network'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'IBP2',
       url: 'wss://bridge-hub-paseo.dotters.network'
     }],

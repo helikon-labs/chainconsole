@@ -139,7 +139,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
       name: 'Liebi',
       url: 'wss://bifrost-rpc.liebi.com/ws'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'LiebiUS',
       url: 'wss://us.bifrost-rpc.liebi.com/ws'
     }, {
@@ -1177,7 +1177,7 @@ export const prodParasKusamaCommon: EndpointOption[] = [
       name: 'Dwellir',
       url: 'wss://encointer-kusama-rpc.n.dwellir.com'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'Encointer Association',
       url: 'wss://kusama.api.encointer.org'
     }, {
@@ -1324,7 +1324,7 @@ export const prodRelayKusama: EndpointOption = {
     name: 'Stakeworld',
     url: 'wss://rpc-kusama.stakeworld.io'
   }, {
-    isAvailable: true,
+    isAvailable: false,
     name: 'SubQuery',
     url: 'wss://kusama.rpc.subquery.network/public/ws'
   }],
