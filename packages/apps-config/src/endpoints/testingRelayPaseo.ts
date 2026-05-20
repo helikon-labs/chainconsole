@@ -193,7 +193,7 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     info: 'heima-paseo',
     paraId: 2106,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Heima',
       url: 'wss://rpc.paseo-parachain.heima.network'
     }],
@@ -305,7 +305,7 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     isPeopleForIdentity: true,
     paraId: 2281,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Kippu',
       url: 'wss://testnet.kreivo.kippu.rocks/'
     }],
@@ -536,7 +536,7 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     info: 'paseoXode',
     paraId: 5160,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'XodeCommunity',
       url: 'wss://paseo-rpcnode.xode.net'
     }],
@@ -551,7 +551,7 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     info: 'ZeitgeistBatteryStation',
     paraId: 2101,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Zeitgeist',
       url: 'wss://bsr.zeitgeist.pm'
     }],
