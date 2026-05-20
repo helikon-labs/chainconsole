@@ -629,7 +629,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
       name: 'OnFinality',
       url: 'wss://polkadex.api.onfinality.io/public-ws'
     }, {
-      isAvailable: false,
+      isAvailable: true,
       name: 'PolkadexSup',
       url: 'wss://so.polkadex.ee'
     }, {
@@ -819,7 +819,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
   {
     info: 'torus',
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'mainnet',
       url: 'wss://api.torus.network'
     }],
