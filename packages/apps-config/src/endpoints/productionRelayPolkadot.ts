@@ -1538,7 +1538,7 @@ export const prodParasPolkadotCommon: EndpointOption[] = [
         url: 'wss://coretime-polkadot.ibp.network'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'IBP2',
         url: 'wss://coretime-polkadot.dotters.network'
       },
@@ -1675,7 +1675,7 @@ export const prodRelayPolkadot: EndpointOption = {
       url: 'wss://polkadot.ibp.network'
     },
     {
-      isAvailable: true,
+      isAvailable: false,
       name: 'IBP2',
       url: 'wss://polkadot.dotters.network'
     },
