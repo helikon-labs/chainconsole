@@ -819,7 +819,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
   {
     info: 'torus',
     providers: [{
-      isAvailable: false,
+      isAvailable: true,
       name: 'mainnet',
       url: 'wss://api.torus.network'
     }],
