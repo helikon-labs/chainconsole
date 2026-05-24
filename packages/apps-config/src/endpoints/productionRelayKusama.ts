@@ -514,7 +514,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     isPeopleForIdentity: true,
     paraId: 2281,
     providers: [{
-      isAvailable: false,
+      isAvailable: true,
       name: 'Kippu',
       url: 'wss://kreivo.kippu.rocks/'
     }, {
@@ -539,7 +539,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
       name: 'Krest',
       url: 'wss://wss-krest.peaq.network/'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'OnFinality',
       url: 'wss://krest.api.onfinality.io/public-ws'
     }, {
@@ -1091,7 +1091,7 @@ export const prodParasKusamaCommon: EndpointOption[] = [
       name: 'IBP1',
       url: 'wss://bridge-hub-kusama.ibp.network'
     }, {
-      isAvailable: false,
+      isAvailable: true,
       name: 'IBP2',
       url: 'wss://bridge-hub-kusama.dotters.network'
     }, {
