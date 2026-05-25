@@ -514,7 +514,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     isPeopleForIdentity: true,
     paraId: 2281,
     providers: [{
-      isAvailable: false,
+      isAvailable: true,
       name: 'Kippu',
       url: 'wss://kreivo.kippu.rocks/'
     }, {
@@ -1091,7 +1091,7 @@ export const prodParasKusamaCommon: EndpointOption[] = [
       name: 'IBP1',
       url: 'wss://bridge-hub-kusama.ibp.network'
     }, {
-      isAvailable: false,
+      isAvailable: true,
       name: 'IBP2',
       url: 'wss://bridge-hub-kusama.dotters.network'
     }, {
@@ -1276,7 +1276,7 @@ export const prodRelayKusama: EndpointOption = {
     name: 'Geometry Labs',
     url: 'wss://kusama.geometry.io/websockets'
   }, {
-    isAvailable: true,
+    isAvailable: false,
     name: 'Automata 1RPC',
     url: 'wss://1rpc.io/ksm'
   }, {
