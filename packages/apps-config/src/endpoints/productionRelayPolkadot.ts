@@ -1309,7 +1309,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://rakson-ceb-rpc.xode.net'
       },
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'RakSonKorea',
         url: 'wss://rakson-rpc.xode.net'
       },

@@ -193,7 +193,7 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     info: 'heima-paseo',
     paraId: 2106,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Heima',
       url: 'wss://rpc.paseo-parachain.heima.network'
     }],
@@ -536,7 +536,7 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     info: 'paseoXode',
     paraId: 5160,
     providers: [{
-      isAvailable: false,
+      isAvailable: true,
       name: 'XodeCommunity',
       url: 'wss://paseo-rpcnode.xode.net'
     }],
@@ -627,7 +627,7 @@ export const testParasPaseoCommon: EndpointOption[] = [
       name: 'IBP1',
       url: 'wss://collectives-paseo.ibp.network'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'IBP2',
       url: 'wss://collectives-paseo.dotters.network'
     }],
