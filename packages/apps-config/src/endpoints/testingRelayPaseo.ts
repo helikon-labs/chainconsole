@@ -491,7 +491,7 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     info: 'PaseoShibuyaChain',
     paraId: 2000,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Astar',
       url: 'wss://rpc.shibuya.astar.network'
     }],
@@ -536,7 +536,7 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     info: 'paseoXode',
     paraId: 5160,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'XodeCommunity',
       url: 'wss://paseo-rpcnode.xode.net'
     }],
@@ -577,7 +577,7 @@ export const testParasPaseoCommon: EndpointOption[] = [
       name: 'IBP1',
       url: 'wss://asset-hub-paseo.ibp.network'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'IBP2',
       url: 'wss://asset-hub-paseo.dotters.network'
     }, {
@@ -627,7 +627,7 @@ export const testParasPaseoCommon: EndpointOption[] = [
       name: 'IBP1',
       url: 'wss://collectives-paseo.ibp.network'
     }, {
-      isAvailable: false,
+      isAvailable: true,
       name: 'IBP2',
       url: 'wss://collectives-paseo.dotters.network'
     }],
