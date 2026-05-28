@@ -702,7 +702,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
       name: 'OnFinality',
       url: 'wss://sora.api.onfinality.io/public-ws'
     }, {
-      isAvailable: false,
+      isAvailable: true,
       name: 'SORA Parliament Ministry of Finance',
       url: 'wss://ws.mof.sora.org'
     }, {
@@ -710,7 +710,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
       name: 'SORA Parliament Ministry of Finance #2',
       url: 'wss://mof2.sora.org'
     }, {
-      isAvailable: false,
+      isAvailable: true,
       name: 'SORA Parliament Ministry of Finance #3',
       url: 'wss://mof3.sora.org'
     }],
