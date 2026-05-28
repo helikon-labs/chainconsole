@@ -193,7 +193,7 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     info: 'heima-paseo',
     paraId: 2106,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Heima',
       url: 'wss://rpc.paseo-parachain.heima.network'
     }],
@@ -491,7 +491,7 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     info: 'PaseoShibuyaChain',
     paraId: 2000,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Astar',
       url: 'wss://rpc.shibuya.astar.network'
     }],

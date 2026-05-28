@@ -1095,7 +1095,7 @@ export const prodParasKusamaCommon: EndpointOption[] = [
       name: 'IBP2',
       url: 'wss://bridge-hub-kusama.dotters.network'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'LuckyFriday',
       url: 'wss://rpc-bridge-hub-kusama.luckyfriday.io'
     }, {
@@ -1276,7 +1276,7 @@ export const prodRelayKusama: EndpointOption = {
     name: 'Geometry Labs',
     url: 'wss://kusama.geometry.io/websockets'
   }, {
-    isAvailable: true,
+    isAvailable: false,
     name: 'Automata 1RPC',
     url: 'wss://1rpc.io/ksm'
   }, {
@@ -1288,7 +1288,7 @@ export const prodRelayKusama: EndpointOption = {
     name: 'Dwellir',
     url: 'wss://kusama-rpc.n.dwellir.com'
   }, {
-    isAvailable: true,
+    isAvailable: false,
     name: 'Helixstreet',
     url: 'wss://rpc-kusama.helixstreet.io'
   }, {
