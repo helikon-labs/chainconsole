@@ -781,7 +781,7 @@ export const testChains: Omit<EndpointOption, 'teleport'>[] = [
       name: 'Moonbeam Foundation',
       url: 'wss://wss.api.moonbase.moonbeam.network'
     }, {
-      isAvailable: false,
+      isAvailable: true,
       name: 'OnFinality',
       url: 'wss://moonbeam-alpha.api.onfinality.io/public-ws'
     }, {
