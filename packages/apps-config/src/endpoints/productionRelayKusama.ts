@@ -1091,7 +1091,7 @@ export const prodParasKusamaCommon: EndpointOption[] = [
       name: 'IBP1',
       url: 'wss://bridge-hub-kusama.ibp.network'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'IBP2',
       url: 'wss://bridge-hub-kusama.dotters.network'
     }, {
@@ -1243,7 +1243,7 @@ export const prodParasKusamaCommon: EndpointOption[] = [
       name: 'Parity',
       url: 'wss://kusama-people-rpc.polkadot.io'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'RadiumBlock',
       url: 'wss://people-kusama.public.curie.radiumblock.co/ws'
     }, {
@@ -1276,7 +1276,7 @@ export const prodRelayKusama: EndpointOption = {
     name: 'Geometry Labs',
     url: 'wss://kusama.geometry.io/websockets'
   }, {
-    isAvailable: true,
+    isAvailable: false,
     name: 'Automata 1RPC',
     url: 'wss://1rpc.io/ksm'
   }, {
@@ -1288,7 +1288,7 @@ export const prodRelayKusama: EndpointOption = {
     name: 'Dwellir',
     url: 'wss://kusama-rpc.n.dwellir.com'
   }, {
-    isAvailable: false,
+    isAvailable: true,
     name: 'Helixstreet',
     url: 'wss://rpc-kusama.helixstreet.io'
   }, {

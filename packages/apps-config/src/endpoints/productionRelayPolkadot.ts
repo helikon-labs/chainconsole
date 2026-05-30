@@ -42,7 +42,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://acala-rpc-3.aca-api.network/ws'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'Dwellir',
         url: 'wss://acala-rpc.n.dwellir.com'
       },
@@ -165,7 +165,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://rpc.astar.network'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'Automata 1RPC',
         url: 'wss://1rpc.io/astr'
       },
@@ -244,7 +244,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://bifrost-polkadot.api.onfinality.io/public-ws'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'RadiumBlock',
         url: 'wss://bifrost.public.curie.radiumblock.co/ws'
       }
@@ -880,7 +880,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://moonbeam-rpc.publicnode.com'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'Automata 1RPC',
         url: 'wss://1rpc.io/glmr'
       },
@@ -1106,7 +1106,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://api.phala.network/ws'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'RadiumBlock',
         url: 'wss://phala.public.curie.radiumblock.co/ws'
       },
@@ -1304,7 +1304,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     paraId: 3417,
     providers: [
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'RakSonCebu',
         url: 'wss://rakson-ceb-rpc.xode.net'
       },
@@ -1655,7 +1655,7 @@ export const prodRelayPolkadot: EndpointOption = {
       url: 'wss://polkadot.geometry.io/websockets'
     },
     {
-      isAvailable: true,
+      isAvailable: false,
       name: 'Automata 1RPC',
       url: 'wss://1rpc.io/dot'
     },
