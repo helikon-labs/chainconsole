@@ -244,7 +244,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://bifrost-polkadot.api.onfinality.io/public-ws'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'RadiumBlock',
         url: 'wss://bifrost.public.curie.radiumblock.co/ws'
       }
@@ -1106,7 +1106,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://api.phala.network/ws'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'RadiumBlock',
         url: 'wss://phala.public.curie.radiumblock.co/ws'
       },
@@ -1304,7 +1304,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     paraId: 3417,
     providers: [
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'RakSonCebu',
         url: 'wss://rakson-ceb-rpc.xode.net'
       },
@@ -1426,7 +1426,7 @@ export const prodParasPolkadotCommon: EndpointOption[] = [
         url: 'wss://bridge-hub-polkadot.ibp.network'
       },
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'IBP2',
         url: 'wss://bridge-hub-polkadot.dotters.network'
       },

@@ -606,7 +606,7 @@ export const testParasPaseoCommon: EndpointOption[] = [
       name: 'IBP1',
       url: 'wss://bridge-hub-paseo.ibp.network'
     }, {
-      isAvailable: false,
+      isAvailable: true,
       name: 'IBP2',
       url: 'wss://bridge-hub-paseo.dotters.network'
     }],
@@ -723,7 +723,7 @@ export const testRelayPaseo: EndpointOption = {
     name: 'StakeWorld',
     url: 'wss://rpc-paseo.stakeworld.io'
   }, {
-    isAvailable: false, // https://github.com/polkadot-js/apps/issues/11199
+    isAvailable: true,
     name: 'Zondax',
     url: 'wss://api2.zondax.ch/pas/node/rpc'
   }],
