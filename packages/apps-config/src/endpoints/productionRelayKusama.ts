@@ -1177,7 +1177,7 @@ export const prodParasKusamaCommon: EndpointOption[] = [
       name: 'Dwellir',
       url: 'wss://encointer-kusama-rpc.n.dwellir.com'
     }, {
-      isAvailable: false,
+      isAvailable: true,
       name: 'Encointer Association',
       url: 'wss://kusama.api.encointer.org'
     }, {
@@ -1276,7 +1276,7 @@ export const prodRelayKusama: EndpointOption = {
     name: 'Geometry Labs',
     url: 'wss://kusama.geometry.io/websockets'
   }, {
-    isAvailable: false,
+    isAvailable: true,
     name: 'Automata 1RPC',
     url: 'wss://1rpc.io/ksm'
   }, {
