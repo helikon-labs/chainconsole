@@ -611,7 +611,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://hydration-rpc.n.dwellir.com'
       },
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'Galactic Council',
         url: 'wss://rpc.hydradx.cloud'
       },
@@ -1392,7 +1392,7 @@ export const prodParasPolkadotCommon: EndpointOption[] = [
         url: 'wss://polkadot-asset-hub-rpc.polkadot.io'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'RadiumBlock',
         url: 'wss://statemint.public.curie.radiumblock.co/ws'
       },
@@ -1504,7 +1504,7 @@ export const prodParasPolkadotCommon: EndpointOption[] = [
         url: 'wss://polkadot-collectives-rpc.polkadot.io'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'RadiumBlock',
         url: 'wss://collectives.public.curie.radiumblock.co/ws'
       },
@@ -1613,7 +1613,7 @@ export const prodParasPolkadotCommon: EndpointOption[] = [
         url: 'wss://polkadot-people-rpc.polkadot.io'
       },
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'RadiumBlock',
         url: 'wss://people-polkadot.public.curie.radiumblock.co/ws'
       },
@@ -1675,7 +1675,7 @@ export const prodRelayPolkadot: EndpointOption = {
       url: 'wss://polkadot.ibp.network'
     },
     {
-      isAvailable: true,
+      isAvailable: false,
       name: 'IBP2',
       url: 'wss://polkadot.dotters.network'
     },

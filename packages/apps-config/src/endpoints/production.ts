@@ -381,7 +381,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
   {
     info: 'elysium',
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Elysium',
       url: 'wss://ws.elysiumchain.tech'
     }],
