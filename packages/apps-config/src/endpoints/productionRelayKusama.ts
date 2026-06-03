@@ -1062,7 +1062,7 @@ export const prodParasKusamaCommon: EndpointOption[] = [
       name: 'Parity',
       url: 'wss://kusama-asset-hub-rpc.polkadot.io'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'RadiumBlock',
       url: 'wss://statemine.public.curie.radiumblock.co/ws'
     }, {
@@ -1135,7 +1135,7 @@ export const prodParasKusamaCommon: EndpointOption[] = [
       name: 'Dwellir',
       url: 'wss://coretime-kusama-rpc.n.dwellir.com'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'IBP1',
       url: 'wss://coretime-kusama.ibp.network'
     }, {
@@ -1177,7 +1177,7 @@ export const prodParasKusamaCommon: EndpointOption[] = [
       name: 'Dwellir',
       url: 'wss://encointer-kusama-rpc.n.dwellir.com'
     }, {
-      isAvailable: false,
+      isAvailable: true,
       name: 'Encointer Association',
       url: 'wss://kusama.api.encointer.org'
     }, {
@@ -1243,7 +1243,7 @@ export const prodParasKusamaCommon: EndpointOption[] = [
       name: 'Parity',
       url: 'wss://kusama-people-rpc.polkadot.io'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'RadiumBlock',
       url: 'wss://people-kusama.public.curie.radiumblock.co/ws'
     }, {
