@@ -1062,7 +1062,7 @@ export const prodParasKusamaCommon: EndpointOption[] = [
       name: 'Parity',
       url: 'wss://kusama-asset-hub-rpc.polkadot.io'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'RadiumBlock',
       url: 'wss://statemine.public.curie.radiumblock.co/ws'
     }, {
@@ -1091,7 +1091,7 @@ export const prodParasKusamaCommon: EndpointOption[] = [
       name: 'IBP1',
       url: 'wss://bridge-hub-kusama.ibp.network'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'IBP2',
       url: 'wss://bridge-hub-kusama.dotters.network'
     }, {
@@ -1243,7 +1243,7 @@ export const prodParasKusamaCommon: EndpointOption[] = [
       name: 'Parity',
       url: 'wss://kusama-people-rpc.polkadot.io'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'RadiumBlock',
       url: 'wss://people-kusama.public.curie.radiumblock.co/ws'
     }, {
