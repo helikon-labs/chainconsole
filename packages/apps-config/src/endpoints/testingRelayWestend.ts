@@ -295,7 +295,7 @@ export const testRelayWestend: EndpointOption = {
     name: 'LuckyFriday',
     url: 'wss://rpc-westend.luckyfriday.io'
   }, {
-    isAvailable: true,
+    isAvailable: false,
     name: 'OnFinality',
     url: 'wss://westend.api.onfinality.io/public-ws'
   }, {
@@ -303,7 +303,7 @@ export const testRelayWestend: EndpointOption = {
     name: 'Parity',
     url: 'wss://westend-rpc.polkadot.io'
   }, {
-    isAvailable: true,
+    isAvailable: false,
     name: 'RadiumBlock',
     url: 'wss://westend.public.curie.radiumblock.co/ws'
   }, {
