@@ -491,7 +491,7 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     info: 'PaseoShibuyaChain',
     paraId: 2000,
     providers: [{
-      isAvailable: false,
+      isAvailable: true,
       name: 'Astar',
       url: 'wss://rpc.shibuya.astar.network'
     }],
@@ -627,7 +627,7 @@ export const testParasPaseoCommon: EndpointOption[] = [
       name: 'IBP1',
       url: 'wss://collectives-paseo.ibp.network'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'IBP2',
       url: 'wss://collectives-paseo.dotters.network'
     }],

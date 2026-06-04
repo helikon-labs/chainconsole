@@ -1504,7 +1504,7 @@ export const prodParasPolkadotCommon: EndpointOption[] = [
         url: 'wss://polkadot-collectives-rpc.polkadot.io'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'RadiumBlock',
         url: 'wss://collectives.public.curie.radiumblock.co/ws'
       },
