@@ -491,7 +491,7 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     info: 'PaseoShibuyaChain',
     paraId: 2000,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Astar',
       url: 'wss://rpc.shibuya.astar.network'
     }],
@@ -723,7 +723,7 @@ export const testRelayPaseo: EndpointOption = {
     name: 'StakeWorld',
     url: 'wss://rpc-paseo.stakeworld.io'
   }, {
-    isAvailable: false, // https://github.com/polkadot-js/apps/issues/11199
+    isAvailable: true,
     name: 'Zondax',
     url: 'wss://api2.zondax.ch/pas/node/rpc'
   }],
