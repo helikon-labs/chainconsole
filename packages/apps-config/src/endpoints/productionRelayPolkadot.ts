@@ -611,7 +611,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://hydration-rpc.n.dwellir.com'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'Galactic Council',
         url: 'wss://rpc.hydradx.cloud'
       },
@@ -1150,7 +1150,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     paraId: 3426,
     providers: [
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'QF Network',
         url: 'wss://archive.para.mainnet.qfnode.net'
       }
@@ -1304,7 +1304,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     paraId: 3417,
     providers: [
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'RakSonCebu',
         url: 'wss://rakson-ceb-rpc.xode.net'
       },
@@ -1695,7 +1695,7 @@ export const prodRelayPolkadot: EndpointOption = {
       url: 'wss://polkadot.public.curie.radiumblock.co/ws'
     },
     {
-      isAvailable: false,
+      isAvailable: true,
       name: 'RockX',
       url: 'wss://rockx-dot.w3node.com/polka-public-dot/ws'
     },
