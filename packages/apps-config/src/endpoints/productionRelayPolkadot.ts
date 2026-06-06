@@ -1304,7 +1304,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     paraId: 3417,
     providers: [
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'RakSonCebu',
         url: 'wss://rakson-ceb-rpc.xode.net'
       },
@@ -1695,7 +1695,7 @@ export const prodRelayPolkadot: EndpointOption = {
       url: 'wss://polkadot.public.curie.radiumblock.co/ws'
     },
     {
-      isAvailable: true,
+      isAvailable: false,
       name: 'RockX',
       url: 'wss://rockx-dot.w3node.com/polka-public-dot/ws'
     },
