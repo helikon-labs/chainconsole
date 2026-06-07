@@ -514,7 +514,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     isPeopleForIdentity: true,
     paraId: 2281,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Kippu',
       url: 'wss://kreivo.kippu.rocks/'
     }, {
