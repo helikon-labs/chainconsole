@@ -57,7 +57,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
     homepage: 'https://analog.one',
     info: 'analog-timechain',
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Analog One',
       url: 'wss://rpc.timechain.analog.one'
     }],
@@ -513,7 +513,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
       name: 'Dwellir',
       url: 'wss://liberland-rpc.n.dwellir.com'
     }, {
-      isAvailable: false,
+      isAvailable: true,
       name: 'Liberland Government',
       url: 'wss://mainnet.liberland.org'
     }],
@@ -702,7 +702,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
       name: 'OnFinality',
       url: 'wss://sora.api.onfinality.io/public-ws'
     }, {
-      isAvailable: false,
+      isAvailable: true,
       name: 'SORA Parliament Ministry of Finance',
       url: 'wss://ws.mof.sora.org'
     }, {
