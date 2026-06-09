@@ -893,7 +893,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
   {
     info: 'vtb',
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'VTB Community',
       url: 'wss://substratenode.vtbcfoundation.org/explorer'
     }],
