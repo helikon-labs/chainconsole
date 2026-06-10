@@ -193,7 +193,7 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     info: 'heima-paseo',
     paraId: 2106,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Heima',
       url: 'wss://rpc.paseo-parachain.heima.network'
     }],
@@ -573,7 +573,7 @@ export const testParasPaseoCommon: EndpointOption[] = [
       name: 'Dwellir',
       url: 'wss://asset-hub-paseo-rpc.n.dwellir.com'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'IBP1',
       url: 'wss://asset-hub-paseo.ibp.network'
     }, {
@@ -602,7 +602,7 @@ export const testParasPaseoCommon: EndpointOption[] = [
     isPeopleForIdentity: true,
     paraId: 1002,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'IBP1',
       url: 'wss://bridge-hub-paseo.ibp.network'
     }, {
@@ -623,7 +623,7 @@ export const testParasPaseoCommon: EndpointOption[] = [
     isPeopleForIdentity: true,
     paraId: 1001,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'IBP1',
       url: 'wss://collectives-paseo.ibp.network'
     }, {
@@ -644,11 +644,11 @@ export const testParasPaseoCommon: EndpointOption[] = [
     isPeopleForIdentity: true,
     paraId: 1005,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'IBP1',
       url: 'wss://coretime-paseo.ibp.network'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'IBP2',
       url: 'wss://coretime-paseo.dotters.network'
     }, {
@@ -670,15 +670,15 @@ export const testParasPaseoCommon: EndpointOption[] = [
     isPeopleForIdentity: false,
     paraId: 1004,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Amforc',
       url: 'wss://people-paseo.rpc.amforc.com'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'IBP1',
       url: 'wss://people-paseo.ibp.network'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'IBP2',
       url: 'wss://people-paseo.dotters.network'
     }],
@@ -703,7 +703,7 @@ export const testRelayPaseo: EndpointOption = {
     ...testParasPaseo
   ],
   providers: [{
-    isAvailable: true,
+    isAvailable: false,
     name: 'Amforc',
     url: 'wss://paseo.rpc.amforc.com'
   }, {
@@ -711,11 +711,11 @@ export const testRelayPaseo: EndpointOption = {
     name: 'Dwellir',
     url: 'wss://paseo-rpc.n.dwellir.com'
   }, {
-    isAvailable: true,
+    isAvailable: false,
     name: 'IBP1',
     url: 'wss://paseo.ibp.network'
   }, {
-    isAvailable: true,
+    isAvailable: false,
     name: 'IBP2',
     url: 'wss://paseo.dotters.network'
   }, {
