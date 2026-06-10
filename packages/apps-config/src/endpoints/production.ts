@@ -220,7 +220,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
   {
     info: 'chainx',
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'ChainX',
       url: 'wss://mainnet.chainx.org/ws'
     }],
