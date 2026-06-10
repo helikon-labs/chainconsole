@@ -220,7 +220,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
   {
     info: 'chainx',
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'ChainX',
       url: 'wss://mainnet.chainx.org/ws'
     }],
@@ -659,7 +659,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
   {
     info: 'qf-network',
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'QF Network',
       url: 'wss://mainnet.qfnode.net'
     }],
@@ -893,7 +893,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
   {
     info: 'vtb',
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'VTB Community',
       url: 'wss://substratenode.vtbcfoundation.org/explorer'
     }],

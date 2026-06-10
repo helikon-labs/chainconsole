@@ -625,7 +625,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
       name: 'RadiumBlock',
       url: 'wss://moonriver.public.curie.radiumblock.co/ws'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'UnitedBloc',
       url: 'wss://moonriver.unitedbloc.com'
     }],
@@ -1042,7 +1042,7 @@ export const prodParasKusamaCommon: EndpointOption[] = [
       name: 'Dwellir',
       url: 'wss://asset-hub-kusama-rpc.n.dwellir.com'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'IBP1',
       url: 'wss://asset-hub-kusama.ibp.network'
     }, {
@@ -1087,11 +1087,11 @@ export const prodParasKusamaCommon: EndpointOption[] = [
       name: 'Dwellir',
       url: 'wss://bridge-hub-kusama-rpc.n.dwellir.com'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'IBP1',
       url: 'wss://bridge-hub-kusama.ibp.network'
     }, {
-      isAvailable: false,
+      isAvailable: true,
       name: 'IBP2',
       url: 'wss://bridge-hub-kusama.dotters.network'
     }, {
@@ -1135,11 +1135,11 @@ export const prodParasKusamaCommon: EndpointOption[] = [
       name: 'Dwellir',
       url: 'wss://coretime-kusama-rpc.n.dwellir.com'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'IBP1',
       url: 'wss://coretime-kusama.ibp.network'
     }, {
-      isAvailable: false,
+      isAvailable: true,
       name: 'IBP2',
       url: 'wss://coretime-kusama.dotters.network'
     }, {
@@ -1181,7 +1181,7 @@ export const prodParasKusamaCommon: EndpointOption[] = [
       name: 'Encointer Association',
       url: 'wss://kusama.api.encointer.org'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'IBP1',
       url: 'wss://encointer-kusama.ibp.network'
     }, {
@@ -1223,7 +1223,7 @@ export const prodParasKusamaCommon: EndpointOption[] = [
       name: 'Helixstreet',
       url: 'wss://rpc-people-kusama.helixstreet.io'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'IBP1',
       url: 'wss://people-kusama.ibp.network'
     }, {
@@ -1288,11 +1288,11 @@ export const prodRelayKusama: EndpointOption = {
     name: 'Dwellir',
     url: 'wss://kusama-rpc.n.dwellir.com'
   }, {
-    isAvailable: true,
+    isAvailable: false,
     name: 'Helixstreet',
     url: 'wss://rpc-kusama.helixstreet.io'
   }, {
-    isAvailable: true,
+    isAvailable: false,
     name: 'IBP1',
     url: 'wss://kusama.ibp.network'
   }, {

@@ -42,7 +42,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://acala-rpc-3.aca-api.network/ws'
       },
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'Dwellir',
         url: 'wss://acala-rpc.n.dwellir.com'
       },
@@ -616,7 +616,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://rpc.hydradx.cloud'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'IBP1',
         url: 'wss://hydration.ibp.network'
       },
@@ -1367,7 +1367,7 @@ export const prodParasPolkadotCommon: EndpointOption[] = [
         url: 'wss://asset-hub-polkadot-rpc.n.dwellir.com'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'IBP1',
         url: 'wss://asset-hub-polkadot.ibp.network'
       },
@@ -1421,7 +1421,7 @@ export const prodParasPolkadotCommon: EndpointOption[] = [
         url: 'wss://bridge-hub-polkadot-rpc.n.dwellir.com'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'IBP1',
         url: 'wss://bridge-hub-polkadot.ibp.network'
       },
@@ -1479,7 +1479,7 @@ export const prodParasPolkadotCommon: EndpointOption[] = [
         url: 'wss://collectives-polkadot-rpc.n.dwellir.com'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'IBP1',
         url: 'wss://collectives-polkadot.ibp.network'
       },
@@ -1533,12 +1533,12 @@ export const prodParasPolkadotCommon: EndpointOption[] = [
         url: 'wss://coretime-polkadot-rpc.n.dwellir.com'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'IBP1',
         url: 'wss://coretime-polkadot.ibp.network'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'IBP2',
         url: 'wss://coretime-polkadot.dotters.network'
       },
@@ -1588,7 +1588,7 @@ export const prodParasPolkadotCommon: EndpointOption[] = [
         url: 'wss://people-polkadot-rpc.n.dwellir.com'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'IBP1',
         url: 'wss://people-polkadot.ibp.network'
       },
@@ -1670,7 +1670,7 @@ export const prodRelayPolkadot: EndpointOption = {
       url: 'wss://rpc-polkadot.helixstreet.io'
     },
     {
-      isAvailable: true,
+      isAvailable: false,
       name: 'IBP1',
       url: 'wss://polkadot.ibp.network'
     },
