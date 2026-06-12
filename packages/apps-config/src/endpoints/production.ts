@@ -449,7 +449,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
       name: 'Joyutils',
       url: 'wss://rpc.joyutils.org'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'Jsgenesis',
       url: 'wss://rpc.joystream.org'
     }, {
@@ -659,7 +659,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
   {
     info: 'qf-network',
     providers: [{
-      isAvailable: false,
+      isAvailable: true,
       name: 'QF Network',
       url: 'wss://mainnet.qfnode.net'
     }],
@@ -893,7 +893,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
   {
     info: 'vtb',
     providers: [{
-      isAvailable: false,
+      isAvailable: true,
       name: 'VTB Community',
       url: 'wss://substratenode.vtbcfoundation.org/explorer'
     }],
