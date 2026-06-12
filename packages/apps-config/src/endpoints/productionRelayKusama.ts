@@ -1296,7 +1296,7 @@ export const prodRelayKusama: EndpointOption = {
     name: 'IBP1',
     url: 'wss://kusama.ibp.network'
   }, {
-    isAvailable: true,
+    isAvailable: false,
     name: 'IBP2',
     url: 'wss://kusama.dotters.network'
   }, {

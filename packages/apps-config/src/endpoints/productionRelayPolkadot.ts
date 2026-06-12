@@ -42,7 +42,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://acala-rpc-3.aca-api.network/ws'
       },
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'Dwellir',
         url: 'wss://acala-rpc.n.dwellir.com'
       },
@@ -621,7 +621,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://hydration.ibp.network'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'IBP2',
         url: 'wss://hydration.dotters.network'
       },
@@ -1504,7 +1504,7 @@ export const prodParasPolkadotCommon: EndpointOption[] = [
         url: 'wss://polkadot-collectives-rpc.polkadot.io'
       },
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'RadiumBlock',
         url: 'wss://collectives.public.curie.radiumblock.co/ws'
       },
@@ -1675,7 +1675,7 @@ export const prodRelayPolkadot: EndpointOption = {
       url: 'wss://polkadot.ibp.network'
     },
     {
-      isAvailable: false,
+      isAvailable: true,
       name: 'IBP2',
       url: 'wss://polkadot.dotters.network'
     },
