@@ -806,7 +806,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
   {
     info: 'ternoa',
     providers: [{
-      isAvailable: true, // https://github.com/polkadot-js/apps/issues/10172
+      isAvailable: false,
       name: 'CapsuleCorp',
       url: 'wss://mainnet.ternoa.network'
     }],
