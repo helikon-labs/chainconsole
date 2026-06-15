@@ -625,7 +625,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
       name: 'RadiumBlock',
       url: 'wss://moonriver.public.curie.radiumblock.co/ws'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'UnitedBloc',
       url: 'wss://moonriver.unitedbloc.com'
     }],
@@ -904,7 +904,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     info: 'sora',
     paraId: 2011,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Soramitsu',
       url: 'wss://ws.parachain-collator-2.c2.sora2.soramitsu.co.jp'
     }],
@@ -1177,7 +1177,7 @@ export const prodParasKusamaCommon: EndpointOption[] = [
       name: 'Dwellir',
       url: 'wss://encointer-kusama-rpc.n.dwellir.com'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'Encointer Association',
       url: 'wss://kusama.api.encointer.org'
     }, {
