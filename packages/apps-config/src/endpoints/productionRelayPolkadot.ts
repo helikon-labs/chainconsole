@@ -106,7 +106,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     paraId: 2051,
     providers: [
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'AjunaNetwork',
         url: 'wss://rpc-para.ajuna.network'
       },
@@ -185,7 +185,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://astar.api.onfinality.io/public-ws'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'RadiumBlock',
         url: 'wss://astar.public.curie.radiumblock.co/ws'
       }
@@ -1387,7 +1387,7 @@ export const prodParasPolkadotCommon: EndpointOption[] = [
         url: 'wss://statemint.api.onfinality.io/public-ws'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'Parity',
         url: 'wss://polkadot-asset-hub-rpc.polkadot.io'
       },
@@ -1446,7 +1446,7 @@ export const prodParasPolkadotCommon: EndpointOption[] = [
         url: 'wss://polkadot-bridge-hub-rpc.polkadot.io'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'RadiumBlock',
         url: 'wss://bridgehub-polkadot.public.curie.radiumblock.co/ws'
       },
@@ -1675,7 +1675,7 @@ export const prodRelayPolkadot: EndpointOption = {
       url: 'wss://polkadot.ibp.network'
     },
     {
-      isAvailable: false,
+      isAvailable: true,
       name: 'IBP2',
       url: 'wss://polkadot.dotters.network'
     },
