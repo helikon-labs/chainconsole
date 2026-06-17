@@ -625,7 +625,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
       name: 'RadiumBlock',
       url: 'wss://moonriver.public.curie.radiumblock.co/ws'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'UnitedBloc',
       url: 'wss://moonriver.unitedbloc.com'
     }],
@@ -875,7 +875,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
       name: 'OnFinality',
       url: 'wss://shiden.api.onfinality.io/public-ws'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'RadiumBlock',
       url: 'wss://shiden.public.curie.radiumblock.co/ws'
     }],
@@ -904,7 +904,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     info: 'sora',
     paraId: 2011,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Soramitsu',
       url: 'wss://ws.parachain-collator-2.c2.sora2.soramitsu.co.jp'
     }],
@@ -1107,7 +1107,7 @@ export const prodParasKusamaCommon: EndpointOption[] = [
       name: 'Parity',
       url: 'wss://kusama-bridge-hub-rpc.polkadot.io'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'RadiumBlock',
       url: 'wss://bridgehub-kusama.public.curie.radiumblock.co/ws'
     }, {
@@ -1308,7 +1308,7 @@ export const prodRelayKusama: EndpointOption = {
     name: 'OnFinality',
     url: 'wss://kusama.api.onfinality.io/public-ws'
   }, {
-    isAvailable: true,
+    isAvailable: false,
     name: 'RadiumBlock',
     url: 'wss://kusama.public.curie.radiumblock.co/ws'
   }, {
