@@ -1377,7 +1377,7 @@ export const prodParasPolkadotCommon: EndpointOption[] = [
         url: 'wss://asset-hub-polkadot.dotters.network'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'LuckyFriday',
         url: 'wss://rpc-asset-hub-polkadot.luckyfriday.io'
       },
@@ -1484,7 +1484,7 @@ export const prodParasPolkadotCommon: EndpointOption[] = [
         url: 'wss://collectives-polkadot.ibp.network'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'IBP2',
         url: 'wss://collectives-polkadot.dotters.network'
       },
