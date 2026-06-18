@@ -148,7 +148,7 @@ export const testChains: Omit<EndpointOption, 'teleport'>[] = [
   {
     info: 'autonomys-chronos-evm',
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Labs',
       url: 'wss://auto-evm.chronos.autonomys.xyz/ws'
     }],
@@ -913,7 +913,7 @@ export const testChains: Omit<EndpointOption, 'teleport'>[] = [
   {
     info: 'polymesh',
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Polymesh',
       url: 'wss://testnet-rpc.polymesh.live'
     }],
@@ -1294,7 +1294,7 @@ export const testChains: Omit<EndpointOption, 'teleport'>[] = [
   {
     info: 'vara-testnet',
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Gear',
       url: 'wss://testnet.vara.network'
     }],

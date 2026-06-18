@@ -42,7 +42,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://acala-rpc-3.aca-api.network/ws'
       },
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'Dwellir',
         url: 'wss://acala-rpc.n.dwellir.com'
       },
@@ -388,17 +388,17 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     paraId: 2008,
     providers: [
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'Crust',
         url: 'wss://crust-parachain.crustapps.net'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'Crust APP',
         url: 'wss://crust-parachain.crustnetwork.app'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'Crust CC',
         url: 'wss://crust-parachain.crustnetwork.cc'
       },
@@ -475,7 +475,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     paraId: 3345,
     providers: [
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'Energy Web',
         url: 'wss://public-rpc.mainnet.energywebx.com/'
       }
@@ -1240,7 +1240,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://unique-rpc.n.dwellir.com'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'Geo Load Balancer',
         url: 'wss://ws.unique.network'
       },
@@ -1270,7 +1270,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://asia-ws.unique.network'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'Unique Europe',
         url: 'wss://eu-ws.unique.network'
       }
@@ -1309,12 +1309,12 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://rakson-ceb-rpc.xode.net'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'RakSonKorea',
         url: 'wss://rakson-rpc.xode.net'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'XodeCommunity',
         url: 'wss://polkadot-rpcnode.xode.net'
       }

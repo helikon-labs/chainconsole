@@ -57,7 +57,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
     homepage: 'https://analog.one',
     info: 'analog-timechain',
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Analog One',
       url: 'wss://rpc.timechain.analog.one'
     }],
@@ -84,7 +84,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
   {
     info: 'autonomys-mainnet',
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Foundation',
       url: 'wss://rpc.mainnet.subspace.foundation/ws'
     }, {
@@ -131,7 +131,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
   {
     info: 'bittensor',
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Latent Holdings (Lite)',
       url: 'wss://lite.sub.latent.to:443'
     }, {
@@ -289,11 +289,11 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
   {
     info: 'crust',
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Crust Network',
       url: 'wss://rpc.crust.network'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'Crust Network APP',
       url: 'wss://rpc.crustnetwork.app'
     }, {
@@ -301,7 +301,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
       name: 'Crust Network CC',
       url: 'wss://rpc.crustnetwork.cc'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'Crust Network XYZ',
       url: 'wss://rpc.crustnetwork.xyz'
     }, {
@@ -893,7 +893,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
   {
     info: 'vtb',
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'VTB Community',
       url: 'wss://substratenode.vtbcfoundation.org/explorer'
     }],
