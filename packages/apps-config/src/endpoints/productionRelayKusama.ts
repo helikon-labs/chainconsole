@@ -356,7 +356,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     info: 'kabocha',
     paraId: 2113,
     providers: [{
-      isAvailable: false,
+      isAvailable: true,
       name: 'JelliedOwl',
       url: 'wss://kabocha.jelliedowl.net'
     }],
@@ -1046,7 +1046,7 @@ export const prodParasKusamaCommon: EndpointOption[] = [
       name: 'IBP1',
       url: 'wss://asset-hub-kusama.ibp.network'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'IBP2',
       url: 'wss://asset-hub-kusama.dotters.network'
     }, {
@@ -1177,7 +1177,7 @@ export const prodParasKusamaCommon: EndpointOption[] = [
       name: 'Dwellir',
       url: 'wss://encointer-kusama-rpc.n.dwellir.com'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'Encointer Association',
       url: 'wss://kusama.api.encointer.org'
     }, {

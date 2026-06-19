@@ -659,7 +659,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
   {
     info: 'qf-network',
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'QF Network',
       url: 'wss://mainnet.qfnode.net'
     }],
@@ -775,7 +775,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
   {
     info: 'tangle',
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Dwellir',
       url: 'wss://tangle-mainnet-rpc.n.dwellir.com'
     }, {
@@ -806,7 +806,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
   {
     info: 'ternoa',
     providers: [{
-      isAvailable: false,
+      isAvailable: true,
       name: 'CapsuleCorp',
       url: 'wss://mainnet.ternoa.network'
     }],
