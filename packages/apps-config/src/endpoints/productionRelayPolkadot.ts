@@ -621,7 +621,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://hydration.ibp.network'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'IBP2',
         url: 'wss://hydration.dotters.network'
       },
@@ -1372,7 +1372,7 @@ export const prodParasPolkadotCommon: EndpointOption[] = [
         url: 'wss://asset-hub-polkadot.ibp.network'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'IBP2',
         url: 'wss://asset-hub-polkadot.dotters.network'
       },
@@ -1426,7 +1426,7 @@ export const prodParasPolkadotCommon: EndpointOption[] = [
         url: 'wss://bridge-hub-polkadot.ibp.network'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'IBP2',
         url: 'wss://bridge-hub-polkadot.dotters.network'
       },
@@ -1484,7 +1484,7 @@ export const prodParasPolkadotCommon: EndpointOption[] = [
         url: 'wss://collectives-polkadot.ibp.network'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'IBP2',
         url: 'wss://collectives-polkadot.dotters.network'
       },
@@ -1538,7 +1538,7 @@ export const prodParasPolkadotCommon: EndpointOption[] = [
         url: 'wss://coretime-polkadot.ibp.network'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'IBP2',
         url: 'wss://coretime-polkadot.dotters.network'
       },
@@ -1593,7 +1593,7 @@ export const prodParasPolkadotCommon: EndpointOption[] = [
         url: 'wss://people-polkadot.ibp.network'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'IBP2',
         url: 'wss://people-polkadot.dotters.network'
       },
@@ -1675,7 +1675,7 @@ export const prodRelayPolkadot: EndpointOption = {
       url: 'wss://polkadot.ibp.network'
     },
     {
-      isAvailable: true,
+      isAvailable: false,
       name: 'IBP2',
       url: 'wss://polkadot.dotters.network'
     },

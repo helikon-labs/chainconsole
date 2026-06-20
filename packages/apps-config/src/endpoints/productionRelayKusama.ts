@@ -356,7 +356,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     info: 'kabocha',
     paraId: 2113,
     providers: [{
-      isAvailable: false,
+      isAvailable: true,
       name: 'JelliedOwl',
       url: 'wss://kabocha.jelliedowl.net'
     }],
@@ -1046,7 +1046,7 @@ export const prodParasKusamaCommon: EndpointOption[] = [
       name: 'IBP1',
       url: 'wss://asset-hub-kusama.ibp.network'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'IBP2',
       url: 'wss://asset-hub-kusama.dotters.network'
     }, {
@@ -1091,7 +1091,7 @@ export const prodParasKusamaCommon: EndpointOption[] = [
       name: 'IBP1',
       url: 'wss://bridge-hub-kusama.ibp.network'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'IBP2',
       url: 'wss://bridge-hub-kusama.dotters.network'
     }, {
@@ -1139,7 +1139,7 @@ export const prodParasKusamaCommon: EndpointOption[] = [
       name: 'IBP1',
       url: 'wss://coretime-kusama.ibp.network'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'IBP2',
       url: 'wss://coretime-kusama.dotters.network'
     }, {
@@ -1185,7 +1185,7 @@ export const prodParasKusamaCommon: EndpointOption[] = [
       name: 'IBP1',
       url: 'wss://encointer-kusama.ibp.network'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'IBP2',
       url: 'wss://encointer-kusama.dotters.network'
     }, {
@@ -1227,7 +1227,7 @@ export const prodParasKusamaCommon: EndpointOption[] = [
       name: 'IBP1',
       url: 'wss://people-kusama.ibp.network'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'IBP2',
       url: 'wss://people-kusama.dotters.network'
     }, {
@@ -1296,7 +1296,7 @@ export const prodRelayKusama: EndpointOption = {
     name: 'IBP1',
     url: 'wss://kusama.ibp.network'
   }, {
-    isAvailable: true,
+    isAvailable: false,
     name: 'IBP2',
     url: 'wss://kusama.dotters.network'
   }, {
