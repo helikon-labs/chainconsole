@@ -577,7 +577,7 @@ export const testParasPaseoCommon: EndpointOption[] = [
       name: 'IBP1',
       url: 'wss://asset-hub-paseo.ibp.network'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'IBP2',
       url: 'wss://asset-hub-paseo.dotters.network'
     }, {
@@ -627,7 +627,7 @@ export const testParasPaseoCommon: EndpointOption[] = [
       name: 'IBP1',
       url: 'wss://collectives-paseo.ibp.network'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'IBP2',
       url: 'wss://collectives-paseo.dotters.network'
     }],
@@ -648,7 +648,7 @@ export const testParasPaseoCommon: EndpointOption[] = [
       name: 'IBP1',
       url: 'wss://coretime-paseo.ibp.network'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'IBP2',
       url: 'wss://coretime-paseo.dotters.network'
     }, {
@@ -678,7 +678,7 @@ export const testParasPaseoCommon: EndpointOption[] = [
       name: 'IBP1',
       url: 'wss://people-paseo.ibp.network'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'IBP2',
       url: 'wss://people-paseo.dotters.network'
     }],
@@ -715,7 +715,7 @@ export const testRelayPaseo: EndpointOption = {
     name: 'IBP1',
     url: 'wss://paseo.ibp.network'
   }, {
-    isAvailable: true,
+    isAvailable: false,
     name: 'IBP2',
     url: 'wss://paseo.dotters.network'
   }, {
