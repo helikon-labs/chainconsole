@@ -74,7 +74,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     info: 'amplitude',
     paraId: 2124,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'PendulumChain',
       url: 'wss://rpc-amplitude.pendulumchain.tech'
     }],
@@ -625,7 +625,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
       name: 'RadiumBlock',
       url: 'wss://moonriver.public.curie.radiumblock.co/ws'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'UnitedBloc',
       url: 'wss://moonriver.unitedbloc.com'
     }],
@@ -1288,7 +1288,7 @@ export const prodRelayKusama: EndpointOption = {
     name: 'Dwellir',
     url: 'wss://kusama-rpc.n.dwellir.com'
   }, {
-    isAvailable: true,
+    isAvailable: false,
     name: 'Helixstreet',
     url: 'wss://rpc-kusama.helixstreet.io'
   }, {
