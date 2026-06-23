@@ -53,7 +53,7 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     info: 'paseoAmplitude',
     paraId: 2124,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'PendulumChain',
       url: 'wss://rpc-foucoco.pendulumchain.tech'
     }],
