@@ -106,7 +106,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     paraId: 2051,
     providers: [
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'AjunaNetwork',
         url: 'wss://rpc-para.ajuna.network'
       },
