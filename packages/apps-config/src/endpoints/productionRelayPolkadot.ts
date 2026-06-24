@@ -42,7 +42,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://acala-rpc-3.aca-api.network/ws'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'Dwellir',
         url: 'wss://acala-rpc.n.dwellir.com'
       },
@@ -106,7 +106,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     paraId: 2051,
     providers: [
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'AjunaNetwork',
         url: 'wss://rpc-para.ajuna.network'
       },
@@ -702,7 +702,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://api.interlay.io/parachain'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'LuckyFriday',
         url: 'wss://rpc-interlay.luckyfriday.io/'
       },
@@ -1150,7 +1150,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     paraId: 3426,
     providers: [
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'QF Network',
         url: 'wss://archive.para.mainnet.qfnode.net'
       }
