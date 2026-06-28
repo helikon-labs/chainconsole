@@ -351,7 +351,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
       name: 'Commonwealth Labs',
       url: 'wss://mainnet2.edgewa.re'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'JelliedOwl Bangalore',
       url: 'wss://edgeware-rpc3.jelliedowl.net'
     }, {
@@ -513,7 +513,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
       name: 'Dwellir',
       url: 'wss://liberland-rpc.n.dwellir.com'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'Liberland Government',
       url: 'wss://mainnet.liberland.org'
     }],
@@ -702,7 +702,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
       name: 'OnFinality',
       url: 'wss://sora.api.onfinality.io/public-ws'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'SORA Parliament Ministry of Finance',
       url: 'wss://ws.mof.sora.org'
     }, {
