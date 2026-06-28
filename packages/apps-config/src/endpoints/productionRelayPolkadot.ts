@@ -106,7 +106,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     paraId: 2051,
     providers: [
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'AjunaNetwork',
         url: 'wss://rpc-para.ajuna.network'
       },
@@ -611,7 +611,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://hydration-rpc.n.dwellir.com'
       },
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'Galactic Council',
         url: 'wss://rpc.hydradx.cloud'
       },
@@ -1665,7 +1665,7 @@ export const prodRelayPolkadot: EndpointOption = {
       url: 'wss://polkadot-rpc.n.dwellir.com'
     },
     {
-      isAvailable: false,
+      isAvailable: true,
       name: 'Helixstreet',
       url: 'wss://rpc-polkadot.helixstreet.io'
     },
