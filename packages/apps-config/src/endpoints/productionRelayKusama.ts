@@ -1219,7 +1219,7 @@ export const prodParasKusamaCommon: EndpointOption[] = [
       name: 'Dwellir',
       url: 'wss://people-kusama-rpc.n.dwellir.com'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'Helixstreet',
       url: 'wss://rpc-people-kusama.helixstreet.io'
     }, {
