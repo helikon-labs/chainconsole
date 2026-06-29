@@ -193,7 +193,7 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     info: 'heima-paseo',
     paraId: 2106,
     providers: [{
-      isAvailable: false,
+      isAvailable: true,
       name: 'Heima',
       url: 'wss://rpc.paseo-parachain.heima.network'
     }],
