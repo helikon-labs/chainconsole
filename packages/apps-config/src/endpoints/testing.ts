@@ -688,7 +688,7 @@ export const testChains: Omit<EndpointOption, 'teleport'>[] = [
   {
     info: 'Liberland',
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Liberland Government',
       url: 'wss://testchain.liberland.org'
     }],
@@ -913,7 +913,7 @@ export const testChains: Omit<EndpointOption, 'teleport'>[] = [
   {
     info: 'polymesh',
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Polymesh',
       url: 'wss://testnet-rpc.polymesh.live'
     }],
