@@ -793,7 +793,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
     info: 'tanssi',
     isPeople: true,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Tanssi Foundation',
       url: 'wss://services.tanssi-mainnet.network/tanssi'
     }],

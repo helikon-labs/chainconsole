@@ -324,7 +324,7 @@ export const testChains: Omit<EndpointOption, 'teleport'>[] = [
     info: 'Dancelight',
     isPeople: true,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Tanssi Foundation',
       url: 'wss://services.tanssi-testnet.network/dancelight'
     }],
@@ -688,7 +688,7 @@ export const testChains: Omit<EndpointOption, 'teleport'>[] = [
   {
     info: 'Liberland',
     providers: [{
-      isAvailable: false,
+      isAvailable: true,
       name: 'Liberland Government',
       url: 'wss://testchain.liberland.org'
     }],
@@ -913,7 +913,7 @@ export const testChains: Omit<EndpointOption, 'teleport'>[] = [
   {
     info: 'polymesh',
     providers: [{
-      isAvailable: false,
+      isAvailable: true,
       name: 'Polymesh',
       url: 'wss://testnet-rpc.polymesh.live'
     }],

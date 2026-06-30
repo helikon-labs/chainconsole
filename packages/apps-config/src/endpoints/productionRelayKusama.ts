@@ -514,7 +514,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     isPeopleForIdentity: true,
     paraId: 2281,
     providers: [{
-      isAvailable: false,
+      isAvailable: true,
       name: 'Kippu',
       url: 'wss://kreivo.kippu.rocks/'
     }, {
@@ -1177,7 +1177,7 @@ export const prodParasKusamaCommon: EndpointOption[] = [
       name: 'Dwellir',
       url: 'wss://encointer-kusama-rpc.n.dwellir.com'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'Encointer Association',
       url: 'wss://kusama.api.encointer.org'
     }, {
