@@ -723,7 +723,7 @@ export const testRelayPaseo: EndpointOption = {
     name: 'StakeWorld',
     url: 'wss://rpc-paseo.stakeworld.io'
   }, {
-    isAvailable: true,
+    isAvailable: false,
     name: 'Zondax',
     url: 'wss://api2.zondax.ch/pas/node/rpc'
   }],

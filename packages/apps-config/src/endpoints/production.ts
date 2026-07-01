@@ -702,7 +702,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
       name: 'OnFinality',
       url: 'wss://sora.api.onfinality.io/public-ws'
     }, {
-      isAvailable: false,
+      isAvailable: true,
       name: 'SORA Parliament Ministry of Finance',
       url: 'wss://ws.mof.sora.org'
     }, {
@@ -793,7 +793,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
     info: 'tanssi',
     isPeople: true,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Tanssi Foundation',
       url: 'wss://services.tanssi-mainnet.network/tanssi'
     }],
