@@ -193,7 +193,7 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     info: 'heima-paseo',
     paraId: 2106,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Heima',
       url: 'wss://rpc.paseo-parachain.heima.network'
     }],
@@ -585,7 +585,7 @@ export const testParasPaseoCommon: EndpointOption[] = [
       name: 'StakeWorld',
       url: 'wss://rpc-assethub-paseo.stakeworld.io'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'TurboFlakes',
       url: 'wss://sys.turboflakes.io/asset-hub-paseo'
     }],
@@ -723,7 +723,7 @@ export const testRelayPaseo: EndpointOption = {
     name: 'StakeWorld',
     url: 'wss://rpc-paseo.stakeworld.io'
   }, {
-    isAvailable: true,
+    isAvailable: false,
     name: 'Zondax',
     url: 'wss://api2.zondax.ch/pas/node/rpc'
   }],
