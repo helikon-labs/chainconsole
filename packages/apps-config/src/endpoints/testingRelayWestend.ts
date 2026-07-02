@@ -174,7 +174,7 @@ export const testParasWestendCommon: EndpointOption[] = [
       name: 'Parity',
       url: 'wss://westend-asset-hub-rpc.polkadot.io'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'Stakeworld',
       url: 'wss://wnd-rpc.stakeworld.io/assethub'
     }],
@@ -307,7 +307,7 @@ export const testRelayWestend: EndpointOption = {
     name: 'RadiumBlock',
     url: 'wss://westend.public.curie.radiumblock.co/ws'
   }, {
-    isAvailable: true,
+    isAvailable: false,
     name: 'Stakeworld',
     url: 'wss://wnd-rpc.stakeworld.io'
   }],

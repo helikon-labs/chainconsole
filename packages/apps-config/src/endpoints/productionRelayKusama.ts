@@ -514,7 +514,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     isPeopleForIdentity: true,
     paraId: 2281,
     providers: [{
-      isAvailable: false,
+      isAvailable: true,
       name: 'Kippu',
       url: 'wss://kreivo.kippu.rocks/'
     }, {
@@ -1066,7 +1066,7 @@ export const prodParasKusamaCommon: EndpointOption[] = [
       name: 'RadiumBlock',
       url: 'wss://statemine.public.curie.radiumblock.co/ws'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'Stakeworld',
       url: 'wss://rpc-assethub-kusama.stakeworld.io'
     }],
@@ -1115,7 +1115,7 @@ export const prodParasKusamaCommon: EndpointOption[] = [
       name: 'Spectrum',
       url: 'wss://spectrum-03.simplystaking.xyz/cG9sa2Fkb3QtMDMtOTFkMmYwZGYtcG9sa2Fkb3Q/balkpUVauqyv8g/kusamabridgehub/mainnet/'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'Stakeworld',
       url: 'wss://rpc-bridgehub-kusama.stakeworld.io'
     }],
