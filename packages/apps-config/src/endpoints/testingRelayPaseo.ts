@@ -585,7 +585,7 @@ export const testParasPaseoCommon: EndpointOption[] = [
       name: 'StakeWorld',
       url: 'wss://rpc-assethub-paseo.stakeworld.io'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'TurboFlakes',
       url: 'wss://sys.turboflakes.io/asset-hub-paseo'
     }],
@@ -719,7 +719,7 @@ export const testRelayPaseo: EndpointOption = {
     name: 'IBP2',
     url: 'wss://paseo.dotters.network'
   }, {
-    isAvailable: false,
+    isAvailable: true,
     name: 'StakeWorld',
     url: 'wss://rpc-paseo.stakeworld.io'
   }, {
