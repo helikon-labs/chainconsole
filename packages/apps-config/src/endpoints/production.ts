@@ -207,7 +207,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
   {
     info: 'chainflip',
     providers: [{
-      isAvailable: false,
+      isAvailable: true,
       name: 'chainflip',
       url: 'wss://mainnet-archive.chainflip.io'
     }],
@@ -629,7 +629,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
       name: 'OnFinality',
       url: 'wss://polkadex.api.onfinality.io/public-ws'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'PolkadexSup',
       url: 'wss://so.polkadex.ee'
     }, {

@@ -42,7 +42,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://acala-rpc-3.aca-api.network/ws'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'Dwellir',
         url: 'wss://acala-rpc.n.dwellir.com'
       },
@@ -89,7 +89,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     paraId: 3396,
     providers: [
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'Acurast',
         url: 'wss://public-rpc.mainnet.acurast.com'
       }
@@ -967,7 +967,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     paraId: 2043,
     providers: [
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'TraceLabs',
         url: 'wss://parachain-rpc.origin-trail.network'
       }
