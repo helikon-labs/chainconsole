@@ -207,7 +207,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
   {
     info: 'chainflip',
     providers: [{
-      isAvailable: false,
+      isAvailable: true,
       name: 'chainflip',
       url: 'wss://mainnet-archive.chainflip.io'
     }],

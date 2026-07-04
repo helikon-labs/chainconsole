@@ -719,7 +719,7 @@ export const testRelayPaseo: EndpointOption = {
     name: 'IBP2',
     url: 'wss://paseo.dotters.network'
   }, {
-    isAvailable: false,
+    isAvailable: true,
     name: 'StakeWorld',
     url: 'wss://rpc-paseo.stakeworld.io'
   }, {
