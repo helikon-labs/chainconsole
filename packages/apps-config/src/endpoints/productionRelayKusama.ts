@@ -116,7 +116,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
       name: 'Basilisk',
       url: 'wss://rpc.basilisk.cloud'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'Dwellir',
       url: 'wss://basilisk-rpc.n.dwellir.com'
     }, {
@@ -475,7 +475,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     info: 'kintsugi',
     paraId: 2092,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Kintsugi Labs',
       url: 'wss://api-kusama.interlay.io/parachain'
     }, {
