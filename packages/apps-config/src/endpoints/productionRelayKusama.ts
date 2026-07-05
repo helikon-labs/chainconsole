@@ -475,7 +475,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     info: 'kintsugi',
     paraId: 2092,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Kintsugi Labs',
       url: 'wss://api-kusama.interlay.io/parachain'
     }, {
