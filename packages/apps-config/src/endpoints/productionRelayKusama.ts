@@ -116,7 +116,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
       name: 'Basilisk',
       url: 'wss://rpc.basilisk.cloud'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'Dwellir',
       url: 'wss://basilisk-rpc.n.dwellir.com'
     }, {
@@ -173,19 +173,19 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     info: 'shadow',
     paraId: 2012,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Crust',
       url: 'wss://rpc-shadow.crust.network/'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'Crust APP',
       url: 'wss://rpc-shadow.crustnetwork.app'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'Crust CC',
       url: 'wss://rpc-shadow.crustnetwork.cc'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'Crust XYZ',
       url: 'wss://rpc-shadow.crustnetwork.xyz'
     }],
@@ -1177,7 +1177,7 @@ export const prodParasKusamaCommon: EndpointOption[] = [
       name: 'Dwellir',
       url: 'wss://encointer-kusama-rpc.n.dwellir.com'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'Encointer Association',
       url: 'wss://kusama.api.encointer.org'
     }, {
