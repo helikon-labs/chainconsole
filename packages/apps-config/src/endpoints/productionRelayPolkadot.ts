@@ -42,7 +42,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://acala-rpc-3.aca-api.network/ws'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'Dwellir',
         url: 'wss://acala-rpc.n.dwellir.com'
       },
@@ -393,17 +393,17 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://crust-parachain.crustapps.net'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'Crust APP',
         url: 'wss://crust-parachain.crustnetwork.app'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'Crust CC',
         url: 'wss://crust-parachain.crustnetwork.cc'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'Crust XYZ',
         url: 'wss://crust-parachain.crustnetwork.xyz'
       },
