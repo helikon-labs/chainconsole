@@ -207,7 +207,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
   {
     info: 'chainflip',
     providers: [{
-      isAvailable: false,
+      isAvailable: true,
       name: 'chainflip',
       url: 'wss://mainnet-archive.chainflip.io'
     }],
@@ -453,7 +453,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
       name: 'Jsgenesis',
       url: 'wss://rpc.joystream.org'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'l1.media',
       url: 'wss://rpc.l1.media'
     }],
@@ -513,7 +513,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
       name: 'Dwellir',
       url: 'wss://liberland-rpc.n.dwellir.com'
     }, {
-      isAvailable: false,
+      isAvailable: true,
       name: 'Liberland Government',
       url: 'wss://mainnet.liberland.org'
     }],
