@@ -1387,7 +1387,7 @@ export const prodParasPolkadotCommon: EndpointOption[] = [
         url: 'wss://statemint.api.onfinality.io/public-ws'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'Parity',
         url: 'wss://polkadot-asset-hub-rpc.polkadot.io'
       },
@@ -1665,7 +1665,7 @@ export const prodRelayPolkadot: EndpointOption = {
       url: 'wss://polkadot-rpc.n.dwellir.com'
     },
     {
-      isAvailable: true,
+      isAvailable: false,
       name: 'Helixstreet',
       url: 'wss://rpc-polkadot.helixstreet.io'
     },
