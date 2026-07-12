@@ -629,7 +629,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
       name: 'OnFinality',
       url: 'wss://polkadex.api.onfinality.io/public-ws'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'PolkadexSup',
       url: 'wss://so.polkadex.ee'
     }, {
