@@ -859,7 +859,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     info: 'shiden',
     paraId: 2007,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Astar',
       url: 'wss://rpc.shiden.astar.network'
     }, {
