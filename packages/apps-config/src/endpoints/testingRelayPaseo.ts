@@ -98,11 +98,11 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     info: 'Bifrost(Paseo)',
     paraId: 2030,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Liebi',
       url: 'wss://bifrost-rpc.paseo.liebi.com/ws'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'Liebi2',
       url: 'wss://bifrost-rpc.paseo2.liebi.com/ws'
     }],
@@ -116,7 +116,7 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     info: 'bulletin',
     paraId: 5118,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Parity',
       url: 'wss://paseo-bulletin-rpc.polkadot.io'
     }],
@@ -652,7 +652,7 @@ export const testParasPaseoCommon: EndpointOption[] = [
       name: 'IBP2',
       url: 'wss://coretime-paseo.dotters.network'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'ParaNodes',
       url: 'wss://paseo-coretime.paranodes.io'
     }],
@@ -719,7 +719,7 @@ export const testRelayPaseo: EndpointOption = {
     name: 'IBP2',
     url: 'wss://paseo.dotters.network'
   }, {
-    isAvailable: false,
+    isAvailable: true,
     name: 'StakeWorld',
     url: 'wss://rpc-paseo.stakeworld.io'
   }, {

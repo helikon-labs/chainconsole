@@ -135,7 +135,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
       name: 'Latent Holdings (Lite)',
       url: 'wss://lite.sub.latent.to:443'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'OnFinality (Archive)',
       url: 'wss://bittensor-finney.api.onfinality.io/public-ws'
     }, {
@@ -207,7 +207,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
   {
     info: 'chainflip',
     providers: [{
-      isAvailable: false,
+      isAvailable: true,
       name: 'chainflip',
       url: 'wss://mainnet-archive.chainflip.io'
     }],
@@ -453,7 +453,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
       name: 'Jsgenesis',
       url: 'wss://rpc.joystream.org'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'l1.media',
       url: 'wss://rpc.l1.media'
     }],
@@ -513,7 +513,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
       name: 'Dwellir',
       url: 'wss://liberland-rpc.n.dwellir.com'
     }, {
-      isAvailable: false,
+      isAvailable: true,
       name: 'Liberland Government',
       url: 'wss://mainnet.liberland.org'
     }],
@@ -629,7 +629,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
       name: 'OnFinality',
       url: 'wss://polkadex.api.onfinality.io/public-ws'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'PolkadexSup',
       url: 'wss://so.polkadex.ee'
     }, {
