@@ -789,7 +789,7 @@ export const testChains: Omit<EndpointOption, 'teleport'>[] = [
       name: 'RadiumBlock',
       url: 'wss://moonbase.public.curie.radiumblock.co/ws'
     }, {
-      isAvailable: false,
+      isAvailable: true,
       name: 'UnitedBloc',
       url: 'wss://moonbase.unitedbloc.com'
     }],
