@@ -148,7 +148,7 @@ export const testChains: Omit<EndpointOption, 'teleport'>[] = [
   {
     info: 'autonomys-chronos-evm',
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Labs',
       url: 'wss://auto-evm.chronos.autonomys.xyz/ws'
     }],

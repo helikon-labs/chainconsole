@@ -88,7 +88,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
       name: 'Foundation',
       url: 'wss://rpc.mainnet.subspace.foundation/ws'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'Labs',
       url: 'wss://rpc.mainnet.autonomys.xyz/ws'
     }],
@@ -135,7 +135,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
       name: 'Latent Holdings (Lite)',
       url: 'wss://lite.sub.latent.to:443'
     }, {
-      isAvailable: false,
+      isAvailable: true,
       name: 'OnFinality (Archive)',
       url: 'wss://bittensor-finney.api.onfinality.io/public-ws'
     }, {
@@ -156,7 +156,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
       name: 'Amforc',
       url: 'wss://bulletin.rpc.amforc.com'
     }, {
-      isAvailable: false,
+      isAvailable: true,
       name: 'Interweb',
       url: 'wss://rpc.interweb-it.com/bulletin'
     }, {
@@ -629,7 +629,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
       name: 'OnFinality',
       url: 'wss://polkadex.api.onfinality.io/public-ws'
     }, {
-      isAvailable: false,
+      isAvailable: true,
       name: 'PolkadexSup',
       url: 'wss://so.polkadex.ee'
     }, {
