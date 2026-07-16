@@ -1387,7 +1387,7 @@ export const prodParasPolkadotCommon: EndpointOption[] = [
         url: 'wss://statemint.api.onfinality.io/public-ws'
       },
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'Parity',
         url: 'wss://polkadot-asset-hub-rpc.polkadot.io'
       },
