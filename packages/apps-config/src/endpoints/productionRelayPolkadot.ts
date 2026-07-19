@@ -288,7 +288,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://fullnode.centrifuge.io'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'LuckyFriday',
         url: 'wss://rpc-centrifuge.luckyfriday.io'
       },
@@ -910,7 +910,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://wss.api.moonbeam.network'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'OnFinality',
         url: 'wss://moonbeam.api.onfinality.io/public-ws'
       },
@@ -920,7 +920,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://moonbeam.public.curie.radiumblock.co/ws'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'UnitedBloc',
         url: 'wss://moonbeam.unitedbloc.com'
       }
@@ -1387,7 +1387,7 @@ export const prodParasPolkadotCommon: EndpointOption[] = [
         url: 'wss://statemint.api.onfinality.io/public-ws'
       },
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'Parity',
         url: 'wss://polkadot-asset-hub-rpc.polkadot.io'
       },

@@ -55,7 +55,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     info: 'altair',
     paraId: 2088,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Centrifuge',
       url: 'wss://fullnode.altair.centrifuge.io'
     }, {
@@ -625,7 +625,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
       name: 'RadiumBlock',
       url: 'wss://moonriver.public.curie.radiumblock.co/ws'
     }, {
-      isAvailable: false,
+      isAvailable: true,
       name: 'UnitedBloc',
       url: 'wss://moonriver.unitedbloc.com'
     }],
@@ -674,7 +674,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
       name: 'Composable',
       url: 'wss://rpc.composablenodes.tech'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'LuckyFriday',
       url: 'wss://rpc-picasso.luckyfriday.io'
     }],
@@ -1177,7 +1177,7 @@ export const prodParasKusamaCommon: EndpointOption[] = [
       name: 'Dwellir',
       url: 'wss://encointer-kusama-rpc.n.dwellir.com'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'Encointer Association',
       url: 'wss://kusama.api.encointer.org'
     }, {
