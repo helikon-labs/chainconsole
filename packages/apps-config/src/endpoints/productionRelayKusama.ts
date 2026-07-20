@@ -55,7 +55,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     info: 'altair',
     paraId: 2088,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Centrifuge',
       url: 'wss://fullnode.altair.centrifuge.io'
     }, {
@@ -1288,7 +1288,7 @@ export const prodRelayKusama: EndpointOption = {
     name: 'Dwellir',
     url: 'wss://kusama-rpc.n.dwellir.com'
   }, {
-    isAvailable: true,
+    isAvailable: false,
     name: 'Helixstreet',
     url: 'wss://rpc-kusama.helixstreet.io'
   }, {

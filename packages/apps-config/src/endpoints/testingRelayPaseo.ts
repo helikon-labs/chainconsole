@@ -229,7 +229,7 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://hyperbridge-paseo-rpc.blockops.network'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'Polytope Labs',
         url: 'wss://gargantua.rpc.polytope.technology'
       }
