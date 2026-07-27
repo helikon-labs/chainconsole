@@ -611,7 +611,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://hydration-rpc.n.dwellir.com'
       },
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'Galactic Council',
         url: 'wss://rpc.hydradx.cloud'
       },
