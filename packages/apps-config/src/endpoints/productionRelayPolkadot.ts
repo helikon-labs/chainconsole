@@ -42,7 +42,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://acala-rpc-3.aca-api.network/ws'
       },
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'Dwellir',
         url: 'wss://acala-rpc.n.dwellir.com'
       },
@@ -288,7 +288,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://fullnode.centrifuge.io'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'LuckyFriday',
         url: 'wss://rpc-centrifuge.luckyfriday.io'
       },
@@ -1543,7 +1543,7 @@ export const prodParasPolkadotCommon: EndpointOption[] = [
         url: 'wss://coretime-polkadot.dotters.network'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'LuckyFriday',
         url: 'wss://rpc-coretime-polkadot.luckyfriday.io'
       },
