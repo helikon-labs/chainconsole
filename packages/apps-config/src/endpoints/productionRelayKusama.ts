@@ -674,7 +674,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
       name: 'Composable',
       url: 'wss://rpc.composablenodes.tech'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'LuckyFriday',
       url: 'wss://rpc-picasso.luckyfriday.io'
     }],
