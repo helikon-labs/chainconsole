@@ -625,7 +625,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
       name: 'RadiumBlock',
       url: 'wss://moonriver.public.curie.radiumblock.co/ws'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'UnitedBloc',
       url: 'wss://moonriver.unitedbloc.com'
     }],
@@ -871,7 +871,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
       name: 'Dwellir',
       url: 'wss://shiden-rpc.n.dwellir.com'
     }, {
-      isAvailable: false,
+      isAvailable: true,
       name: 'OnFinality',
       url: 'wss://shiden.api.onfinality.io/public-ws'
     }, {

@@ -1167,7 +1167,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     paraId: 3388,
     providers: [
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'Airalab',
         url: 'wss://polkadot.rpc.robonomics.network/'
       }
