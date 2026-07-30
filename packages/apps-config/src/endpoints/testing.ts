@@ -777,11 +777,11 @@ export const testChains: Omit<EndpointOption, 'teleport'>[] = [
       name: 'Dwellir',
       url: 'wss://moonbase-rpc.n.dwellir.com'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'Moonbeam Foundation',
       url: 'wss://wss.api.moonbase.moonbeam.network'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'OnFinality',
       url: 'wss://moonbeam-alpha.api.onfinality.io/public-ws'
     }, {
