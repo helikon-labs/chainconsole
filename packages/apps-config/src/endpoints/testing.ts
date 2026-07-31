@@ -777,7 +777,7 @@ export const testChains: Omit<EndpointOption, 'teleport'>[] = [
       name: 'Dwellir',
       url: 'wss://moonbase-rpc.n.dwellir.com'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'Moonbeam Foundation',
       url: 'wss://wss.api.moonbase.moonbeam.network'
     }, {
@@ -789,7 +789,7 @@ export const testChains: Omit<EndpointOption, 'teleport'>[] = [
       name: 'RadiumBlock',
       url: 'wss://moonbase.public.curie.radiumblock.co/ws'
     }, {
-      isAvailable: false,
+      isAvailable: true,
       name: 'UnitedBloc',
       url: 'wss://moonbase.unitedbloc.com'
     }],

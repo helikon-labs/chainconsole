@@ -59,7 +59,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
       name: 'Centrifuge',
       url: 'wss://fullnode.altair.centrifuge.io'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'OnFinality',
       url: 'wss://altair.api.onfinality.io/public-ws'
     }],
