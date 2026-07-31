@@ -920,7 +920,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://moonbeam.public.curie.radiumblock.co/ws'
       },
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'UnitedBloc',
         url: 'wss://moonbeam.unitedbloc.com'
       }
