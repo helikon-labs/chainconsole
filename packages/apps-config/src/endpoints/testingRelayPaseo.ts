@@ -68,7 +68,7 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     info: 'paseoAventus',
     paraId: 2056,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Aventus',
       url: 'wss://avn-parachain.testnet.aventus.io'
     }],
@@ -491,7 +491,7 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     info: 'PaseoShibuyaChain',
     paraId: 2000,
     providers: [{
-      isAvailable: false,
+      isAvailable: true,
       name: 'Astar',
       url: 'wss://rpc.shibuya.astar.network'
     }],
