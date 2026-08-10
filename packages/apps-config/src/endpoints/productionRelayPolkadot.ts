@@ -611,7 +611,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://hydration-rpc.n.dwellir.com'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'Galactic Council',
         url: 'wss://rpc.hydradx.cloud'
       },
@@ -905,7 +905,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://moonbeam.dotters.network'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'Moonbeam Foundation',
         url: 'wss://wss.api.moonbeam.network'
       },
