@@ -613,7 +613,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
       name: 'Dwellir',
       url: 'wss://moonriver-rpc.n.dwellir.com'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'Moonbeam Foundation',
       url: 'wss://wss.api.moonriver.moonbeam.network'
     }, {
@@ -625,7 +625,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
       name: 'RadiumBlock',
       url: 'wss://moonriver.public.curie.radiumblock.co/ws'
     }, {
-      isAvailable: false,
+      isAvailable: true,
       name: 'UnitedBloc',
       url: 'wss://moonriver.unitedbloc.com'
     }],
@@ -859,7 +859,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     info: 'shiden',
     paraId: 2007,
     providers: [{
-      isAvailable: false,
+      isAvailable: true,
       name: 'Astar',
       url: 'wss://rpc.shiden.astar.network'
     }, {
@@ -871,7 +871,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
       name: 'Dwellir',
       url: 'wss://shiden-rpc.n.dwellir.com'
     }, {
-      isAvailable: false,
+      isAvailable: true,
       name: 'OnFinality',
       url: 'wss://shiden.api.onfinality.io/public-ws'
     }, {
@@ -1177,7 +1177,7 @@ export const prodParasKusamaCommon: EndpointOption[] = [
       name: 'Dwellir',
       url: 'wss://encointer-kusama-rpc.n.dwellir.com'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'Encointer Association',
       url: 'wss://kusama.api.encointer.org'
     }, {
@@ -1288,7 +1288,7 @@ export const prodRelayKusama: EndpointOption = {
     name: 'Dwellir',
     url: 'wss://kusama-rpc.n.dwellir.com'
   }, {
-    isAvailable: true,
+    isAvailable: false,
     name: 'Helixstreet',
     url: 'wss://rpc-kusama.helixstreet.io'
   }, {
