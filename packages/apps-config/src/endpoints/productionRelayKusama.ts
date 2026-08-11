@@ -613,7 +613,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
       name: 'Dwellir',
       url: 'wss://moonriver-rpc.n.dwellir.com'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'Moonbeam Foundation',
       url: 'wss://wss.api.moonriver.moonbeam.network'
     }, {
@@ -859,7 +859,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     info: 'shiden',
     paraId: 2007,
     providers: [{
-      isAvailable: false,
+      isAvailable: true,
       name: 'Astar',
       url: 'wss://rpc.shiden.astar.network'
     }, {
@@ -1288,7 +1288,7 @@ export const prodRelayKusama: EndpointOption = {
     name: 'Dwellir',
     url: 'wss://kusama-rpc.n.dwellir.com'
   }, {
-    isAvailable: true,
+    isAvailable: false,
     name: 'Helixstreet',
     url: 'wss://rpc-kusama.helixstreet.io'
   }, {
