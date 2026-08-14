@@ -1058,7 +1058,7 @@ export const prodParasKusamaCommon: EndpointOption[] = [
       name: 'OnFinality',
       url: 'wss://assethub-kusama.api.onfinality.io/public-ws'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'Parity',
       url: 'wss://kusama-asset-hub-rpc.polkadot.io'
     }, {
