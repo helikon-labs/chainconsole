@@ -42,7 +42,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://acala-rpc-3.aca-api.network/ws'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'Dwellir',
         url: 'wss://acala-rpc.n.dwellir.com'
       },
@@ -611,7 +611,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://hydration-rpc.n.dwellir.com'
       },
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'Galactic Council',
         url: 'wss://rpc.hydradx.cloud'
       },
@@ -663,7 +663,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://nexus.dotters.network'
       },
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'Polytope Labs',
         url: 'wss://nexus.rpc.polytope.technology'
       }
@@ -875,7 +875,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     paraId: 2004,
     providers: [
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'Allnodes',
         url: 'wss://moonbeam-rpc.publicnode.com'
       },
@@ -1167,7 +1167,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     paraId: 3388,
     providers: [
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'Airalab',
         url: 'wss://polkadot.rpc.robonomics.network/'
       }
