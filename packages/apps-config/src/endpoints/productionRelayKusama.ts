@@ -605,7 +605,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     info: 'moonriver',
     paraId: 2023,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Allnodes',
       url: 'wss://moonriver-rpc.publicnode.com'
     }, {

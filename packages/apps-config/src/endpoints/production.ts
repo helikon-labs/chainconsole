@@ -876,7 +876,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
       name: 'Blast',
       url: 'wss://vara-mainnet.public.blastapi.io'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'Gear',
       url: 'wss://rpc.vara.network'
     }, {
