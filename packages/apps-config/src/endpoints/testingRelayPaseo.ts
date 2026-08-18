@@ -385,7 +385,7 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     info: 'NeuroWeb',
     paraId: 2043,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'TraceLabs',
       url: 'wss://parachain-testnet-rpc.origin-trail.network/'
     }],
