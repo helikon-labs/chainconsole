@@ -475,7 +475,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     paraId: 3345,
     providers: [
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'Energy Web',
         url: 'wss://public-rpc.mainnet.energywebx.com/'
       }
