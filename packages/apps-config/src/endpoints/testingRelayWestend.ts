@@ -258,7 +258,7 @@ export const testParasWestendCommon: EndpointOption[] = [
     isPeopleForIdentity: false,
     paraId: 1004,
     providers: [{
-      isAvailable: true,
+      isAvailable: false,
       name: 'Dwellir',
       url: 'wss://people-westend-rpc.n.dwellir.com'
     }, {
@@ -287,7 +287,7 @@ export const testRelayWestend: EndpointOption = {
     ...testParasWestend
   ],
   providers: [{
-    isAvailable: true,
+    isAvailable: false,
     name: 'Dwellir',
     url: 'wss://westend-rpc.n.dwellir.com'
   }, {

@@ -475,7 +475,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     paraId: 3345,
     providers: [
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'Energy Web',
         url: 'wss://public-rpc.mainnet.energywebx.com/'
       }
@@ -1387,7 +1387,7 @@ export const prodParasPolkadotCommon: EndpointOption[] = [
         url: 'wss://statemint.api.onfinality.io/public-ws'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'Parity',
         url: 'wss://polkadot-asset-hub-rpc.polkadot.io'
       },
@@ -1660,7 +1660,7 @@ export const prodRelayPolkadot: EndpointOption = {
       url: 'wss://1rpc.io/dot'
     },
     {
-      isAvailable: true,
+      isAvailable: false,
       name: 'Dwellir',
       url: 'wss://polkadot-rpc.n.dwellir.com'
     },

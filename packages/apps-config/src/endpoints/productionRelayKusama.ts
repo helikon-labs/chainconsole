@@ -116,7 +116,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
       name: 'Basilisk',
       url: 'wss://rpc.basilisk.cloud'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'Dwellir',
       url: 'wss://basilisk-rpc.n.dwellir.com'
     }, {
@@ -625,7 +625,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
       name: 'RadiumBlock',
       url: 'wss://moonriver.public.curie.radiumblock.co/ws'
     }, {
-      isAvailable: false,
+      isAvailable: true,
       name: 'UnitedBloc',
       url: 'wss://moonriver.unitedbloc.com'
     }],
@@ -867,7 +867,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
       name: 'Blast',
       url: 'wss://shiden.public.blastapi.io'
     }, {
-      isAvailable: true,
+      isAvailable: false,
       name: 'Dwellir',
       url: 'wss://shiden-rpc.n.dwellir.com'
     }, {
