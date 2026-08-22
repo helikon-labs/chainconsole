@@ -475,7 +475,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     paraId: 3345,
     providers: [
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'Energy Web',
         url: 'wss://public-rpc.mainnet.energywebx.com/'
       }
@@ -1309,12 +1309,12 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://rakson-ceb-rpc.xode.net'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'RakSonKorea',
         url: 'wss://rakson-rpc.xode.net'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'XodeCommunity',
         url: 'wss://polkadot-rpcnode.xode.net'
       }
