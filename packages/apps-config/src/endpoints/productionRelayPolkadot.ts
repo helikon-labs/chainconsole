@@ -42,7 +42,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://acala-rpc-3.aca-api.network/ws'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'Dwellir',
         url: 'wss://acala-rpc.n.dwellir.com'
       },
@@ -475,7 +475,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     paraId: 3345,
     providers: [
       {
-        isAvailable: false,
+        isAvailable: true,
         name: 'Energy Web',
         url: 'wss://public-rpc.mainnet.energywebx.com/'
       }
@@ -920,7 +920,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
         url: 'wss://moonbeam.public.curie.radiumblock.co/ws'
       },
       {
-        isAvailable: true,
+        isAvailable: false,
         name: 'UnitedBloc',
         url: 'wss://moonbeam.unitedbloc.com'
       }
